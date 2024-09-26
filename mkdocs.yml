@@ -1,0 +1,205 @@
+site_name: 源梦紫金
+site_url: https://zjusuee.github.io
+theme:
+  name: material
+  palette:
+    scheme: default
+  features:
+    - navigation.tabs
+    # - navigation.expand
+    - navigation.indexes
+nav: 
+  - 主页: 
+    - index.md
+  - 本科课程: 
+    - 导航页: courses.md
+    - 公共专业课程:   
+      - 导航页: courses/public.md
+      - 专业基础课程: 
+        - 导航页: courses/public/fundamental.md
+        - 工程图学: courses/public/fundamental/工程图学.md
+        - 机械制图及CAD基础: courses/public/fundamental/机械制图及CAD基础.md
+        - 机械设计基础（甲）: courses/public/fundamental/机械设计基础（甲）.md
+        - 常微分方程: courses/public/fundamental/常微分方程.md
+        - 概率论及数理统计: courses/public/fundamental/概率论及数理统计.md
+        - 复变函数与积分变换: courses/public/fundamental/复变函数与积分变换.md
+        - 工程流体力学（甲）I&II: courses/public/fundamental/工程流体力学（甲）.md
+        - 理论力学（甲）: courses/public/fundamental/理论力学（甲）.md
+        - 材料力学（乙）: courses/public/fundamental/材料力学（乙）.md
+        - 工程力学: courses/public/fundamental/工程力学.md
+        - 工程训练: courses/public/fundamental/工程训练.md
+        - 材料力学实验: courses/public/fundamental/材料力学实验.md
+        - 电工电子学及实验: courses/public/fundamental/电工电子学及实验.md
+        - 电工电子学: courses/public/fundamental/电工电子学.md
+        - 电工电子学实验: courses/public/fundamental/电工电子学实验.md
+        - 现代电路基础：面向通信与物联网设计: courses/public/fundamental/现代电路基础：面向通信与物联网设计.md
+        - 控制论: courses/public/fundamental/控制论.md
+        - 随机过程: courses/public/fundamental/随机过程.md
+        - 数理方法 I&II: courses/public/fundamental/数理方法.md
+        - 物理化学: courses/public/fundamental/物理化学.md
+      - 专业必修课程: 
+        - 导航页: courses/public/professional.md
+        - 工程热力学（甲）: courses/public/professional/工程热力学（甲）.md
+        - 热工实验 I&II: courses/public/professional/热工实验.md
+        - 传热学（甲）: courses/public/professional/传热学（甲）.md
+        - 机械设计课程设计（乙）: courses/public/professional/机械设计课程设计（乙）.md
+        - 能源与环境系统工程概论: courses/public/professional/能源与环境系统工程概论.md
+        - 能源工程伦理与管理: courses/public/professional/能源工程伦理与管理.md
+        - 自动控制理论: courses/public/professional/自动控制理论.md
+    - 专业分类课程: 
+      - 导航页: courses/routes.md
+      - 热能: 
+        - 导航页: courses/routes/Thermal.md
+        - 专业方向课程: 
+          - 透平机械原理: courses/routes/Thermal/Route/透平机械原理.md
+          - 热工信号处理技术及实验: courses/routes/Thermal/Route/热工信号处理技术及实验.md
+          - 燃烧理论: courses/routes/Thermal/Route/燃烧理论.md
+          - 热力环境控制: courses/routes/Thermal/Route/热力环境控制.md
+          - 能源转化（锅炉原理）: courses/routes/Thermal/Route/能源转化（锅炉原理）.md
+          - 能源生产过程控制: courses/routes/Thermal/Route/能源生产过程控制.md
+          - 热能工程试验技术: courses/routes/Thermal/Route/热能工程试验技术.md
+          - 能源与环境实验 I&II: courses/routes/Thermal/Route/能源与环境实验.md
+        - 专业选修课程: 
+          - 微机原理及应用: courses/routes/Thermal/Extra/微机原理及应用.md
+          - 能源与环境技术进展: courses/routes/Thermal/Extra/能源与环境技术进展.md
+          - 太阳能发电: courses/routes/Thermal/Extra/太阳能发电.md
+          - 可再生能源和新能源概论: courses/routes/Thermal/Extra/可再生能源和新能源概论.md
+          - 现代分析测试技术: courses/routes/Thermal/Extra/现代分析测试技术.md
+          - 流体机械: courses/routes/Thermal/Extra/流体机械.md
+          - 二氧化碳捕集利用封存: courses/routes/Thermal/Extra/二氧化碳捕集利用封存.md
+          - 机遇循环经济的能源环境系统: courses/routes/Thermal/Extra/机遇循环经济的能源环境系统.md
+          - 专业英语阅读与写作: courses/routes/Thermal/Extra/专业英语阅读与写作.md
+          - 智慧能源系统理论与应用: courses/routes/Thermal/Extra/智慧能源系统理论与应用.md
+          - 能源系统的评估原理: courses/routes/Thermal/Extra/能源系统的评估原理.md
+          - 燃气轮机基础: courses/routes/Thermal/Extra/燃气轮机基础.md
+      - 低温: 
+        - 导航页: courses/routes/Cryogenic.md
+        - 专业方向课程: 
+          - 流体输送及控制: courses/routes/Cryogenic/Route/流体输送及控制.md
+          - 制冷原理: courses/routes/Cryogenic/Route/制冷原理.md
+          - 制冷与低温测试技术: courses/routes/Cryogenic/Route/制冷与低温测试技术.md
+          - 人工环境概论: courses/routes/Cryogenic/Route/人工环境概论.md
+          - 暖通与空调: courses/routes/Cryogenic/Route/暖通与空调.md
+          - 低温原理: courses/routes/Cryogenic/Route/低温原理.md
+          - 制冷与低温设备: courses/routes/Cryogenic/Route/制冷与低温设备.md
+          - 制冷装置自动化: courses/routes/Cryogenic/Route/制冷装置自动化.md
+          - 制冷与低温实验: courses/routes/Cryogenic/Route/制冷与低温实验.md
+        - 专业选修课程: 
+          - 微机原理及应用:  courses/routes/Thermal/Extra/微机原理及应用.md
+          - 食品冷冻及保鲜技术: courses/routes/Cryogenic/Extra/食品冷冻及保鲜技术.md
+          - 制冷与人工环境英语: courses/routes/Cryogenic/Extra/制冷与人工环境英语.md
+          - 低温环境绝热技术: courses/routes/Cryogenic/Extra/低温环境绝热技术.md
+          - 低温生物技术: courses/routes/Cryogenic/Extra/低温生物技术.md
+      - 新能源: 
+        - 导航页: courses/routes/NovelEnergy.md
+        - 专业方向课程: 
+          - 生物质能: courses/routes/NovelEnergy/Route/生物质能.md
+          - 锅炉原理及热交换器设计: courses/routes/NovelEnergy/Route/锅炉原理及热交换器设计.md
+          - 新能源系统检测与控制: courses/routes/NovelEnergy/Route/新能源系统检测与控制.md
+          - 能源材料: courses/routes/NovelEnergy/Route/能源材料.md
+          - 氢能: courses/routes/NovelEnergy/Route/氢能.md
+          - 风能: courses/routes/NovelEnergy/Route/风能.md
+          - 太阳能: courses/routes/NovelEnergy/Route/太阳能.md
+          - 核能: courses/routes/NovelEnergy/Route/核能.md
+          - 循环经济与节能减排: courses/routes/NovelEnergy/Route/循环经济与节能减排.md
+          - 新能源实验: courses/routes/NovelEnergy/Route/新能源实验.md
+        - 专业选修课程: 
+          - 微机原理及应用:  courses/routes/Thermal/Extra/微机原理及应用.md
+          - 能源与环境技术进展: courses/routes/Thermal/Extra/能源与环境技术进展.md
+          - 燃烧理论: courses/routes/Thermal/Route/燃烧理论.md
+          - 二氧化碳捕集利用封存: courses/routes/Thermal/Extra/二氧化碳捕集利用封存.md
+          - 燃料电池: courses/routes/NovelEnergy/Extra/燃料电池.md
+          - 专业英语阅读与写作: courses/routes/Thermal/Extra/专业英语阅读与写作.md
+          - 能源化学: courses/routes/NovelEnergy/Extra/能源化学.md
+          - 能源系统的评估原理: courses/routes/Thermal/Extra/能源系统的评估原理.md
+          - 燃气轮机基础: courses/routes/Thermal/Extra/燃气轮机基础.md
+      - 慧能: 
+        - 导航页: courses/routes/SmartEnergy.md
+        - 专业必修课程:
+          - 能源与环境系统原理及实践: courses/routes/SmartEnergy/能源与环境系统原理及实践.md
+          - 制冷低温与空调原理及实践: courses/routes/SmartEnergy/制冷低温与空调原理及实践.md
+          - 能源系统大数据分析理论与实践: courses/routes/SmartEnergy/能源系统大数据分析理论及实践.md
+          - 计算机模拟: courses/routes/SmartEnergy/计算机模拟.md
+          - 动态建模理论与应用: courses/routes/SmartEnergy/动态建模理论与应用.md
+          - 智慧能源系统控制与优化: courses/routes/SmartEnergy/智慧能源系统控制与优化.md
+          - 能源系统先进测量技术: courses/routes/SmartEnergy/能源系统先进测量技术.md
+          - 人工智能: courses/routes/SmartEnergy/人工智能.md
+          - 数据挖掘概论: courses/routes/SmartEnergy/数据挖掘概论.md
+      - 车辆: 
+        - 导航页: courses/routes/Vehicles.md
+        - 专业必修课程: 
+          - 设计与制造 I&II&III: courses/routes/Vehicles/Route/设计与制造.md
+          - 汽车构造: courses/routes/Vehicles/Route/汽车构造.md
+          - 工程流体力学（乙）: courses/routes/Vehicles/Route/工程流体力学（乙）.md
+          - 汽车动力系统原理: courses/routes/Vehicles/Route/汽车动力系统原理.md
+          - 汽车理论: courses/routes/Vehicles/Route/汽车理论.md
+          - 汽车电子与控制: courses/routes/Vehicles/Route/汽车电子与控制.md
+          - 汽车设计: courses/routes/Vehicles/Route/汽车设计.md
+          - 动力机械测试技术: courses/routes/Vehicles/Route/动力机械测试技术.md
+          - 汽车及动力系统专业实验: courses/routes/Vehicles/Route/汽车及动力系统专业实验.md
+        - 专业选修课程: 
+          - 汽车工程导论: courses/routes/Vehicles/Extra/汽车工程导论.md
+          - 车辆振动与噪声: courses/routes/Vehicles/Extra/车辆振动与噪声.md
+          - 新能源汽车技术: courses/routes/Vehicles/Extra/新能源汽车技术.md
+          - 车辆动力学: courses/routes/Vehicles/Extra/车辆动力学.md
+      - 过控: 
+        - 导航页: courses/routes/ProcessControl.md
+        - 专业必修课程: 
+          - 机械设计（乙）: courses/routes/ProcessControl/Route/机械设计（乙）.md
+          - 工程热力学: courses/routes/ProcessControl/Route/工程热力学.md
+          - 过程工程流体力学: courses/routes/ProcessControl/Route/过程工程流体力学.md
+          - 工程材料: courses/routes/ProcessControl/Route/工程材料.md
+          - 控制工程基础: courses/routes/ProcessControl/Route/控制工程基础.md
+          - 化工原理（乙）: courses/routes/ProcessControl/Route/化工原理（乙）.md
+          - 化工原理实验（乙）: courses/routes/ProcessControl/Route/化工原理实验（乙）.md
+          - 数值计算方法: courses/routes/ProcessControl/Route/数值计算方法.md
+          - 过程设备设计: courses/routes/ProcessControl/Route/过程设备设计.md
+          - 过程装备控制技术: courses/routes/ProcessControl/Route/过程装备控制技术.md
+          - 过程机械: courses/routes/ProcessControl/Route/过程机械.md
+        - 专业选修课程: 
+          - 弹性力学基础: courses/routes/ProcessControl/Extra/弹性力学基础.md
+          - 有限单元法纪其工程应用: courses/routes/ProcessControl/Extra/有限单元法纪其工程应用.md
+          - 虚拟现实技术开发及应用: courses/routes/ProcessControl/Extra/虚拟现实技术开发及应用.md
+          - 过程装备工程设计: courses/routes/ProcessControl/Extra/过程装备工程设计.md
+          - 过程工业传递现象基础: courses/routes/ProcessControl/Extra/过程工业传递现象基础.md
+          - 过程装备与控制工程技术进展: courses/routes/ProcessControl/Extra/过程装备与控制工程技术进展.md
+    - 个性修读课程及实践课程:
+      - 实践教学课程: 
+        - 节能减排创新实践: courses/load.md
+        - 认识实习: courses/load.md
+        - 生产实习: courses/load.md
+        - 汽轮机课程设计: courses/load.md
+        - 锅炉课程设计: courses/load.md
+        - 虚拟制冷教学实践: courses/load.md
+        - 人工环境课程设计: courses/load.md
+        - 低温课程设计: courses/load.md
+        - 风电风机课程设计: courses/load.md
+        - 生物质发电系统课程设计: courses/load.md
+        - 工程训练加强实习（乙）: courses/load.md
+        - 专业综合训练: courses/load.md
+        - 过程装备课程设计: courses/load.md
+      - 个性化修读课程: 
+        - 异性催化与可持续发展: courses/load.md
+        - 能源有机化学: courses/load.md
+        - 建筑结构概论: courses/load.md
+        - 强化传热技术: courses/load.md
+        - CFD软件应用: courses/load.md
+        - 工程测试及信息处理: courses/load.md
+        - 塑料加工技术及装备: courses/load.md
+        - 机械振动基础: courses/load.md
+        - 化工安全及防腐: courses/load.md
+        - 过程装备故障诊断技术: courses/load.md
+        - 人工智能及其工程应用: courses/load.md
+        - 机器视觉: courses/load.md
+        - 机器学习: courses/load.md
+        - 机器学习基础: courses/load.md
+        - 人工智能基础: courses/load.md
+        - 机器视觉及图像处理: courses/load.md
+        - 人工智能与机器学习: courses/load.md
+        - 计算机视觉: courses/load.md
+        - 物联网系统设计: courses/load.md
+        - 物联网与智慧系统: courses/load.md
+        - 大数据安全与隐私保护: courses/load.md
+        - 电机控制: courses/load.md
+        - 物联网安全: courses/load.md
+
