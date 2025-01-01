@@ -1,5 +1,9 @@
 site_name: 源梦紫金
 site_url: https://zjusuee.github.io
+markdown_extensions:
+  - attr_list
+plugins:
+  - mkdocs-pdf
 theme:
   name: material
   palette:
