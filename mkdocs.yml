@@ -1,9 +1,12 @@
 site_name: 源梦紫金
 site_url: https://zjusuee.github.io
+# Strategy: Use an absolute path
 markdown_extensions:
-  - attr_list
-plugins:
-  - mkdocs-pdf
+  - pymdownx.pathconverter:
+      base_path: './docs' # default: ''
+      relative_path: '' # default ''
+      absolute: true # default: false
+      tags: 'a script img link object embed'
 theme:
   name: material
   palette:
