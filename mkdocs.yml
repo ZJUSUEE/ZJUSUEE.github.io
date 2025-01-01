@@ -3,7 +3,7 @@ site_url: https://zjusuee.github.io
 # Strategy: Use an absolute path
 markdown_extensions:
   - pymdownx.pathconverter:
-      base_path: './docs' # default: ''
+      base_path: './docs/courses' # default: ''
       relative_path: '' # default ''
       absolute: true # default: false
       tags: 'a script img link object embed'
