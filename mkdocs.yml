@@ -21,7 +21,8 @@ theme:
     - content.tabs.link
 nav: 
   - 主页: 
-    - index.md
+    - 首页: index.md
+    - 本科课程: courses.md
   - 本科课程: 
     - 导航页: courses.md
     - 公共专业课程:   
