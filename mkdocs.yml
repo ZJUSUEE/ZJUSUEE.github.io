@@ -7,6 +7,9 @@ markdown_extensions:
       relative_path: '' # default ''
       absolute: true # default: false
       tags: 'a script img link object embed'
+plugins:
+    - search
+    - awesome-pages
 theme:
   name: material
   palette:
@@ -45,7 +48,10 @@ nav:
       - 专业必修课程: 
         - 工程热力学（甲）: courses/public/professional/工程热力学（甲）.md
         - 热工实验 I&II: courses/public/professional/热工实验.md
-        - 传热学（甲）: courses/public/professional/传热学（甲）.md
+        - 传热学（甲）: 
+          - 传热学甲
+          - Page1: courses/public/professional/传热学（甲）.md
+          - Page2: courses/public/professional/传热学（甲）page2.md
         - 机械设计课程设计（乙）: courses/public/professional/机械设计课程设计（乙）.md
         - 能源与环境系统工程概论: courses/public/professional/能源与环境系统工程概论.md
         - 能源工程伦理与管理: courses/public/professional/能源工程伦理与管理.md
