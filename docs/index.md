@@ -2,21 +2,67 @@
 
 ### 💡关于源梦紫金
 
-嗨！每一位怀揣热望的能源探索者～
-这里是由浙江大学能源工程学院学生会倾情打造的课程攻略共享平台——「源梦紫金」，我们为热爱求知的心灵点亮了一盏永不熄灭的能源灯塔！🌟
+Hi~😉！
 
-欢迎能院的同学与我们共同建立平台，分享课程资源、笔记等资料，以便今后能源学子能够更为便捷地获取知识！
-从《工程热力学》到《传热学》，每一门课程都藏着独特的通关秘籍。我们收集了学长学姐们亲笔撰写的课程锦囊、精心整理的学霸笔记，还有满载实战经验的实验报告模板。就像打开能源世界的多啦A梦口袋，你需要的学习装备，我们早已备好！
+这里是由**浙江大学能源工程学院学生会（ZJUSUEE）**建设的课程攻略共享平台——**「源梦紫金」**
+
+ZJU能院包含能环、车辆、过控等诸多专业，本站即致力于汇总整合ZJU能源学科众多的课程资源，满足能院学子日常学习需要以及度过漫长的考试周🌟
+
+从《工程流体力学》到《传热学》，每一门课程都藏着独特的通关秘籍。我们收集了学长学姐们亲笔撰写的课程锦囊、精心整理的学霸笔记，还有满载实战经验的实验报告模板。就像打开能源世界的多啦A梦口袋，你需要的学习装备，我们早已备好！
+
+欢迎能院的同学（也欢迎其他学院同学）与我们共同建立平台，分享课程资源、笔记等资料，以便今后能源学子能够更为便捷地获取知识！
 
 !!! info "特别致谢"
 
     源梦紫金主要参考力速双A、数学之韵、图灵班学习指南等优秀的友院课程平台建设网站！感谢友院优秀平台的启迪，让我们在求是创新的道路上携手同行。
 
+**以下是一些常用课程资源跳转框：**
+
+<div class="grid cards" markdown>
+
+-   :fontawesome-brands-html5: __工程流体力学（甲）I&II__
+
+    ---
+
+    ![Image title](./courses/public/fundamental/工程流体力学（甲）/starrynight.jpg){ width="300" }
+    /// caption
+    [工程流体力学（甲）I&II](./courses/public/fundamental/工程流体力学（甲）.md)
+    ///
+
+-   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+
+    ---
+
+    Focus on your content and generate a responsive and searchable static site
+
+    [:octicons-arrow-right-24: Reference](#)
+
+-   :material-format-font:{ .lg .middle } __Made to measure__
+
+    ---
+
+    Change the colors, fonts, language, icons, logo and more with a few lines
+
+    [:octicons-arrow-right-24: Customization](#)
+
+-   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+
+    ---
+
+    Material for MkDocs is licensed under MIT and available on [GitHub]
+
+    [:octicons-arrow-right-24: License](#)
+
+</div>
+
 ### 🚩召集令
 
-无论是想成为知识海盗发掘宝藏，还是化身能源诗人书写攻略，查阅左侧边栏"**平台贡献指南**"上传你的优秀独到见解~
+无论是想成为知识海盗发掘宝藏，还是化身能源诗人书写攻略，查阅左侧边栏"**平台贡献指南**"上传你优秀的独到见解~
 让我们以知识为燃料，以梦想为反应堆，在浩渺的学术宇宙中，共同推进属于ZJU能院人的光速航行！🔋🚀
+**（感谢每一位学长学姐为网站的贡献！我们会为每一份上传的资料注明出处~）**
 
-相关问题请联系xjy同学cryowhale@zju.edu.cn
+~~源神启动！~~
+
+本站由**能源工程学院学生会**开发，在使用遇到相关问题请私信**ZJU能小源**微信公众号，或邮箱反馈：ZJUSUEE@163.com，也欢迎私信CC98@淹死的鲸（注明来意）
 
 
