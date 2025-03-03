@@ -25,38 +25,43 @@ nav:
     - 本科课程: courses.md
   # - 本科课程: 
   #   - 导航页: courses.md
-  - 专业基础课程:   
+  - 专业基础及必修课程:   
     - 导航页: courses/public/index.md
-    - 工程图学: courses/public/fundamental/工程图学.md
-    - 机械制图及CAD基础: courses/public/fundamental/机械制图及CAD基础.md
-    - 机械设计基础（甲）: courses/public/fundamental/机械设计基础（甲）.md
-    - 常微分方程: courses/public/fundamental/常微分方程.md
-    - 概率论及数理统计: courses/public/fundamental/概率论及数理统计.md
-    - 复变函数与积分变换: courses/public/fundamental/复变函数与积分变换.md
-    - 工程流体力学（甲）I&II: courses/public/fundamental/工程流体力学（甲）.md
-    - 理论力学（甲）: courses/public/fundamental/理论力学（甲）.md
-    - 材料力学（乙）: courses/public/fundamental/材料力学（乙）.md
-    - 工程力学: courses/public/fundamental/工程力学.md
-    - 工程训练: courses/public/fundamental/工程训练.md
-    - 材料力学实验: courses/public/fundamental/材料力学实验.md
-    - 电工电子学及实验: courses/public/fundamental/电工电子学及实验.md
+    - 机械类: 
+      - 工程图学: courses/public/fundamental/工程图学.md
+      - 机械制图及CAD基础: courses/public/fundamental/机械制图及CAD基础.md
+      - 机械设计基础（甲）: courses/public/fundamental/机械设计基础（甲）.md
+      - 机械设计课程设计（乙）: courses/public/professional/机械设计课程设计（乙）.md
+      - 工程训练: courses/public/fundamental/工程训练.md
+    - 力学类: 
+      - 工程流体力学（甲）I&II: courses/public/fundamental/工程流体力学（甲）.md
+      - 工程力学: courses/public/fundamental/工程力学.md
+      - 理论力学（甲）: courses/public/fundamental/理论力学（甲）.md
+      - 材料力学（乙）: courses/public/fundamental/材料力学（乙）.md
+      - 材料力学实验: courses/public/fundamental/材料力学实验.md
+    - 电学及控制类: 
+      - 电工电子学及实验: courses/public/fundamental/电工电子学及实验.md
+      - 自动控制理论: courses/public/professional/自动控制理论.md
     # - 电工电子学: courses/public/fundamental/电工电子学.md
     # - 电工电子学实验: courses/public/fundamental/电工电子学实验.md
     # - 现代电路基础：面向通信与物联网设计: courses/public/fundamental/现代电路基础：面向通信与物联网设计.md
     # - 控制论: courses/public/fundamental/控制论.md
-    # - 随机过程: courses/public/fundamental/随机过程.md
-    - 数理方法 I&II: courses/public/fundamental/数理方法.md
-    - 物理化学: courses/public/fundamental/物理化学.md
-    - 工程热力学（甲）: courses/public/professional/工程热力学（甲）.md
-    - 热工实验 I&II: courses/public/professional/热工实验.md
-    - 传热学（甲）: courses/public/professional/传热学（甲）.md
-    - 机械设计课程设计（乙）: courses/public/professional/机械设计课程设计（乙）.md
-    - 能源与环境系统工程概论: courses/public/professional/能源与环境系统工程概论.md
-    - 能源工程伦理与管理: courses/public/professional/能源工程伦理与管理.md
-    - 自动控制理论: courses/public/professional/自动控制理论.md
+    - 数理类: 
+      # - 随机过程: courses/public/fundamental/随机过程.md
+      - 常微分方程: courses/public/fundamental/常微分方程.md
+      - 概率论及数理统计: courses/public/fundamental/概率论及数理统计.md
+      - 复变函数与积分变换: courses/public/fundamental/复变函数与积分变换.md
+      - 数理方法 I&II: courses/public/fundamental/数理方法.md
+      - 物理化学: courses/public/fundamental/物理化学.md
+    - 能源与热学类:
+      - 工程热力学（甲）: courses/public/professional/工程热力学（甲）.md
+      - 热工实验 I&II: courses/public/professional/热工实验.md
+      - 传热学（甲）: courses/public/professional/传热学（甲）.md
+      - 能源与环境系统工程概论: courses/public/professional/能源与环境系统工程概论.md
+      - 能源工程伦理与管理: courses/public/professional/能源工程伦理与管理.md
   # - 专业分类课程: 
   - 热能: 
-    - 导航页: courses/routes.md
+    - 导航页: courses/routes/Thermal/index.md
     # - 专业方向课程: 
     - 透平机械原理: courses/routes/Thermal/Route/透平机械原理.md
     - 热工信号处理技术及实验: courses/routes/Thermal/Route/热工信号处理技术及实验.md
@@ -80,7 +85,7 @@ nav:
     #   - 能源系统的评估原理: courses/routes/Thermal/Extra/能源系统的评估原理.md
     #   - 燃气轮机基础: courses/routes/Thermal/Extra/燃气轮机基础.md
   - 低温: 
-    - 导航页: courses/routes.md
+    - 导航页: courses/routes/Cryogenic/index.md
     # - 专业方向课程: 
     - 流体输送及控制: courses/routes/Cryogenic/Route/流体输送及控制.md
     - 制冷原理: courses/routes/Cryogenic/Route/制冷原理.md
@@ -98,7 +103,7 @@ nav:
     #   - 低温环境绝热技术: courses/routes/Cryogenic/Extra/低温环境绝热技术.md
     #   - 低温生物技术: courses/routes/Cryogenic/Extra/低温生物技术.md
   - 新能源: 
-    - 导航页: courses/routes.md
+    - 导航页: courses/routes/NovelEnergy/index.md
     # - 专业方向课程: 
     - 生物质能: courses/routes/NovelEnergy/Route/生物质能.md
     - 锅炉原理及热交换器设计: courses/routes/NovelEnergy/Route/锅炉原理及热交换器设计.md
@@ -121,7 +126,7 @@ nav:
     #   - 能源系统的评估原理: courses/routes/Thermal/Extra/能源系统的评估原理.md
     #   - 燃气轮机基础: courses/routes/Thermal/Extra/燃气轮机基础.md
   - 慧能: 
-    - 导航页: courses/routes.md
+    - 导航页: courses/routes/SmartEnergy/index.md
     # - 专业必修课程:
     - 能源与环境系统原理及实践: courses/routes/SmartEnergy/能源与环境系统原理及实践.md
     - 制冷低温与空调原理及实践: courses/routes/SmartEnergy/制冷低温与空调原理及实践.md
@@ -133,7 +138,7 @@ nav:
     - 人工智能: courses/routes/SmartEnergy/人工智能.md
     - 数据挖掘概论: courses/routes/SmartEnergy/数据挖掘概论.md
   - 车辆: 
-    - 导航页: courses/routes.md
+    - 导航页: courses/routes/Vehicles/index.md
     # - 专业必修课程: 
     - 设计与制造 I&II&III: courses/routes/Vehicles/Route/设计与制造.md
     - 汽车构造: courses/routes/Vehicles/Route/汽车构造.md
@@ -150,7 +155,7 @@ nav:
     #   - 新能源汽车技术: courses/routes/Vehicles/Extra/新能源汽车技术.md
     #   - 车辆动力学: courses/routes/Vehicles/Extra/车辆动力学.md
   - 过控: 
-    - 导航页: courses/routes.md
+    - 导航页: courses/routes/ProcessControl/index.md
     # - 专业必修课程: 
     - 机械设计（乙）: courses/routes/ProcessControl/Route/机械设计（乙）.md
     - 工程热力学: courses/routes/ProcessControl/Route/工程热力学.md
