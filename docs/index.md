@@ -20,7 +20,7 @@ ZJU能院包含能环、车辆、过控等诸多专业，本站即致力于汇�
 
 <div class="grid cards" markdown>
 
--   :fontawesome-duotone-solid-water:{ .lg .middle } __工程流体力学（甲）I&II__
+-   :ocean:{ .lg .middle } __工程流体力学（甲）I&II__
 
     ---
 
@@ -29,29 +29,23 @@ ZJU能院包含能环、车辆、过控等诸多专业，本站即致力于汇�
     [**工程流体力学（甲）I&II**](./courses/public/fundamental/工程流体力学（甲）.md)
     ///
 
--   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
+-   :simple-steam:{ .lg .middle } __工程热力学（甲）__
 
     ---
 
-    Focus on your content and generate a responsive and searchable static site
+    ![Image title](./courses/public/professional/工程热力学（甲）/thermodynamics.jpg){ width="200" }
+    /// caption
+    [**工程热力学（甲）**](./courses/public/professional/工程热力学（甲）.md)
+    ///
 
-    [:octicons-arrow-right-24: Reference](#)
-
--   :material-format-font:{ .lg .middle } __Made to measure__
-
-    ---
-
-    Change the colors, fonts, language, icons, logo and more with a few lines
-
-    [:octicons-arrow-right-24: Customization](#)
-
--   :material-scale-balance:{ .lg .middle } __Open Source, MIT__
+-   :fire:{ .lg .middle } __传热学__
 
     ---
 
-    Material for MkDocs is licensed under MIT and available on [GitHub]
-
-    [:octicons-arrow-right-24: License](#)
+    ![Image title](./courses/public/professional/传热学（甲）/heattransfer.jpg){ width="200" }
+    /// caption
+    [**传热学（甲）**](./courses/public/professional/传热学（甲）.md)
+    ///
 
 </div>
 
