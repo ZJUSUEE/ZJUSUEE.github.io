@@ -24,7 +24,7 @@ ZJU能院包含能环、车辆、过控等诸多专业，本站即致力于汇�
 
     ---
 
-    ![Image title](./courses/public/fundamental/工程流体力学（甲）/starrynight.jpg){ width="200" }
+    ![Image title](./courses/public/fundamental/工程流体力学（甲）/starrynight.jpg){ height="200" }
     /// caption
     [**工程流体力学（甲）I&II**](./courses/public/fundamental/工程流体力学（甲）.md)
     ///
@@ -33,7 +33,7 @@ ZJU能院包含能环、车辆、过控等诸多专业，本站即致力于汇�
 
     ---
 
-    ![Image title](./courses/public/professional/工程热力学（甲）/thermodynamics.jpg){ width="200" }
+    ![Image title](./courses/public/professional/工程热力学（甲）/thermodynamics.jpg){ height="200" }
     /// caption
     [**工程热力学（甲）**](./courses/public/professional/工程热力学（甲）.md)
     ///
@@ -42,7 +42,7 @@ ZJU能院包含能环、车辆、过控等诸多专业，本站即致力于汇�
 
     ---
 
-    ![Image title](./courses/public/professional/传热学（甲）/heattransfer.jpg){ width="200" }
+    ![Image title](./courses/public/professional/传热学（甲）/heattransfer.jpg){ height="200" }
     /// caption
     [**传热学（甲）**](./courses/public/professional/传热学（甲）.md)
     ///
