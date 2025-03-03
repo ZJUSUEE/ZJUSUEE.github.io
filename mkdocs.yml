@@ -74,7 +74,6 @@ nav:
       - 传热学（甲）: courses/public/professional/传热学（甲）.md
       - 能源与环境系统工程概论: courses/public/professional/能源与环境系统工程概论.md
       - 能源工程伦理与管理: courses/public/professional/能源工程伦理与管理.md
-  # - 专业分类课程: 
   - 热能: 
     - 导航页: courses/routes/Thermal/index.md
     # - 专业方向课程: 
