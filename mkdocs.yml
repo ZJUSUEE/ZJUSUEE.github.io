@@ -47,6 +47,7 @@ theme:
       quote: fontawesome/solid/quote-left
   features:
     - navigation.tabs
+    - navigation.tabs.sticky
     # - navigation.sections
     - navigation.indexes
     - content.tabs.link
@@ -54,6 +55,7 @@ nav:
   - 主页: 
     - 首页: index.md
     - 本科课程大纲: courses.md
+    - 平台贡献指南: guideline.md
   # - 本科课程: 
   #   - 导航页: courses.md
   - 专业基础及必修课程:   
