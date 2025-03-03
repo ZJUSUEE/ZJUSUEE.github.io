@@ -26,7 +26,7 @@ theme:
         icon: material/brightness-4
         name: Switch to light mode
   font:
-    text: Noto Serif Simplified Chinese
+    text: Noto Serif SC
   logo: images/logo.jpg
   favicon: images/logo.jpg
   features:
