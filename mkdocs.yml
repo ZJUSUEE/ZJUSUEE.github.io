@@ -13,7 +13,11 @@ markdown_extensions:
 theme:
   name: material
   palette:
-    scheme: default
+    primary: pink
+  font:
+    text: Noto Serif Simplified Chinese
+  logo: images/logo.jpg
+  favicon: images/logo.jpg
   features:
     - navigation.tabs
     - navigation.sections
