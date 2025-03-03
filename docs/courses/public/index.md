@@ -1,7 +1,5 @@
 # Public
-
-
-- 工程图学: courses/public/fundamental/工程图学.md
+    - 工程图学: courses/public/fundamental/工程图学.md
     - 机械制图及CAD基础: courses/public/fundamental/机械制图及CAD基础.md
     - 机械设计基础（甲）: courses/public/fundamental/机械设计基础（甲）.md
     - 常微分方程: courses/public/fundamental/常微分方程.md
