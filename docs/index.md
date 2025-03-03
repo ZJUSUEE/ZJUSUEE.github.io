@@ -20,13 +20,13 @@ ZJU能院包含能环、车辆、过控等诸多专业，本站即致力于汇�
 
 <div class="grid cards" markdown>
 
--   :fontawesome-brands-html5: __工程流体力学（甲）I&II__
+-   :fontawesome-duotone-solid-water:{ .lg .middle } __工程流体力学（甲）I&II__
 
     ---
 
-    ![Image title](./courses/public/fundamental/工程流体力学（甲）/starrynight.jpg){ width="300" }
+    ![Image title](./courses/public/fundamental/工程流体力学（甲）/starrynight.jpg){ width="200" }
     /// caption
-    [工程流体力学（甲）I&II](./courses/public/fundamental/工程流体力学（甲）.md)
+    [**工程流体力学（甲）I&II**](./courses/public/fundamental/工程流体力学（甲）.md)
     ///
 
 -   :fontawesome-brands-markdown:{ .lg .middle } __It's just Markdown__
