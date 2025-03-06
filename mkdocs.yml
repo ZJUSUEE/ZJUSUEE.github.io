@@ -60,6 +60,7 @@ theme:
     - content.tabs.link
 plugins:
   - tags
+  - search
 nav: 
   - 主页: 
     - 首页: index.md
