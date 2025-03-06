@@ -2,10 +2,11 @@
 
 !!! info 
 
-  将能院六个专业所涉及的主要专业基础课与必修课按照学科模块整理，譬如`力学类`模块包含`工程力学`、`工程流体力学`等课程，共分为`机械类`、`力学类`、`电学及控制类`、`数理类`、`能源与热学类`五个模块。
-  此外由于六个专业有些课程内容是重叠的（或刚好是同一门课），不同专业间也可以相互参考。
-  *注：含I、II、III序号的课程已合并。*
+    将能院六个专业所涉及的主要专业基础课与必修课按照学科模块整理，譬如`力学类`模块包含`工程力学`、`工程流体力学`等课程，共分为`机械类`、`力学类`、`电学及控制类`、`数理类`、`能源与热学类`五个模块。
+    此外由于六个专业有些课程内容是重叠的（或刚好是同一门课），不同专业间也可以相互参考。
+    *注：含I、II、III序号的课程已合并。*
   
+ --- 
 
 ### 机械类  
 
@@ -16,22 +17,27 @@
 | [**机械制图及CAD基础**](./courses/public/fundamental/机械制图及CAD基础.md)    | 1.5  |  能环/车辆/过控  |  大一（夏） |  :x:暂无 | 
 | [**机械设计基础（甲）**](./courses/public/fundamental/机械设计基础（甲）.md)   | 3.0  |  能环  |    大二（春夏） | :white_check_mark: 较完善   |
 | [**机械设计课程设计（乙）**](./courses/public/professional/机械设计课程设计（乙）.md)  |  1.5    |  能环 | 大三（秋冬） |  :x: 不完善   |
-| [**机械设计（乙）**](./courses/public/fundamental/机械设计（乙）.md)    | 1.5  |  过控  |  大一（夏） |  :x:暂无 |
-| [**设计与制造 I&II&III**](./courses/public/fundamental/设计与制造.md)    | 1.5  |  车辆  |  大一（夏） |  :x:暂无 |
+| [**机械设计（乙）**](./courses/routes/ProcessControl/Route/机械设计（乙）.md)    | 4.5  |  过控  |  大三（秋冬） |  :x:暂无 |
+| [**设计与制造 I&II&III**](./courses/routes/Vehicles/Route/设计与制造.md)    | 2.0/3.0/3.0  |  车辆  |  大二一年+大三（秋冬） |  :x:暂无 |
+
+---
+
+### 力学类
+
+| 课程名称                  | 学分  | 专业 | 建议修读时间 | 资料情况 |
+| -------                   | ----- | ---- | ------------| ------- |
+| [**工程流体力学（甲）I&II**](./courses/public/fundamental/工程流体力学（甲）.md)                |   2.0/1.5  |  能环/慧能  |  大二（秋冬）|  :x:不完善  |
+| [**工程流体力学（乙）**](./courses/routes/Vehicles/Route/工程流体力学（乙）.md)                |   2.0  |  机械  |   大二（春夏） |  :x:暂无 |
+| [**过程工程流体力学**](./courses/routes/ProcessControl/Route/过程工程流体力学.md)    | 2.0  |  过控  |  大二（春夏） |  :x:暂无 | 
+| [**工程力学**](./courses/public/fundamental/工程力学.md)   | 3.5  |  能环/慧能  |    大二（秋冬） | :white_check_mark: 较完善   |
+| [**理论力学（甲）**](./courses/public/fundamental/理论力学（甲）.md)  |  4.0    |  车辆/过控 | 大二（秋冬） |  :x: 不完善   |
+| [**材料力学（乙）**](./courses/public/fundamental/材料力学（乙）.md)    | 4.0  |  车辆/过控  |  大二（春夏） |  :x:暂无 |
+| [**材料力学实验**](./courses/public/fundamental/材料力学实验.md)    | 0.5  |  能环/车辆/过控  |  大二（冬）/（夏） |  :x:不完善 |
+
+---
 
 
 
-
-
-
-    - 机械类: 
-      - 工程图学: courses/public/fundamental/工程图学.md
-      - 工程训练: courses/public/fundamental/工程训练.md
-      - 机械制图及CAD基础: courses/public/fundamental/机械制图及CAD基础.md
-      - 机械设计基础（甲）: courses/public/fundamental/机械设计基础（甲）.md
-      - 机械设计课程设计（乙）: courses/public/professional/机械设计课程设计（乙）.md
-      - 设计与制造 I&II&III: courses/routes/Vehicles/Route/设计与制造.md
-      - 机械设计（乙）: courses/routes/ProcessControl/Route/机械设计（乙）.md
     - 力学类: 
       - 工程流体力学（甲）I&II: courses/public/fundamental/工程流体力学（甲）.md
       - 工程流体力学（乙）: courses/routes/Vehicles/Route/工程流体力学（乙）.md
