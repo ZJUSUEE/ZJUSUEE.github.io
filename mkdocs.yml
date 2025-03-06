@@ -88,8 +88,8 @@ nav:
       - 电工电子学: courses/public/fundamental/电工电子学.md
       - 电工电子学实验: courses/public/fundamental/电工电子学实验.md
       - 自动控制理论: courses/public/professional/自动控制理论.md
-    # - 现代电路基础：面向通信与物联网设计: courses/public/fundamental/现代电路基础：面向通信与物联网设计.md
-    # - 控制论: courses/public/fundamental/控制论.md
+      - 现代电路基础：面向通信与物联网设计: courses/public/fundamental/现代电路基础：面向通信与物联网设计.md
+      - 控制论: courses/public/fundamental/控制论.md
     - 数理类: 
       # - 随机过程: courses/public/fundamental/随机过程.md
       - 常微分方程: courses/public/fundamental/常微分方程.md
