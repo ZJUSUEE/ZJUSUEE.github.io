@@ -58,6 +58,8 @@ theme:
     # - navigation.sections
     - navigation.indexes
     - content.tabs.link
+plugins:
+  - tags
 nav: 
   - 主页: 
     - 首页: index.md
