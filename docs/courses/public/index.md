@@ -58,6 +58,7 @@
 | [**复变函数与积分变换**](./fundamental/复变函数与积分变换.md)    | 1.5  |  过控  | :white_check_mark: 含资料 | 
 | [**数理方法 I&II**](./fundamental/数理方法.md)  |  4.0/2.0    |  慧能 | :white_check_mark: 较完善   |
 | [**物理化学**](./fundamental/物理化学.md)   | 4.0  |  慧能  | :x: 暂无  |
+| [**随机过程**](./fundamental/随机过程.md)   | 1.5  |  车辆  | :x: 暂无  |
 
 ---
 
