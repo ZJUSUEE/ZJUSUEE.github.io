@@ -16,7 +16,7 @@
 | [**工程训练**](./fundamental/工程训练.md)                |   1.5  |  All  |   :white_check_mark:含资料 |
 | [**机械制图及CAD基础**](./fundamental/机械制图及CAD基础.md)    | 1.5  |  能环/车辆/过控  |   :x:暂无 | 
 | [**机械设计基础（甲）**](./fundamental/机械设计基础（甲）.md)   | 3.0  |  能环  | :white_check_mark: 较完善   |
-| [**机械设计课程设计（乙）**](./professional/机械设计课程设计（乙）.md)  |  1.5    |  能环 |  :white_check_mark: 含资料   |
+| [**机械设计课程设计（乙）**](./professional/机械设计课程设计（乙）.md)  |  1.5    |  能环 |  :white_check_mark: 较完善   |
 | [**机械设计（乙）**](../routes/ProcessControl/Route/机械设计（乙）.md)    | 4.5  |  过控  |   :white_check_mark: 含资料 |
 | [**设计与制造 I&II&III**](../routes/Vehicles/Route/设计与制造.md)    | 2.0/3.0/3.0  |  车辆  |  :white_check_mark: 较完善 |
 

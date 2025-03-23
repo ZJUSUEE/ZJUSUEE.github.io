@@ -1,12 +1,24 @@
-# Routes
-# - 专业方向课程: 
-    - 生物质能: courses/routes/NovelEnergy/Route/生物质能.md
-    - 锅炉原理及热交换器设计: courses/routes/NovelEnergy/Route/锅炉原理及热交换器设计.md
-    - 新能源系统检测与控制: courses/routes/NovelEnergy/Route/新能源系统检测与控制.md
-    - 能源材料: courses/routes/NovelEnergy/Route/能源材料.md
-    - 氢能: courses/routes/NovelEnergy/Route/氢能.md
-    - 风能: courses/routes/NovelEnergy/Route/风能.md
-    - 太阳能: courses/routes/NovelEnergy/Route/太阳能.md
-    - 核能: courses/routes/NovelEnergy/Route/核能.md
-    - 循环经济与节能减排: courses/routes/NovelEnergy/Route/循环经济与节能减排.md
-    - 新能源实验: courses/routes/NovelEnergy/Route/新能源实验.md
+# 新能源方向（新能源与能源利用新技术）
+
+!!! info 
+
+    新能源为能环中人数最少的方向，目前课程资源收集较少，希望今后学弟学妹们可以多多贡献~
+  
+ --- 
+
+### 专业方向课程
+
+| 课程名称                  | 学分  | 必修/选修 | 资料情况 |
+| -------                   | ----- | ---- | ------------| 
+| [**生物质能**](./Route/生物质能.md)                |   2.0  |  必修  |   :white_check_mark: 有资料  |
+| [**锅炉原理及热交换器设计**](./Route/锅炉原理及热交换器设计.md)                |   2.0  |  必修 |   :white_check_mark:有资料 |
+| [**新能源系统检测与控制**](./Route/新能源系统检测与控制.md)    | 2.0  |  必修  |   :x: 暂无 | 
+| [**能源材料**](./Route/能源材料.md)   | 2.0  |  必修  | :x: 暂无   |
+| [**氢能**](./Route/氢能.md)   | 1.5  |  必修  | :x: 暂无  |
+| [**风能**](./Route/风能.md)  |  2.0    |  必修 |  :x: 暂无   |
+| [**太阳能**](./Route/太阳能.md)    | 2.0  |  必修  |   :x: 暂无 |
+| [**核能**](./Route/核能.md)    | 1.5  |  必修（24级开始停开） |  :x: 暂无 |
+| [**循环经济与节能减排**](./Route/循环经济与节能减排.md)    | 2.0  |  必修   |  :x: 暂无 |
+| [**新能源实验**](./Route/新能源实验.md)    | 1.0  |  必修  |  :x: 暂无 |
+
+---
