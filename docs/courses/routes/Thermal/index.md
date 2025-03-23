@@ -1,10 +1,23 @@
-# Routes
-# - 专业方向课程: 
-    - 透平机械原理: courses/routes/Thermal/Route/透平机械原理.md
-    - 热工信号处理技术及实验: courses/routes/Thermal/Route/热工信号处理技术及实验.md
-    - 燃烧理论: courses/routes/Thermal/Route/燃烧理论.md
-    - 热力环境控制: courses/routes/Thermal/Route/热力环境控制.md
-    - 能源转化（锅炉原理）: courses/routes/Thermal/Route/能源转化（锅炉原理）.md
-    - 能源生产过程控制: courses/routes/Thermal/Route/能源生产过程控制.md
-    - 热能工程试验技术: courses/routes/Thermal/Route/热能工程试验技术.md
-    - 能源与环境实验 I&II: courses/routes/Thermal/Route/能源与环境实验.md
+# 热能方向（能源与环境工程及自动化）
+
+!!! info 
+
+    热能为能环中人数最多的方向，同时也和新能源方向有一些重合的课程（如锅炉原理、燃烧理论等）。
+  
+ --- 
+
+### 专业方向课程
+
+| 课程名称                  | 学分  | 必修/选修 | 资料情况 |
+| -------                   | ----- | ---- | ------------| 
+| [**透平机械原理**](./Route/透平机械原理.md)                |   4.0（24级开始为2.0）  |  必修  |   :white_check_mark: 较完善  |
+| [**热工信号处理技术及实验**](./Route/热工信号处理技术及实验.md)                |   2.5  |  必修(24开始为选修)  |   :white_check_mark:较完善 |
+| [**燃烧理论**](./Route/燃烧理论.md)    | 1.5  |  必修  |   :x: 暂无 | 
+| [**热力环境控制**](./Route/热力环境控制.md)   | 2.0  |  必修  | :x: 暂无   |
+| [**热力系统工程**](./Route/热力系统工程.md)   | 2.0  |  必修  | :x: 暂无  |
+| [**能源转化（锅炉原理）**](./Route/能源转化（锅炉原理）.md)  |  4.0（24级开始为3.0）    |  必修 |  :white_check_mark: 含资料   |
+| [**能源生产过程控制**](./Route/能源生产过程控制.md)    | 2.0  |  必修（24级开始停开）  |   :white_check_mark: 含资料 |
+| [**热能工程试验技术**](./Route/热能工程试验技术.md)    | 1.5  |  必修 |  :white_check_mark:含资料 |
+| [**能源与环境实验 I&II**](./Route/能源与环境实验.md)    | 0.5  |  必修（24级开始合并）   |  :x: 暂无 |
+
+---
