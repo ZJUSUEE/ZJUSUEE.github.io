@@ -1,11 +1,27 @@
-# Routes
-# - 专业方向课程: 
-    - 流体输送及控制: courses/routes/Cryogenic/Route/流体输送及控制.md
-    - 制冷原理: courses/routes/Cryogenic/Route/制冷原理.md
-    - 制冷与低温测试技术: courses/routes/Cryogenic/Route/制冷与低温测试技术.md
-    - 人工环境概论: courses/routes/Cryogenic/Route/人工环境概论.md
-    - 暖通与空调: courses/routes/Cryogenic/Route/暖通与空调.md
-    - 低温原理: courses/routes/Cryogenic/Route/低温原理.md
-    - 制冷与低温设备: courses/routes/Cryogenic/Route/制冷与低温设备.md
-    - 制冷装置自动化: courses/routes/Cryogenic/Route/制冷装置自动化.md
-    - 制冷与低温实验: courses/routes/Cryogenic/Route/制冷与低温实验.md
+# 低温方向（制冷与人工环境及自动化）
+
+!!! info 
+
+    低温算是能环中的一个“小”方向，涉及的课程几乎和热能新能源无交集。浙大低温所大致可分为**暖通空调**、**制冷**、**低温**三个方向，最核心的课程是**工程热力学**，其中暖通空调偏向自动化控制，制冷与低温更关注循环过程本身————因此我们可以将课程大致分为：自动化控制类、材料与设备类、原理类、实验与测试类（同样也可以类似的看待各个开课老师的研究方向）
+
+    24级开始部分课程有所调整，会随时更新相关信息
+
+    由于低温所历年来本科生的人数较少，收集资料较少，希望未来能有更多低温的学弟学妹贡献出自己的一份力量~
+  
+ --- 
+
+### 专业方向课程
+
+| 课程名称                  | 学分  | 必修/选修 | 资料情况 |
+| -------                   | ----- | ---- | ------------| 
+| [**流体输送及控制**](./Route/流体输送及控制.md)                |   2.0  |  必修  |   :white_check_mark: 较完善  |
+| [**人工环境概论**](./Route/人工环境概论.md)                |   1.5  |  必修(24开始为选修)  |   :white_check_mark:含资料 |
+| [**制冷与低温测试技术**](./Route/制冷与低温测试技术.md)    | 2.0  |  必修  |   :white_check_mark: 含资料 | 
+| [**制冷原理**](./Route/制冷原理.md)   | 3.5  |  必修  | :white_check_mark: 较完善   |
+| [**低温原理**](./Route/低温原理.md)  |  4.0(24级开始为3.0)    |  必修 |  :white_check_mark: 含资料   |
+| [**暖通与空调**](./Route/暖通与空调.md)    | 3.0  |  必修  |   :white_check_mark: 含资料 |
+| [**制冷与低温设备**](./Route/制冷与低温设备.md)    | 2.0  |  必修 |  :x:暂无 |
+| [**制冷装置自动化**](./Route/制冷装置自动化.md)    | 1.5  |  必修   |  :x: 暂无 |
+| [**制冷与低温实验**](./Route/制冷与低温实验.md)    | 1.0 |  必修  |  :x: 暂无 |
+
+---
