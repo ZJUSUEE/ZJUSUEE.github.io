@@ -94,7 +94,7 @@ nav:
       - 现代电路基础：面向通信与物联网设计: courses/public/fundamental/现代电路基础：面向通信与物联网设计.md
       - 控制论: courses/public/fundamental/控制论.md
     - 数理类: 
-      # - 随机过程: courses/public/fundamental/随机过程.md
+      - 随机过程: courses/public/fundamental/随机过程.md
       - 常微分方程: courses/public/fundamental/常微分方程.md
       - 概率论及数理统计: courses/public/fundamental/概率论及数理统计.md
       - 复变函数与积分变换: courses/public/fundamental/复变函数与积分变换.md
