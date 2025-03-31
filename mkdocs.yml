@@ -188,7 +188,9 @@ nav:
   - 车辆: 
     - 导航页: courses/routes/Vehicles/index.md
     # - 专业必修课程: 
+    - 设计与制造 I&II&III: courses/routes/Vehicles/Route/设计与制造.md
     - 汽车构造: courses/routes/Vehicles/Route/汽车构造.md
+    - 工程流体力学（乙）: courses/routes/Vehicles/Route/工程流体力学（乙）.md
     - 汽车动力系统原理: courses/routes/Vehicles/Route/汽车动力系统原理.md
     - 汽车理论: courses/routes/Vehicles/Route/汽车理论.md
     - 汽车电子与控制: courses/routes/Vehicles/Route/汽车电子与控制.md
@@ -203,6 +205,9 @@ nav:
   - 过控: 
     - 导航页: courses/routes/ProcessControl/index.md
     # - 专业必修课程: 
+    - 机械设计（乙）: courses/routes/ProcessControl/Route/机械设计（乙）.md
+    - 工程热力学（过控）: courses/routes/ProcessControl/Route/工程热力学.md
+    - 过程工程流体力学: courses/routes/ProcessControl/Route/过程工程流体力学.md
     - 工程材料: courses/routes/ProcessControl/Route/工程材料.md
     - 控制工程基础: courses/routes/ProcessControl/Route/控制工程基础.md
     - 化工原理（乙）: courses/routes/ProcessControl/Route/化工原理（乙）.md
