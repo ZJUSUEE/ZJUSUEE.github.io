@@ -68,7 +68,7 @@
 | 课程名称                  | 学分  | 专业 |  资料情况 |
 | -------                   | ----- | ---- | ------------|
 | [**工程热力学（甲）**](./professional/工程热力学（甲）.md)                |   3.5  |  能环/车辆/慧能  |   :white_check_mark: 较完善  |
-| [**工程热力学（过控）**](../routes/ProcessControl/Route/工程热力学.md)                |   2.0 |  过控  |    :white_check_mark: 含资料 |
+| [**工程热力学（过控）**](../routes/ProcessControl/Route/工程热力学.md)                |   2.0 |  过控  |    :white_check_mark: 较完善 |
 | [**热工实验 I&II**](./professional/热工实验.md)    | 0.5/0.5  |  能环  |  :white_check_mark:较完善 | 
 | [**传热学（甲）**](./professional/传热学（甲）.md)  |  3.5    |  能环/车辆/慧能 |   :white_check_mark: 较完善   |
 | [**能源与环境系统工程概论**](./professional/能源与环境系统工程概论.md)   | 2.0  |  能环  | :white_check_mark: 较完善  |
