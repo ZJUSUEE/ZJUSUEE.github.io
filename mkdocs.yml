@@ -120,7 +120,7 @@ nav:
     - 热能工程试验技术: courses/routes/Thermal/Route/热能工程试验技术.md
     - 能源与环境实验 I&II: courses/routes/Thermal/Route/能源与环境实验.md
     # - 专业选修课程: 
-    - 微机原理及应用: courses/routes/Thermal/Extra/微机原理及应用.md
+    # - 微机原理及应用: courses/routes/Thermal/Extra/微机原理及应用.md
     #   - 能源与环境技术进展: courses/routes/Thermal/Extra/能源与环境技术进展.md
     #   - 太阳能发电: courses/routes/Thermal/Extra/太阳能发电.md
     #   - 可再生能源和新能源概论: courses/routes/Thermal/Extra/可再生能源和新能源概论.md
@@ -145,7 +145,7 @@ nav:
     - 制冷装置自动化: courses/routes/Cryogenic/Route/制冷装置自动化.md
     - 制冷与低温实验: courses/routes/Cryogenic/Route/制冷与低温实验.md
     # - 专业选修课程: 
-    - 微机原理及应用:  courses/routes/Thermal/Extra/微机原理及应用.md
+    # - 微机原理及应用:  courses/routes/Thermal/Extra/微机原理及应用.md
     #   - 食品冷冻及保鲜技术: courses/routes/Cryogenic/Extra/食品冷冻及保鲜技术.md
     #   - 制冷与人工环境英语: courses/routes/Cryogenic/Extra/制冷与人工环境英语.md
     #   - 低温环境绝热技术: courses/routes/Cryogenic/Extra/低温环境绝热技术.md
@@ -164,7 +164,7 @@ nav:
     - 循环经济与节能减排: courses/routes/NovelEnergy/Route/循环经济与节能减排.md
     - 新能源实验: courses/routes/NovelEnergy/Route/新能源实验.md
     # - 专业选修课程: 
-    - 微机原理及应用:  courses/routes/Thermal/Extra/微机原理及应用.md
+    # - 微机原理及应用:  courses/routes/Thermal/Extra/微机原理及应用.md
     #   - 能源与环境技术进展: courses/routes/Thermal/Extra/能源与环境技术进展.md
     #   - 燃烧理论: courses/routes/Thermal/Route/燃烧理论.md
     #   - 二氧化碳捕集利用封存: courses/routes/Thermal/Extra/二氧化碳捕集利用封存.md
