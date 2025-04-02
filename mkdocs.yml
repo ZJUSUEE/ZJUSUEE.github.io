@@ -223,43 +223,10 @@ nav:
     #   - 过程装备工程设计: courses/routes/ProcessControl/Extra/过程装备工程设计.md
     #   - 过程工业传递现象基础: courses/routes/ProcessControl/Extra/过程工业传递现象基础.md
     #   - 过程装备与控制工程技术进展: courses/routes/ProcessControl/Extra/过程装备与控制工程技术进展.md
-# - 个性修读课程及实践课程:
-#   - 实践教学课程: 
-#     - 节能减排创新实践: courses/load.md
-#     - 认识实习: courses/load.md
-#     - 生产实习: courses/load.md
-#     - 汽轮机课程设计: courses/load.md
-#     - 锅炉课程设计: courses/load.md
-#     - 虚拟制冷教学实践: courses/load.md
-#     - 人工环境课程设计: courses/load.md
-#     - 低温课程设计: courses/load.md
-#     - 风电风机课程设计: courses/load.md
-#     - 生物质发电系统课程设计: courses/load.md
-#     - 工程训练加强实习（乙）: courses/load.md
-#     - 专业综合训练: courses/load.md
-#     - 过程装备课程设计: courses/load.md
-#   - 个性化修读课程: 
-#     - 异性催化与可持续发展: courses/load.md
-#     - 能源有机化学: courses/load.md
-#     - 建筑结构概论: courses/load.md
-#     - 强化传热技术: courses/load.md
-#     - CFD软件应用: courses/load.md
-#     - 工程测试及信息处理: courses/load.md
-#     - 塑料加工技术及装备: courses/load.md
-#     - 机械振动基础: courses/load.md
-#     - 化工安全及防腐: courses/load.md
-#     - 过程装备故障诊断技术: courses/load.md
-#     - 人工智能及其工程应用: courses/load.md
-#     - 机器视觉: courses/load.md
-#     - 机器学习: courses/load.md
-#     - 机器学习基础: courses/load.md
-#     - 人工智能基础: courses/load.md
-#     - 机器视觉及图像处理: courses/load.md
-#     - 人工智能与机器学习: courses/load.md
-#     - 计算机视觉: courses/load.md
-#     - 物联网系统设计: courses/load.md
-#     - 物联网与智慧系统: courses/load.md
-#     - 大数据安全与隐私保护: courses/load.md
-#     - 电机控制: courses/load.md
-#     - 物联网安全: courses/load.md
+  - 飞跃手册:
+    # - 导航页: Flybook/index.md
+    - 2024年飞跃手册: Flybook/2024.md
+    - 2019年飞跃手册: Flybook/2019.md
+    - 2018年飞跃手册: Flybook/2018.md
+
 
