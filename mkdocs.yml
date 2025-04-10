@@ -93,6 +93,7 @@ nav:
       - 自动控制理论: courses/public/professional/自动控制理论.md
       - 现代电路基础：面向通信与物联网设计: courses/public/fundamental/现代电路基础：面向通信与物联网设计.md
       - 控制论: courses/public/fundamental/控制论.md
+      - 微机原理及应用: courses/routes/Thermal/Extra/微机原理及应用.md
     - 数理类: 
       - 随机过程: courses/public/fundamental/随机过程.md
       - 常微分方程: courses/public/fundamental/常微分方程.md
@@ -176,7 +177,7 @@ nav:
   - 慧能: 
     - 导航页: courses/routes/SmartEnergy/index.md
     # - 专业必修课程:
-    - 能源与环境系统原理及实践: courses/routes/SmartEnergy/能源与环境系统原理及实践.md
+    - 能源与环境系统工程原理及实践: courses/routes/SmartEnergy/能源与环境系统工程原理及实践.md
     - 制冷低温与空调原理及实践: courses/routes/SmartEnergy/制冷低温与空调原理及实践.md
     - 能源系统大数据分析理论与实践: courses/routes/SmartEnergy/能源系统大数据分析理论与实践.md
     - 计算机模拟: courses/routes/SmartEnergy/计算机模拟.md
