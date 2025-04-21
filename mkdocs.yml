@@ -101,6 +101,7 @@ nav:
       - 复变函数与积分变换: courses/public/fundamental/复变函数与积分变换.md
       - 数理方法 I&II: courses/public/fundamental/数理方法.md
       - 物理化学: courses/public/fundamental/物理化学.md
+      - 大学物理/普通物理学: courses/public/fundamental/物理.md
     - 能源与热学类:
       - 工程热力学（甲）: courses/public/professional/工程热力学（甲）.md
       - 工程热力学（过控）: courses/routes/ProcessControl/Route/工程热力学.md
@@ -224,6 +225,9 @@ nav:
     #   - 过程装备工程设计: courses/routes/ProcessControl/Extra/过程装备工程设计.md
     #   - 过程工业传递现象基础: courses/routes/ProcessControl/Extra/过程工业传递现象基础.md
     #   - 过程装备与控制工程技术进展: courses/routes/ProcessControl/Extra/过程装备与控制工程技术进展.md
+  - 跨专业课程分享:
+    - 导航页: extra/index.md
+    - 人工智能: extra/人工智能.md  
   - 飞跃手册:
     # - 导航页: Flybook/index.md
     - 2024年飞跃手册: Flybook/2024.md
