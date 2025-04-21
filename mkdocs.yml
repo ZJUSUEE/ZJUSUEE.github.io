@@ -226,8 +226,8 @@ nav:
     #   - 过程工业传递现象基础: courses/routes/ProcessControl/Extra/过程工业传递现象基础.md
     #   - 过程装备与控制工程技术进展: courses/routes/ProcessControl/Extra/过程装备与控制工程技术进展.md
   - 跨专业课程分享:
-    - 导航页: extra/index.md
-    - 人工智能: extra/人工智能.md  
+    - 导航页: courses/extra/index.md
+    - 人工智能: courses/extra/人工智能.md  
   - 飞跃手册:
     # - 导航页: Flybook/index.md
     - 2024年飞跃手册: Flybook/2024.md
