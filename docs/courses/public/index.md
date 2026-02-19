@@ -43,7 +43,7 @@
 | [**电工电子学及实验**](./fundamental/电工电子学及实验.md)                |   3.5  |  能环  |   :white_check_mark: 较完善  |
 | [**电工电子学**](./fundamental/电工电子学.md)                |   4.5  |  车辆/过控  |     :white_check_mark: 较完善 |
 | [**电工电子学实验**](./fundamental/电工电子学实验.md)    | 1.5  |  车辆/过控  |   :x:不完善 | 
-| [**现代电路基础：面向通信与物联网设计**](./fundamental/现代电路基础：面向通信与物联网设计.md)  |  3.0    |  慧能 |   :x: 不完善   |
+| [**现代电路基础：面向通信与物联网设计**](./fundamental/现代电路基础：面向通信与物联网设计.md)  |  3.0    |  慧能 |   :white_check_mark: 较完善   |
 | [**自动控制理论**](./professional/自动控制理论.md)   | 3.0  |  能环/车辆  |    :white_check_mark: 较完善   |
 | [**控制论**](./fundamental/控制论.md)    | 3.0  |  慧能  |   :x:不完善 |
 | [**微机原理及应用**](../routes/Thermal/Extra/微机原理及应用.md)    | 2.0  |  能环  |   :white_check_mark:含资料 |
