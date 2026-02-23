@@ -15,7 +15,7 @@
 | [**生物质能**](./Route/生物质能.md)                |   2.0  |  必修  |   :white_check_mark: 较完善  |
 | [**锅炉原理及热交换器设计**](./Route/锅炉原理及热交换器设计.md)                |   2.0  |  必修 |   :white_check_mark:较完善 |
 | [**新能源系统检测与控制**](./Route/新能源系统检测与控制.md)    | 2.0  |  必修  |   :white_check_mark: 较完善 | 
-| [**能源材料**](./Route/能源材料.md)   | 2.0  |  必修  | :x: 不完善   |
+| [**能源材料**](./Route/能源材料.md)   | 2.0  |  必修  | :white_check_mark: 含资料   |
 | [**氢能**](./Route/氢能.md)   | 1.5  |  必修  | :white_check_mark: 含资料  |
 | [**风能**](./Route/风能.md)  |  2.0    |  必修 |  :white_check_mark: 较完善   |
 | [**太阳能**](./Route/太阳能.md)    | 2.0  |  必修  |   :x: 不完善 |
