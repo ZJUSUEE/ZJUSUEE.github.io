@@ -1,5 +1,7 @@
 site_name: 源梦紫金ZJUSUEE
 site_url: https://zjusuee.github.io
+hooks:
+  - hooks/search_codes.py
 exclude_docs: |
   /courses/routes/Thermal/Route/能源转化（锅炉原理）/热能锅炉原理复习笔记.-klx.pdf
 # Strategy: Use an absolute path
@@ -22,6 +24,7 @@ markdown_extensions:
   - pymdownx.blocks.caption
   - tables
 theme:
+  custom_dir: overrides
   name: material
   palette:
     # Palette toggle for light mode
@@ -63,177 +66,731 @@ theme:
 plugins:
   - tags
   - search
-nav: 
-  - 主页: 
-    - 首页: index.md
-    - 平台贡献指南: guideline.md
-    - 本科课程大纲: courses.md
-  # - 本科课程: 
-  #   - 导航页: courses.md
-  - 专业基础及必修课程:   
-    - 导航页: courses/public/index.md
-    - 机械类: 
-      - 工程图学: courses/public/fundamental/工程图学.md
-      - 工程训练: courses/public/fundamental/工程训练.md
-      - 机械制图及CAD基础: courses/public/fundamental/机械制图及CAD基础.md
-      - 机械设计基础（甲）: courses/public/fundamental/机械设计基础（甲）.md
-      - 机械设计课程设计（乙）: courses/public/professional/机械设计课程设计（乙）.md
-      - 设计与制造 I&II&III: courses/routes/Vehicles/Route/设计与制造.md
-      - 机械设计（乙）: courses/routes/ProcessControl/Route/机械设计（乙）.md
-    - 力学类: 
-      - 工程流体力学（甲）I&II: courses/public/fundamental/工程流体力学（甲）.md
-      - 工程流体力学（乙）: courses/routes/Vehicles/Route/工程流体力学（乙）.md
-      - 过程工程流体力学: courses/routes/ProcessControl/Route/过程工程流体力学.md
-      - 工程力学: courses/public/fundamental/工程力学.md
-      - 理论力学（甲）: courses/public/fundamental/理论力学（甲）.md
-      - 材料力学（乙）: courses/public/fundamental/材料力学（乙）.md
-      - 材料力学实验: courses/public/fundamental/材料力学实验.md
-    - 电学及控制类: 
-      - 电工电子学及实验: courses/public/fundamental/电工电子学及实验.md
-      - 电工电子学: courses/public/fundamental/电工电子学.md
-      - 电工电子学实验: courses/public/fundamental/电工电子学实验.md
-      - 自动控制理论: courses/public/professional/自动控制理论.md
-      - 现代电路基础：面向通信与物联网设计: courses/public/fundamental/现代电路基础：面向通信与物联网设计.md
-      - 控制论: courses/public/fundamental/控制论.md
-      - 微机原理及应用: courses/routes/Thermal/Extra/微机原理及应用.md
-    - 数理类: 
-      - 随机过程: courses/public/fundamental/随机过程.md
-      - 常微分方程: courses/public/fundamental/常微分方程.md
-      - 概率论及数理统计: courses/public/fundamental/概率论及数理统计.md
-      - 复变函数与积分变换: courses/public/fundamental/复变函数与积分变换.md
-      - 数理方法 I&II: courses/public/fundamental/数理方法.md
-      - 物理化学: courses/public/fundamental/物理化学.md
-      - 大学物理/普通物理学: courses/public/fundamental/物理.md
-    - 能源与热学类:
-      - 工程热力学（甲）: courses/public/professional/工程热力学（甲）.md
-      - 工程热力学（过控）: courses/routes/ProcessControl/Route/工程热力学.md
-      - 热工实验 I&II: courses/public/professional/热工实验.md
-      - 传热学（甲）: courses/public/professional/传热学（甲）.md
-      - 能源与环境系统工程概论: courses/public/professional/能源与环境系统工程概论.md
-      - 能源工程伦理与管理: courses/public/professional/能源工程伦理与管理.md
-  - 热能: 
-    - 导航页: courses/routes/Thermal/index.md
-    # - 专业方向课程: 
-    - 透平机械原理: courses/routes/Thermal/Route/透平机械原理.md
-    - 热工信号处理技术及实验: courses/routes/Thermal/Route/热工信号处理技术及实验.md
-    - 燃烧理论: courses/routes/Thermal/Route/燃烧理论.md
-    - 热力环境控制: courses/routes/Thermal/Route/热力环境控制.md
-    - 热力系统工程: courses/routes/Thermal/Route/热力系统工程.md
-    - 能源转化（锅炉原理）: courses/routes/Thermal/Route/能源转化（锅炉原理）.md
-    - 能源生产过程控制: courses/routes/Thermal/Route/能源生产过程控制.md
-    - 热能工程试验技术: courses/routes/Thermal/Route/热能工程试验技术.md
-    - 能源与环境实验 I&II: courses/routes/Thermal/Route/能源与环境实验.md
-    # - 专业选修课程: 
-    # - 微机原理及应用: courses/routes/Thermal/Extra/微机原理及应用.md
-    #   - 能源与环境技术进展: courses/routes/Thermal/Extra/能源与环境技术进展.md
-    #   - 太阳能发电: courses/routes/Thermal/Extra/太阳能发电.md
-    #   - 可再生能源和新能源概论: courses/routes/Thermal/Extra/可再生能源和新能源概论.md
-    #   - 现代分析测试技术: courses/routes/Thermal/Extra/现代分析测试技术.md
-    #   - 流体机械: courses/routes/Thermal/Extra/流体机械.md
-    #   - 二氧化碳捕集利用封存: courses/routes/Thermal/Extra/二氧化碳捕集利用封存.md
-    #   - 机遇循环经济的能源环境系统: courses/routes/Thermal/Extra/机遇循环经济的能源环境系统.md
-    #   - 专业英语阅读与写作: courses/routes/Thermal/Extra/专业英语阅读与写作.md
-    #   - 智慧能源系统理论与应用: courses/routes/Thermal/Extra/智慧能源系统理论与应用.md
-    #   - 能源系统的评估原理: courses/routes/Thermal/Extra/能源系统的评估原理.md
-    #   - 燃气轮机基础: courses/routes/Thermal/Extra/燃气轮机基础.md
-  - 低温: 
-    - 导航页: courses/routes/Cryogenic/index.md
-    # - 专业方向课程: 
-    - 流体输送及控制: courses/routes/Cryogenic/Route/流体输送及控制.md
-    - 制冷原理: courses/routes/Cryogenic/Route/制冷原理.md
-    - 制冷与低温测试技术: courses/routes/Cryogenic/Route/制冷与低温测试技术.md
-    - 人工环境概论: courses/routes/Cryogenic/Route/人工环境概论.md
-    - 暖通与空调: courses/routes/Cryogenic/Route/暖通与空调.md
-    - 低温原理: courses/routes/Cryogenic/Route/低温原理.md
-    - 制冷与低温设备: courses/routes/Cryogenic/Route/制冷与低温设备.md
-    - 制冷装置自动化: courses/routes/Cryogenic/Route/制冷装置自动化.md
-    - 制冷与低温实验: courses/routes/Cryogenic/Route/制冷与低温实验.md
-    # - 专业选修课程: 
-    # - 微机原理及应用:  courses/routes/Thermal/Extra/微机原理及应用.md
-    #   - 食品冷冻及保鲜技术: courses/routes/Cryogenic/Extra/食品冷冻及保鲜技术.md
-    #   - 制冷与人工环境英语: courses/routes/Cryogenic/Extra/制冷与人工环境英语.md
-    #   - 低温环境绝热技术: courses/routes/Cryogenic/Extra/低温环境绝热技术.md
-    #   - 低温生物技术: courses/routes/Cryogenic/Extra/低温生物技术.md
-  - 新能源: 
-    - 导航页: courses/routes/NovelEnergy/index.md
-    # - 专业方向课程: 
-    - 生物质能: courses/routes/NovelEnergy/Route/生物质能.md
-    - 锅炉原理及热交换器设计: courses/routes/NovelEnergy/Route/锅炉原理及热交换器设计.md
-    - 新能源系统检测与控制: courses/routes/NovelEnergy/Route/新能源系统检测与控制.md
-    - 能源材料: courses/routes/NovelEnergy/Route/能源材料.md
-    - 氢能: courses/routes/NovelEnergy/Route/氢能.md
-    - 风能: courses/routes/NovelEnergy/Route/风能.md
-    - 太阳能: courses/routes/NovelEnergy/Route/太阳能.md
-    - 核能: courses/routes/NovelEnergy/Route/核能.md
-    - 循环经济与节能减排: courses/routes/NovelEnergy/Route/循环经济与节能减排.md
-    - 新能源实验: courses/routes/NovelEnergy/Route/新能源实验.md
-    # - 专业选修课程: 
-    # - 微机原理及应用:  courses/routes/Thermal/Extra/微机原理及应用.md
-    #   - 能源与环境技术进展: courses/routes/Thermal/Extra/能源与环境技术进展.md
-    #   - 燃烧理论: courses/routes/Thermal/Route/燃烧理论.md
-    #   - 二氧化碳捕集利用封存: courses/routes/Thermal/Extra/二氧化碳捕集利用封存.md
-    #   - 燃料电池: courses/routes/NovelEnergy/Extra/燃料电池.md
-    #   - 专业英语阅读与写作: courses/routes/Thermal/Extra/专业英语阅读与写作.md
-    #   - 能源化学: courses/routes/NovelEnergy/Extra/能源化学.md
-    #   - 能源系统的评估原理: courses/routes/Thermal/Extra/能源系统的评估原理.md
-    #   - 燃气轮机基础: courses/routes/Thermal/Extra/燃气轮机基础.md
-  - 慧能: 
-    - 导航页: courses/routes/SmartEnergy/index.md
-    # - 专业必修课程:
-    - 能源与环境系统工程原理及实践: courses/routes/SmartEnergy/能源与环境系统工程原理及实践.md
-    - 制冷低温与空调原理及实践: courses/routes/SmartEnergy/制冷低温与空调原理及实践.md
-    - 能源系统大数据分析理论与实践: courses/routes/SmartEnergy/能源系统大数据分析理论与实践.md
-    - 计算机模拟: courses/routes/SmartEnergy/计算机模拟.md
-    - 动态建模理论与应用: courses/routes/SmartEnergy/动态建模理论与应用.md
-    - 智慧能源系统控制与优化: courses/routes/SmartEnergy/智慧能源系统控制与优化.md
-    - 能源系统先进测量技术: courses/routes/SmartEnergy/能源系统先进测量技术.md
-    - 人工智能: courses/routes/SmartEnergy/人工智能.md
-    - 数据挖掘概论: courses/routes/SmartEnergy/数据挖掘概论.md
-  - 车辆: 
-    - 导航页: courses/routes/Vehicles/index.md
-    # - 专业必修课程: 
+extra_css:
+  - stylesheets/course-navigation.css
+extra_javascript:
+  - javascripts/course-navigation.js
+
+extra:
+  direction_menus:
+    能环:
+      - title: 热能
+        url: courses/routes/Thermal/
+      - title: 低温
+        url: courses/routes/Cryogenic/
+      - title: 新能源
+        url: courses/routes/NovelEnergy/
+      - title: 慧能
+        url: courses/routes/SmartEnergy/
+    储能:
+      - title: 普通班 · 多能融储
+        url: courses/routes/Storage/multi-energy/
+      - title: 普通班 · 电储
+        url: courses/routes/Storage/electric/
+      - title: 储能卓工班
+        url: courses/routes/Storage/excellence/
+    车辆:
+      - title: 车辆工程
+        url: courses/routes/Vehicles/2025/
+      - title: 未来汽车
+        url: courses/routes/Vehicles/2026/
+
+nav:
+- 主页:
+  - 首页: index.md
+  - 平台贡献指南: guideline.md
+  - 本科课程大纲:
+    - 课程总览: courses.md
+    - 专业基础及必修课程: /courses/public/
+    - 能环:
+      - 热能: /courses/routes/Thermal/
+      - 低温: /courses/routes/Cryogenic/
+      - 新能源: /courses/routes/NovelEnergy/
+      - 慧能: /courses/routes/SmartEnergy/
+    - 储能:
+      - 普通班 · 多能融储: /courses/routes/Storage/multi-energy/
+      - 普通班 · 电储: /courses/routes/Storage/electric/
+      - 储能卓工班: /courses/routes/Storage/excellence/
+    - 车辆:
+      - 车辆工程: /courses/routes/Vehicles/2025/
+      - 未来汽车: /courses/routes/Vehicles/2026/
+    - 过控: /courses/routes/ProcessControl/
+  - 更新说明: updates.md
+- 专业基础及必修课程:
+  - 导航页: courses/public/index.md
+  - 机械类:
+    - 工程图学: courses/public/fundamental/工程图学.md
+    - 工程训练: courses/public/fundamental/工程训练.md
+    - 机械制图及CAD基础: courses/public/fundamental/机械制图及CAD基础.md
+    - 机械设计基础（甲）: courses/public/fundamental/机械设计基础（甲）.md
+    - 机械设计课程设计（乙）: courses/public/professional/机械设计课程设计（乙）.md
     - 设计与制造 I&II&III: courses/routes/Vehicles/Route/设计与制造.md
-    - 汽车构造: courses/routes/Vehicles/Route/汽车构造.md
-    - 工程流体力学（乙）: courses/routes/Vehicles/Route/工程流体力学（乙）.md
-    - 汽车动力系统原理: courses/routes/Vehicles/Route/汽车动力系统原理.md
-    - 汽车理论: courses/routes/Vehicles/Route/汽车理论.md
-    - 汽车电子与控制: courses/routes/Vehicles/Route/汽车电子与控制.md
-    - 汽车设计: courses/routes/Vehicles/Route/汽车设计.md
-    - 动力机械测试技术: courses/routes/Vehicles/Route/动力机械测试技术.md
-    - 汽车及动力系统专业实验: courses/routes/Vehicles/Route/汽车及动力系统专业实验.md
-    # - 专业选修课程: 
-    #   - 汽车工程导论: courses/routes/Vehicles/Extra/汽车工程导论.md
-    #   - 车辆振动与噪声: courses/routes/Vehicles/Extra/车辆振动与噪声.md
-    #   - 新能源汽车技术: courses/routes/Vehicles/Extra/新能源汽车技术.md
-    #   - 车辆动力学: courses/routes/Vehicles/Extra/车辆动力学.md
-  - 过控: 
-    - 导航页: courses/routes/ProcessControl/index.md
-    # - 专业必修课程: 
     - 机械设计（乙）: courses/routes/ProcessControl/Route/机械设计（乙）.md
-    - 工程热力学（过控）: courses/routes/ProcessControl/Route/工程热力学.md
+    - 互换性与技术测量: courses/catalog/ME2106M.md
+    - 机械制造技术: courses/catalog/ME3231M.md
+    - 机械工程基础实验: courses/catalog/ME3316M.md
+  - 力学类:
+    - 工程流体力学（甲）I&II: courses/public/fundamental/工程流体力学（甲）.md
+    - 工程流体力学（乙）: courses/routes/Vehicles/Route/工程流体力学（乙）.md
     - 过程工程流体力学: courses/routes/ProcessControl/Route/过程工程流体力学.md
-    - 工程材料: courses/routes/ProcessControl/Route/工程材料.md
-    - 控制工程基础: courses/routes/ProcessControl/Route/控制工程基础.md
+    - 工程力学: courses/public/fundamental/工程力学.md
+    - 理论力学（甲）: courses/public/fundamental/理论力学（甲）.md
+    - 材料力学（乙）: courses/public/fundamental/材料力学（乙）.md
+    - 材料力学实验: courses/public/fundamental/材料力学实验.md
+    - 理论力学（B）: courses/catalog/AA2031F.md
+    - 材料力学（B）: courses/catalog/AA2028F.md
+  - 电学及控制类:
+    - 电工电子学及实验: courses/public/fundamental/电工电子学及实验.md
+    - 电工电子学: courses/public/fundamental/电工电子学.md
+    - 电工电子学实验: courses/public/fundamental/电工电子学实验.md
+    - 自动控制理论: courses/public/professional/自动控制理论.md
+    - 现代电路基础：面向通信与物联网设计: courses/public/fundamental/现代电路基础：面向通信与物联网设计.md
+    - 控制论: courses/public/fundamental/控制论.md
+    - 微机原理与工业物联网: courses/routes/Thermal/Extra/微机原理及应用.md
+    - 电子工程训练（乙）: courses/catalog/ISEE2009F.md
+    - 自动控制理论（甲）: courses/catalog/CSE2001M.md
+    - 自动化导论: courses/catalog/CSE1000M.md
+    - 嵌入式系统: courses/catalog/CSE2000M.md
+    - 系统建模与仿真: courses/catalog/CSE2002M.md
+  - 数理类:
+    - 随机过程: courses/public/fundamental/随机过程.md
+    - 常微分方程: courses/public/fundamental/常微分方程.md
+    - 概率论与数理统计: courses/public/fundamental/概率论及数理统计.md
+    - 复变函数与积分变换: courses/public/fundamental/复变函数与积分变换.md
+    - 数理方法 I&II: courses/public/fundamental/数理方法.md
+    - 物理化学: courses/public/fundamental/物理化学.md
+    - 大学物理/普通物理学: courses/public/fundamental/物理.md
+    - 微积分与数学分析: courses/public/fundamental/微积分与数学分析.md
+    - 线性代数: courses/catalog/MATH1232G.md
+    - 普通化学与工程化学: courses/catalog/CHEM1003G.md
+    - 化学实验: courses/catalog/CHEM1006G.md
+    - 物理实验: courses/catalog/PHY2005G.md
+    - C语言程序设计: courses/catalog/CS1002G.md
+    - Python程序设计: courses/catalog/CS1006G.md
+    - Java程序设计: courses/catalog/CS1007G.md
+    - 人工智能基础（A）: courses/catalog/CS1241G.md
+    - 概率论（H）: courses/catalog/MATH2462FH.md
+  - 能源与热学类:
+    - 工程热力学（甲）: courses/public/professional/工程热力学（甲）.md
+    - 工程热力学（过控）: courses/routes/ProcessControl/Route/工程热力学.md
+    - 热工实验 I&II: courses/public/professional/热工实验.md
+    - 传热学（甲）: courses/public/professional/传热学（甲）.md
+    - 能源与环境系统工程概论: courses/public/professional/能源与环境系统工程概论.md
+    - 能源工程伦理与管理: courses/public/professional/能源工程伦理与管理.md
+    - 化工原理及实验: courses/catalog/CBE3004F.md
+- 能环:
+  - 热能:
+    - 课程列表: courses/routes/Thermal/index.md
+    - 通识必修:
+      - 人工智能基础（A）: /courses/catalog/CS1241G/
+      - C程序设计基础: /courses/catalog/CS1002G/
+      - Python程序设计: /courses/catalog/CS1006G/
+      - 微积分（甲）Ⅰ: /courses/public/fundamental/微积分与数学分析/
+      - 线性代数（甲）: /courses/catalog/MATH1232G/
+      - 普通化学（乙）: /courses/catalog/CHEM1003G/
+      - 普通化学实验（乙）: /courses/catalog/CHEM1006G/
+      - 微积分（甲）Ⅱ: /courses/public/fundamental/微积分与数学分析/
+      - 大学物理（甲）Ⅰ: /courses/public/fundamental/物理/
+      - 大学物理（甲）Ⅱ: /courses/public/fundamental/物理/
+      - 大学物理实验: /courses/catalog/PHY2005G/
+    - 专业基础:
+      - 工程图学: /courses/public/fundamental/工程图学/
+      - 常微分方程: /courses/public/fundamental/常微分方程/
+      - 机械制图及CAD基础: /courses/public/fundamental/机械制图及CAD基础/
+      - 工程力学: /courses/public/fundamental/工程力学/
+      - 概率论与数理统计: /courses/public/fundamental/概率论及数理统计/
+      - 工程训练: /courses/public/fundamental/工程训练/
+      - 材料力学实验: /courses/public/fundamental/材料力学实验/
+      - 电工电子学及实验: /courses/public/fundamental/电工电子学及实验/
+      - 机械设计基础（甲）: /courses/public/fundamental/机械设计基础（甲）/
+    - 专业必修:
+      - 工程流体力学（甲）Ⅰ: /courses/public/fundamental/工程流体力学（甲）/#fluid-mechanics-1
+      - 工程流体力学（甲）Ⅱ: /courses/public/fundamental/工程流体力学（甲）/#fluid-mechanics-2
+      - 工程热力学（甲）: /courses/public/professional/工程热力学（甲）/
+      - 热工实验Ⅰ: /courses/public/professional/热工实验/
+      - 能源与环境系统工程概论: /courses/public/professional/能源与环境系统工程概论/
+      - 机械设计课程设计（乙）: /courses/public/professional/机械设计课程设计（乙）/
+      - 传热学（甲）: /courses/public/professional/传热学（甲）/
+      - 自动控制理论: /courses/public/professional/自动控制理论/
+      - 热工实验Ⅱ: /courses/public/professional/热工实验/
+      - 能源工程伦理与管理: /courses/public/professional/能源工程伦理与管理/
+      - 透平机械原理: courses/routes/Thermal/Route/透平机械原理.md
+      - 燃烧理论: courses/routes/Thermal/Route/燃烧理论.md
+      - 热力环境控制: courses/routes/Thermal/Route/热力环境控制.md
+      - 能源转化（含锅炉原理）: courses/routes/Thermal/Route/能源转化（锅炉原理）.md
+      - 热能工程试验技术: courses/routes/Thermal/Route/热能工程试验技术.md
+      - 能源与环境实验Ⅱ: courses/routes/Thermal/Route/能源与环境实验.md
+      - 能源与环境实验Ⅰ: /courses/routes/Thermal/Route/能源与环境实验/
+    - 专业选修:
+      - 微机原理与工业物联网: /courses/routes/Thermal/Extra/微机原理及应用/
+      - 能源与环境技术进展: courses/routes/Thermal/Extra/能源与环境技术进展.md
+      - 太阳能发电: courses/routes/Thermal/Extra/太阳能发电.md
+      - 可再生能源和新能源概论: courses/routes/Thermal/Extra/可再生能源和新能源概论.md
+      - 热工信号处理技术及实验: courses/routes/Thermal/Route/热工信号处理技术及实验.md
+      - 现代分析测试技术: courses/routes/Thermal/Extra/现代分析测试技术.md
+      - 异相催化与可持续发展: courses/catalog/ENER3053M.md
+      - 流体机械: courses/routes/Thermal/Extra/流体机械.md
+      - 热力系统工程: courses/routes/Thermal/Route/热力系统工程.md
+      - 二氧化碳捕集利用封存: courses/routes/Thermal/Extra/二氧化碳捕集利用封存.md
+      - 基于循环经济的能源环境系统: courses/routes/Thermal/Extra/机遇循环经济的能源环境系统.md
+      - 能源有机化学: courses/catalog/ENER3037M.md
+      - 深度学习与智慧能源大模型: courses/catalog/ENER3074M.md
+      - 未来能源系统创新实践: courses/catalog/ENER3060M.md
+      - 先进储热与强化传热技术: courses/catalog/ENER3065M.md
+      - 燃气轮机基础: courses/routes/Thermal/Extra/燃气轮机基础.md
+    - 实践课程:
+      - 认识实习: courses/catalog/ENER2006M.md
+      - 生产实习: courses/catalog/ENER3056M.md
+      - 汽轮机课程设计: courses/catalog/ENER4008M.md
+      - 锅炉课程设计: courses/catalog/ENER4012M.md
+      - 毕业设计（论文）: courses/catalog/ENER4016M.md
+      - 节能减排创新实践: courses/catalog/ENER2007M.md
+    - 更多课程资料:
+      - 专业英语阅读与写作: courses/routes/Thermal/Extra/专业英语阅读与写作.md
+      - 智慧能源系统理论与应用: courses/routes/Thermal/Extra/智慧能源系统理论与应用.md
+      - 能源系统的评估原理: courses/routes/Thermal/Extra/能源系统的评估原理.md
+      - 能源生产过程控制: courses/routes/Thermal/Route/能源生产过程控制.md
+  - 低温:
+    - 课程列表: courses/routes/Cryogenic/index.md
+    - 通识必修:
+      - 人工智能基础（A）: /courses/catalog/CS1241G/
+      - C程序设计基础: /courses/catalog/CS1002G/
+      - Python程序设计: /courses/catalog/CS1006G/
+      - 微积分（甲）Ⅰ: /courses/public/fundamental/微积分与数学分析/
+      - 线性代数（甲）: /courses/catalog/MATH1232G/
+      - 普通化学（乙）: /courses/catalog/CHEM1003G/
+      - 普通化学实验（乙）: /courses/catalog/CHEM1006G/
+      - 微积分（甲）Ⅱ: /courses/public/fundamental/微积分与数学分析/
+      - 大学物理（甲）Ⅰ: /courses/public/fundamental/物理/
+      - 大学物理（甲）Ⅱ: /courses/public/fundamental/物理/
+      - 大学物理实验: /courses/catalog/PHY2005G/
+    - 专业基础:
+      - 工程图学: /courses/public/fundamental/工程图学/
+      - 常微分方程: /courses/public/fundamental/常微分方程/
+      - 机械制图及CAD基础: /courses/public/fundamental/机械制图及CAD基础/
+      - 工程力学: /courses/public/fundamental/工程力学/
+      - 概率论与数理统计: /courses/public/fundamental/概率论及数理统计/
+      - 工程训练: /courses/public/fundamental/工程训练/
+      - 材料力学实验: /courses/public/fundamental/材料力学实验/
+      - 电工电子学及实验: /courses/public/fundamental/电工电子学及实验/
+      - 机械设计基础（甲）: /courses/public/fundamental/机械设计基础（甲）/
+    - 专业必修:
+      - 工程流体力学（甲）Ⅰ: /courses/public/fundamental/工程流体力学（甲）/#fluid-mechanics-1
+      - 工程流体力学（甲）Ⅱ: /courses/public/fundamental/工程流体力学（甲）/#fluid-mechanics-2
+      - 工程热力学（甲）: /courses/public/professional/工程热力学（甲）/
+      - 热工实验Ⅰ: /courses/public/professional/热工实验/
+      - 能源与环境系统工程概论: /courses/public/professional/能源与环境系统工程概论/
+      - 机械设计课程设计（乙）: /courses/public/professional/机械设计课程设计（乙）/
+      - 传热学（甲）: /courses/public/professional/传热学（甲）/
+      - 自动控制理论: /courses/public/professional/自动控制理论/
+      - 热工实验Ⅱ: /courses/public/professional/热工实验/
+      - 能源工程伦理与管理: /courses/public/professional/能源工程伦理与管理/
+      - 制冷原理: courses/routes/Cryogenic/Route/制冷原理.md
+      - 低温原理: courses/routes/Cryogenic/Route/低温原理.md
+      - 暖通与空调: courses/routes/Cryogenic/Route/暖通与空调.md
+      - 制冷与低温实验: courses/routes/Cryogenic/Route/制冷与低温实验.md
+    - 专业选修:
+      - 微机原理与工业物联网: /courses/routes/Thermal/Extra/微机原理及应用/
+      - 人工环境概论: courses/routes/Cryogenic/Route/人工环境概论.md
+      - 流体输送及控制: courses/routes/Cryogenic/Route/流体输送及控制.md
+      - 制冷与低温测试技术: courses/routes/Cryogenic/Route/制冷与低温测试技术.md
+      - 低温环境绝热技术: courses/routes/Cryogenic/Extra/低温环境绝热技术.md
+      - 制冷与人工环境英语: courses/routes/Cryogenic/Extra/制冷与人工环境英语.md
+      - 食品冷冻及保鲜技术: courses/routes/Cryogenic/Extra/食品冷冻及保鲜技术.md
+      - 制冷与低温设备: courses/routes/Cryogenic/Route/制冷与低温设备.md
+      - 能源系统人工智能方法: courses/routes/SmartEnergy/能源系统大数据分析理论与实践.md
+      - CFD软件应用: courses/catalog/ENER4001M.md
+      - 低温生物技术: courses/routes/Cryogenic/Extra/低温生物技术.md
+    - 实践课程:
+      - 虚拟制冷教学实践: courses/catalog/ENER2008M.md
+      - 生产实习: /courses/catalog/ENER3056M/
+      - 低温课程设计: courses/catalog/ENER4002M.md
+      - 人工环境课程设计: courses/catalog/ENER4003M.md
+      - 毕业设计（论文）: /courses/catalog/ENER4016M/
+      - 节能减排创新实践: /courses/catalog/ENER2007M/
+    - 更多课程资料:
+      - 制冷装置自动化: courses/routes/Cryogenic/Route/制冷装置自动化.md
+  - 新能源:
+    - 课程列表: courses/routes/NovelEnergy/index.md
+    - 通识必修:
+      - 人工智能基础（A）: /courses/catalog/CS1241G/
+      - C程序设计基础: /courses/catalog/CS1002G/
+      - Python程序设计: /courses/catalog/CS1006G/
+      - 微积分（甲）Ⅰ: /courses/public/fundamental/微积分与数学分析/
+      - 线性代数（甲）: /courses/catalog/MATH1232G/
+      - 普通化学（乙）: /courses/catalog/CHEM1003G/
+      - 普通化学实验（乙）: /courses/catalog/CHEM1006G/
+      - 微积分（甲）Ⅱ: /courses/public/fundamental/微积分与数学分析/
+      - 大学物理（甲）Ⅰ: /courses/public/fundamental/物理/
+      - 大学物理（甲）Ⅱ: /courses/public/fundamental/物理/
+      - 大学物理实验: /courses/catalog/PHY2005G/
+    - 专业基础:
+      - 工程图学: /courses/public/fundamental/工程图学/
+      - 常微分方程: /courses/public/fundamental/常微分方程/
+      - 机械制图及CAD基础: /courses/public/fundamental/机械制图及CAD基础/
+      - 工程力学: /courses/public/fundamental/工程力学/
+      - 概率论与数理统计: /courses/public/fundamental/概率论及数理统计/
+      - 工程训练: /courses/public/fundamental/工程训练/
+      - 材料力学实验: /courses/public/fundamental/材料力学实验/
+      - 电工电子学及实验: /courses/public/fundamental/电工电子学及实验/
+      - 机械设计基础（甲）: /courses/public/fundamental/机械设计基础（甲）/
+    - 专业必修:
+      - 工程流体力学（甲）Ⅰ: /courses/public/fundamental/工程流体力学（甲）/#fluid-mechanics-1
+      - 工程流体力学（甲）Ⅱ: /courses/public/fundamental/工程流体力学（甲）/#fluid-mechanics-2
+      - 工程热力学（甲）: /courses/public/professional/工程热力学（甲）/
+      - 热工实验Ⅰ: /courses/public/professional/热工实验/
+      - 能源与环境系统工程概论: /courses/public/professional/能源与环境系统工程概论/
+      - 机械设计课程设计（乙）: /courses/public/professional/机械设计课程设计（乙）/
+      - 传热学（甲）: /courses/public/professional/传热学（甲）/
+      - 自动控制理论: /courses/public/professional/自动控制理论/
+      - 热工实验Ⅱ: /courses/public/professional/热工实验/
+      - 能源工程伦理与管理: /courses/public/professional/能源工程伦理与管理/
+      - 氢能: courses/routes/NovelEnergy/Route/氢能.md
+      - 能源材料: courses/routes/NovelEnergy/Route/能源材料.md
+      - 太阳能: courses/routes/NovelEnergy/Route/太阳能.md
+      - 风能: courses/routes/NovelEnergy/Route/风能.md
+      - 生物质能: courses/routes/NovelEnergy/Route/生物质能.md
+      - 新能源实验: courses/routes/NovelEnergy/Route/新能源实验.md
+    - 专业选修:
+      - 微机原理与工业物联网: /courses/routes/Thermal/Extra/微机原理及应用/
+      - 能源与环境技术进展: /courses/routes/Thermal/Extra/能源与环境技术进展/
+      - 锅炉原理及热交换器设计: courses/routes/NovelEnergy/Route/锅炉原理及热交换器设计.md
+      - 异相催化与可持续发展: /courses/catalog/ENER3053M/
+      - 能源有机化学: /courses/catalog/ENER3037M/
+      - 燃料电池: courses/routes/NovelEnergy/Extra/燃料电池.md
+      - 新能源系统检测与控制: courses/routes/NovelEnergy/Route/新能源系统检测与控制.md
+      - 深度学习与智慧能源大模型: /courses/catalog/ENER3074M/
+      - 核能: courses/routes/NovelEnergy/Route/核能.md
+      - 能源化学: courses/routes/NovelEnergy/Extra/能源化学.md
+      - 循环经济与节能减排: courses/routes/NovelEnergy/Route/循环经济与节能减排.md
+      - 专业英语阅读与写作: /courses/routes/Thermal/Extra/专业英语阅读与写作/
+      - 未来能源系统创新实践: /courses/catalog/ENER3060M/
+      - 二氧化碳捕集利用封存: /courses/routes/Thermal/Extra/二氧化碳捕集利用封存/
+      - 燃气轮机基础: /courses/routes/Thermal/Extra/燃气轮机基础/
+    - 实践课程:
+      - 认识实习: /courses/catalog/ENER2006M/
+      - 生产实习: /courses/catalog/ENER3056M/
+      - 风电风机课程设计: courses/catalog/ENER4011M.md
+      - 生物质发电系统课程设计: courses/catalog/ENER4014M.md
+      - 毕业设计（论文）: /courses/catalog/ENER4016M/
+      - 节能减排创新实践: /courses/catalog/ENER2007M/
+  - 慧能:
+    - 课程列表: courses/routes/SmartEnergy/index.md
+    - 通识必修:
+      - 程序设计基础与实验: /courses/catalog/CS1002G/
+      - 普通化学（H）: /courses/catalog/CHEM1003G/
+      - 数学分析（甲）Ⅰ（H）: /courses/public/fundamental/微积分与数学分析/
+      - 线性代数Ⅰ（H）: /courses/catalog/MATH1232G/
+      - 普通化学实验（乙）: /courses/catalog/CHEM1006G/
+      - 数学分析（甲）Ⅱ（H）: /courses/public/fundamental/微积分与数学分析/
+      - 普通物理学Ⅰ（H）: /courses/public/fundamental/物理/
+      - 普通物理学实验Ⅰ: /courses/catalog/PHY2005G/
+      - 普通物理学Ⅱ（H）: /courses/public/fundamental/物理/
+      - 普通物理学实验Ⅱ: /courses/catalog/PHY2005G/
+    - 专业基础:
+      - 工程图学（H）: /courses/public/fundamental/工程图学/
+      - 工程训练: /courses/public/fundamental/工程训练/
+      - 工程力学: /courses/public/fundamental/工程力学/
+      - 概率论与数理统计: /courses/public/fundamental/概率论及数理统计/
+      - 数理方法Ⅰ: /courses/public/fundamental/数理方法/
+      - 数理方法Ⅱ: /courses/public/fundamental/数理方法/
+      - 物理化学: /courses/public/fundamental/物理化学/
+    - 专业必修:
+      - 工程流体力学（甲）Ⅰ: /courses/public/fundamental/工程流体力学（甲）/#fluid-mechanics-1
+      - 工程流体力学（甲）Ⅱ: /courses/public/fundamental/工程流体力学（甲）/#fluid-mechanics-2
+      - 控制论: /courses/public/fundamental/控制论/
+      - 工程热力学（甲）: /courses/public/professional/工程热力学（甲）/
+      - 现代电路基础：面向通信与物联网设计: /courses/public/fundamental/现代电路基础：面向通信与物联网设计/
+      - 能源系统人工智能方法: /courses/routes/SmartEnergy/能源系统大数据分析理论与实践/
+      - 传热学（甲）: /courses/public/professional/传热学（甲）/
+      - 能源与环境系统原理及实践: courses/routes/SmartEnergy/能源与环境系统工程原理及实践.md
+      - 计算机模拟: courses/routes/SmartEnergy/计算机模拟.md
+      - 动态建模理论及应用: courses/routes/SmartEnergy/动态建模理论与应用.md
+      - 能源系统先进测量技术: courses/routes/SmartEnergy/能源系统先进测量技术.md
+      - 人工智能: courses/routes/SmartEnergy/人工智能.md
+      - 制冷低温与空调原理及实践: courses/routes/SmartEnergy/制冷低温与空调原理及实践.md
+      - 数据挖掘概论: courses/routes/SmartEnergy/数据挖掘概论.md
+    - 专业选修:
+      - 生物质能: /courses/routes/NovelEnergy/Route/生物质能/
+      - 异相催化与可持续发展: /courses/catalog/ENER3053M/
+      - 低温环境绝热技术: /courses/routes/Cryogenic/Extra/低温环境绝热技术/
+      - 风能: /courses/routes/NovelEnergy/Route/风能/
+      - 能源有机化学: /courses/catalog/ENER3037M/
+      - 氢能: /courses/routes/NovelEnergy/Route/氢能/
+      - 太阳能: /courses/routes/NovelEnergy/Route/太阳能/
+      - 深度学习与智慧能源大模型: /courses/catalog/ENER3074M/
+      - 未来能源系统创新实践: /courses/catalog/ENER3060M/
+    - 实践课程:
+      - 科研训练基础: courses/catalog/ENER2011M.md
+      - 交叉创新设计: courses/catalog/ENER4020M.md
+      - 毕业设计（论文）: /courses/catalog/ENER4016M/
+    - 更多课程资料:
+      - 智慧能源系统控制与优化: courses/routes/SmartEnergy/智慧能源系统控制与优化.md
+- 储能:
+  - 普通班:
+    - 多能融储方向:
+      - 课程列表: courses/routes/Storage/multi-energy.md
+      - 通识必修:
+        - 人工智能基础（A）: /courses/catalog/CS1241G/
+        - C程序设计基础: /courses/catalog/CS1002G/
+        - Python程序设计: /courses/catalog/CS1006G/
+        - 微积分（甲）Ⅰ: /courses/public/fundamental/微积分与数学分析/
+        - 线性代数（甲）: /courses/catalog/MATH1232G/
+        - 普通化学（乙）: /courses/catalog/CHEM1003G/
+        - 普通化学实验（乙）: /courses/catalog/CHEM1006G/
+        - 微积分（甲）Ⅱ: /courses/public/fundamental/微积分与数学分析/
+        - 大学物理（乙）Ⅰ: /courses/public/fundamental/物理/
+        - 大学物理（乙）Ⅱ: /courses/public/fundamental/物理/
+        - 大学物理实验: /courses/catalog/PHY2005G/
+      - 专业基础:
+        - 工程图学: /courses/public/fundamental/工程图学/
+        - 常微分方程: /courses/public/fundamental/常微分方程/
+        - 概率论与数理统计: /courses/public/fundamental/概率论及数理统计/
+        - 工程训练: /courses/public/fundamental/工程训练/
+        - 电工电子学及实验: /courses/public/fundamental/电工电子学及实验/
+        - 化工原理及实验: /courses/catalog/CBE3004F/
+      - 专业必修:
+        - 储能工程导论: courses/catalog/ENER2012M.md
+        - 材料科学基础Ⅰ: courses/catalog/MSE2001M.md
+        - 储能原理: courses/catalog/ENER2015M.md
+        - 计算方法: courses/catalog/EE2201M.md
+        - 微机原理与工业物联网: /courses/routes/Thermal/Extra/微机原理及应用/
+        - 工程热力学（甲）: /courses/public/professional/工程热力学（甲）/
+        - 电化学储能基础: courses/catalog/ENER2014M.md
+        - 电力储能技术: courses/catalog/EE4463M.md
+        - 自动控制理论: /courses/public/professional/自动控制理论/
+        - 能源工程伦理与管理: /courses/public/professional/能源工程伦理与管理/
+        - 能源材料: /courses/routes/NovelEnergy/Route/能源材料/
+        - 储能热流基础: courses/catalog/ENER3066M.md
+        - 热质储能技术与应用: courses/catalog/ENER3068M.md
+        - 氢储能技术与应用: courses/catalog/ENER3070M.md
+        - 新型电池设计与应用: courses/catalog/ENER3071M.md
+      - 专业选修:
+        - 异相催化与可持续发展: /courses/catalog/ENER3053M/
+        - 低温环境绝热技术: /courses/routes/Cryogenic/Extra/低温环境绝热技术/
+        - 能源有机化学: /courses/catalog/ENER3037M/
+      - 实践课程:
+        - 科研训练基础: /courses/catalog/ENER2011M/
+        - 储能认识实习: courses/catalog/ENER2013M.md
+        - 储能生产实习: courses/catalog/ENER3069M.md
+        - 未来能源系统创新实践: /courses/catalog/ENER3060M/
+        - 储能实验: courses/catalog/ENER4021M.md
+        - 毕业设计（论文）: /courses/catalog/ENER4016M/
+    - 电储方向:
+      - 课程列表: courses/routes/Storage/electric.md
+      - 通识必修:
+        - 人工智能基础（A）: /courses/catalog/CS1241G/
+        - C程序设计基础: /courses/catalog/CS1002G/
+        - Python程序设计: /courses/catalog/CS1006G/
+        - 微积分（甲）Ⅰ: /courses/public/fundamental/微积分与数学分析/
+        - 线性代数（甲）: /courses/catalog/MATH1232G/
+        - 普通化学（乙）: /courses/catalog/CHEM1003G/
+        - 普通化学实验（乙）: /courses/catalog/CHEM1006G/
+        - 微积分（甲）Ⅱ: /courses/public/fundamental/微积分与数学分析/
+        - 大学物理（乙）Ⅰ: /courses/public/fundamental/物理/
+        - 大学物理（乙）Ⅱ: /courses/public/fundamental/物理/
+        - 大学物理实验: /courses/catalog/PHY2005G/
+      - 专业基础:
+        - 工程图学: /courses/public/fundamental/工程图学/
+        - 常微分方程: /courses/public/fundamental/常微分方程/
+        - 概率论与数理统计: /courses/public/fundamental/概率论及数理统计/
+        - 工程训练: /courses/public/fundamental/工程训练/
+        - 电工电子学及实验: /courses/public/fundamental/电工电子学及实验/
+        - 化工原理及实验: /courses/catalog/CBE3004F/
+      - 专业必修:
+        - 储能工程导论: /courses/catalog/ENER2012M/
+        - 材料科学基础Ⅰ: /courses/catalog/MSE2001M/
+        - 储能原理: /courses/catalog/ENER2015M/
+        - 计算方法: /courses/catalog/EE2201M/
+        - 微机原理与工业物联网: /courses/routes/Thermal/Extra/微机原理及应用/
+        - 工程热力学（甲）: /courses/public/professional/工程热力学（甲）/
+        - 电化学储能基础: /courses/catalog/ENER2014M/
+        - 电力储能技术: /courses/catalog/EE4463M/
+        - 自动控制理论: /courses/public/professional/自动控制理论/
+        - 能源工程伦理与管理: /courses/public/professional/能源工程伦理与管理/
+        - 能源材料: /courses/routes/NovelEnergy/Route/能源材料/
+        - 电网络分析: courses/catalog/EE2101M.md
+        - 信号分析与处理: courses/catalog/EE2001M.md
+        - 电力系统稳态分析: courses/catalog/EE3401M.md
+        - 智能电网系统基础: courses/catalog/EE3573M.md
+      - 专业选修:
+        - 异相催化与可持续发展: /courses/catalog/ENER3053M/
+        - 低温环境绝热技术: /courses/routes/Cryogenic/Extra/低温环境绝热技术/
+        - 能源有机化学: /courses/catalog/ENER3037M/
+      - 实践课程:
+        - 科研训练基础: /courses/catalog/ENER2011M/
+        - 储能认识实习: /courses/catalog/ENER2013M/
+        - 储能生产实习: /courses/catalog/ENER3069M/
+        - 未来能源系统创新实践: /courses/catalog/ENER3060M/
+        - 储能实验: /courses/catalog/ENER4021M/
+        - 毕业设计（论文）: /courses/catalog/ENER4016M/
+  - 储能卓工班:
+    - 课程列表: courses/routes/Storage/excellence.md
+    - 通识必修:
+      - 程序设计与算法基础: /courses/catalog/CS1002G/
+      - 微积分Ⅰ（H）: /courses/public/fundamental/微积分与数学分析/
+      - 线性代数Ⅰ（H）: /courses/catalog/MATH1232G/
+      - 微积分Ⅱ（H）: /courses/public/fundamental/微积分与数学分析/
+      - 线性代数Ⅱ（H）: /courses/catalog/MATH1232G/
+      - 普通物理学Ⅰ（H）: /courses/public/fundamental/物理/
+      - 普通物理学实验Ⅰ: /courses/catalog/PHY2005G/
+      - 普通物理学Ⅱ（H）: /courses/public/fundamental/物理/
+      - 普通化学（H）: /courses/catalog/CHEM1003G/
+      - 普通化学实验（乙）: /courses/catalog/CHEM1006G/
+    - 专业基础:
+      - 工程图学（H）: /courses/public/fundamental/工程图学/
+      - 常微分方程: /courses/public/fundamental/常微分方程/
+      - 复变函数与积分变换: /courses/public/fundamental/复变函数与积分变换/
+      - 概率论（H）: /courses/catalog/MATH2462FH/
+      - 自动控制理论（甲）: /courses/catalog/CSE2001M/
+      - 电工电子学: /courses/public/fundamental/电工电子学/
+      - 工程热力学（甲）: /courses/public/professional/工程热力学（甲）/
+      - 机械设计基础（甲）: /courses/public/fundamental/机械设计基础（甲）/
+      - 工程流体力学（甲）Ⅰ: /courses/public/fundamental/工程流体力学（甲）/#fluid-mechanics-1
+      - 理论力学（甲）: /courses/public/fundamental/理论力学（甲）/
+      - 工程训练: /courses/public/fundamental/工程训练/
+      - 工程流体力学（甲）Ⅱ: /courses/public/fundamental/工程流体力学（甲）/#fluid-mechanics-2
+      - 自动化导论: /courses/catalog/CSE1000M/
+      - 互换性与技术测量: /courses/catalog/ME2106M/
+      - 机械制造技术: /courses/catalog/ME3231M/
+      - 材料力学（乙）: /courses/public/fundamental/材料力学（乙）/
+      - 嵌入式系统: /courses/catalog/CSE2000M/
+      - 系统建模与仿真: /courses/catalog/CSE2002M/
+      - 机械工程基础实验: /courses/catalog/ME3316M/
+    - 专业必修:
+      - 储能工程导论: /courses/catalog/ENER2012M/
+      - 储能热流基础: /courses/catalog/ENER3066M/
+      - 工程创新应用Ⅰ: courses/catalog/ENER3072M.md
+      - 储能原理: /courses/catalog/ENER2015M/
+      - 能源与环境系统工程概论: /courses/public/professional/能源与环境系统工程概论/
+      - 工程创新应用Ⅱ: courses/catalog/ENER3073M.md
+      - 深度学习与智慧能源大模型: /courses/catalog/ENER3074M/
+      - 新能源动力系统能效管理与储能安全: courses/catalog/ENER4404M.md
+      - 能源装备基础: courses/catalog/ENER3228M.md
+      - 工程创新应用Ⅲ: courses/catalog/ENER4022M.md
+    - 专业选修:
+      - 电力储能技术: /courses/catalog/EE4463M/
+      - 材料科学基础Ⅰ: /courses/catalog/MSE2001M/
+      - 热质储能技术与应用: /courses/catalog/ENER3068M/
+      - 氢储能技术与应用: /courses/catalog/ENER3070M/
+      - 新型电池设计与应用: /courses/catalog/ENER3071M/
+      - 先进储热与强化传热技术: /courses/catalog/ENER3065M/
+      - 微机原理与工业物联网: /courses/routes/Thermal/Extra/微机原理及应用/
+      - 二氧化碳捕集利用封存: /courses/routes/Thermal/Extra/二氧化碳捕集利用封存/
+      - 数据挖掘概论: /courses/routes/SmartEnergy/数据挖掘概论/
+      - 智能优化与仿真: courses/catalog/MGMT3051M.md
+      - 太阳能: /courses/routes/NovelEnergy/Route/太阳能/
+      - 风能: /courses/routes/NovelEnergy/Route/风能/
+      - 能源系统先进测量技术: /courses/routes/SmartEnergy/能源系统先进测量技术/
+      - 生物质能: /courses/routes/NovelEnergy/Route/生物质能/
+      - 能源系统人工智能方法: /courses/routes/SmartEnergy/能源系统大数据分析理论与实践/
+      - 流体输送及控制: /courses/routes/Cryogenic/Route/流体输送及控制/
+      - 燃气轮机基础: /courses/routes/Thermal/Extra/燃气轮机基础/
+      - 智能网联新能源汽车技术: courses/catalog/ENER3407M1.md
+      - 过程装备智能制造技术: courses/catalog/ENER3220M.md
+      - 流体增压机械: courses/routes/ProcessControl/Route/过程机械.md
+    - 实践课程:
+      - 产业认知实习: courses/catalog/ENER1001M.md
+      - 储能电站状态感知与能量管理: courses/catalog/ENER1002M.md
+      - 智能无人系统基础实践: courses/catalog/CSE1371M.md
+      - 产业前沿实践: courses/catalog/ENER4024M.md
+      - 工程创新应用Ⅳ: courses/catalog/ENER4023M.md
+- 车辆:
+  - 车辆工程:
+    - 课程列表: courses/routes/Vehicles/2025.md
+    - 通识必修:
+      - 人工智能基础（A）: /courses/catalog/CS1241G/
+      - C程序设计基础: /courses/catalog/CS1002G/
+      - Python程序设计: /courses/catalog/CS1006G/
+      - Java程序设计: /courses/catalog/CS1007G/
+      - 微积分（甲）Ⅰ: /courses/public/fundamental/微积分与数学分析/
+      - 线性代数（甲）: /courses/catalog/MATH1232G/
+      - 微积分（甲）Ⅱ: /courses/public/fundamental/微积分与数学分析/
+      - 大学物理（甲）Ⅰ: /courses/public/fundamental/物理/
+      - 大学物理（甲）Ⅱ: /courses/public/fundamental/物理/
+      - 大学物理实验: /courses/catalog/PHY2005G/
+    - 专业基础:
+      - 工程图学: /courses/public/fundamental/工程图学/
+      - 常微分方程: /courses/public/fundamental/常微分方程/
+      - 机械制图及CAD基础: /courses/public/fundamental/机械制图及CAD基础/
+      - 理论力学（甲）: /courses/public/fundamental/理论力学（甲）/
+      - 电工电子学: /courses/public/fundamental/电工电子学/
+      - 电工电子学实验: /courses/public/fundamental/电工电子学实验/
+      - 材料力学（乙）: /courses/public/fundamental/材料力学（乙）/
+      - 概率论与数理统计: /courses/public/fundamental/概率论及数理统计/
+      - 材料力学实验: /courses/public/fundamental/材料力学实验/
+    - 专业必修:
+      - 汽车工程导论: courses/routes/Vehicles/Extra/汽车工程导论.md
+      - 设计与制造Ⅰ: /courses/routes/Vehicles/Route/设计与制造/#design-manufacture-1
+      - 工程热力学（甲）: /courses/public/professional/工程热力学（甲）/
+      - 工程流体力学（乙）: /courses/routes/Vehicles/Route/工程流体力学（乙）/
+      - 汽车构造: courses/routes/Vehicles/Route/汽车构造.md
+      - 设计与制造Ⅱ: /courses/routes/Vehicles/Route/设计与制造/#design-manufacture-2
+      - 传热学（甲）: /courses/public/professional/传热学（甲）/
+      - 自动控制理论: /courses/public/professional/自动控制理论/
+      - 汽车理论: courses/routes/Vehicles/Route/汽车理论.md
+      - 汽车动力系统原理: courses/routes/Vehicles/Route/汽车动力系统原理.md
+      - 设计与制造Ⅲ: /courses/routes/Vehicles/Route/设计与制造/#design-manufacture-3
+      - 汽车及动力系统专业实验: courses/routes/Vehicles/Route/汽车及动力系统专业实验.md
+    - 专业选修:
+      - 随机过程: /courses/public/fundamental/随机过程/
+      - 车辆振动与噪声: courses/routes/Vehicles/Extra/车辆振动与噪声.md
+      - 汽车电子与控制: courses/routes/Vehicles/Route/汽车电子与控制.md
+      - 汽车设计: courses/routes/Vehicles/Route/汽车设计.md
+      - 动力机械测试技术: courses/routes/Vehicles/Route/动力机械测试技术.md
+      - 新能源汽车技术: courses/routes/Vehicles/Extra/新能源汽车技术.md
+      - 高分子复合材料与能源装备: courses/catalog/ENER3226M.md
+      - 能源有机化学: /courses/catalog/ENER3037M/
+      - 有限单元法及其工程应用: courses/routes/ProcessControl/Extra/有限单元法纪其工程应用.md
+      - 机械振动基础: courses/catalog/ENER3209M.md
+      - 信息检索与科技写作: courses/catalog/ENER4207M.md
+    - 实践课程:
+      - 汽车技术综合实践: courses/catalog/ENER1405M.md
+      - 电子工程训练（乙）: /courses/catalog/ISEE2009F/
+      - 工程训练: /courses/public/fundamental/工程训练/
+      - 汽车生产实习: courses/catalog/ENER3408M.md
+      - 汽车核心课程综合设计: courses/catalog/ENER3409M.md
+      - 毕业设计（论文）: courses/catalog/ENER4403M.md
+    - 更多课程资料:
+      - 车辆动力学: courses/routes/Vehicles/Extra/车辆动力学.md
+  - 未来汽车:
+    - 课程列表: courses/routes/Vehicles/2026.md
+    - 通识必修:
+      - 人工智能基础（A）: /courses/catalog/CS1241G/
+      - C程序设计基础: /courses/catalog/CS1002G/
+      - Python程序设计: /courses/catalog/CS1006G/
+      - 微积分（甲）Ⅰ: /courses/public/fundamental/微积分与数学分析/
+      - 线性代数（甲）: /courses/catalog/MATH1232G/
+      - 微积分（甲）Ⅱ: /courses/public/fundamental/微积分与数学分析/
+      - 大学物理（甲）Ⅰ: /courses/public/fundamental/物理/
+      - 大学物理（甲）Ⅱ: /courses/public/fundamental/物理/
+      - 大学物理实验: /courses/catalog/PHY2005G/
+    - 专业基础:
+      - 工程图学: /courses/public/fundamental/工程图学/
+      - 理论力学（B）: /courses/catalog/AA2031F/
+      - 电工电子学: /courses/public/fundamental/电工电子学/
+      - 电工电子学实验: /courses/public/fundamental/电工电子学实验/
+      - 电子工程训练（乙）: /courses/catalog/ISEE2009F/
+      - 材料力学（B）: /courses/catalog/AA2028F/
+      - 概率论与数理统计: /courses/public/fundamental/概率论及数理统计/
+      - 工程训练: /courses/public/fundamental/工程训练/
+      - 材料力学实验: /courses/public/fundamental/材料力学实验/
+    - 专业必修:
+      - 汽车构造: /courses/routes/Vehicles/Route/汽车构造/
+      - 设计与制造Ⅰ: /courses/routes/Vehicles/Route/设计与制造/#design-manufacture-1
+      - 工程热力学（甲）: /courses/public/professional/工程热力学（甲）/
+      - 设计与制造Ⅱ: /courses/routes/Vehicles/Route/设计与制造/#design-manufacture-2
+      - 传热学（甲）: /courses/public/professional/传热学（甲）/
+      - 自动控制理论: /courses/public/professional/自动控制理论/
+      - 汽车动力系统原理: /courses/routes/Vehicles/Route/汽车动力系统原理/
+      - 汽车理论与自动驾驶: courses/catalog/ENER3401M1.md
+      - 汽车设计: /courses/routes/Vehicles/Route/汽车设计/
+      - 智能网联新能源汽车技术: /courses/catalog/ENER3407M1/
+    - 专业选修:
+      - 工程流体力学（甲）Ⅰ: /courses/public/fundamental/工程流体力学（甲）/#fluid-mechanics-1
+      - 科研训练基础: /courses/catalog/ENER2011M/
+      - 信号与系统: courses/catalog/CSE2121M.md
+      - 机器视觉: courses/catalog/CSE3120M.md
+      - 最优控制与强化学习: courses/catalog/CSE3122M1.md
+      - 数值计算方法: courses/routes/ProcessControl/Route/数值计算方法.md
+      - 车用动力电池技术: courses/catalog/ENER3416M.md
+      - 智能控制技术及应用: courses/catalog/EE3366M.md
+      - 车辆振动与噪声: /courses/routes/Vehicles/Extra/车辆振动与噪声/
+      - 动力机械测试技术: /courses/routes/Vehicles/Route/动力机械测试技术/
+      - 机器人导论: courses/catalog/CSE2026M.md
+      - 人机工程学与创新设计: courses/catalog/CS2067M.md
+      - DSP系统设计: courses/catalog/CSE3020M.md
+      - 人工智能大模型技术及应用: courses/catalog/CSE4025M.md
+      - 交通工程: courses/catalog/CCEA3702M.md
+      - 智能交通系统: courses/catalog/CCEA3735M.md
+      - 数字图像处理与机器视觉: courses/catalog/CSE3030M.md
+      - 新一代人工智能与预训练大模型导论: courses/catalog/CS0402G.md
+      - 算法设计与分析: courses/catalog/CS3186M.md
+      - 人因工程与机器行为: courses/catalog/CS3274M.md
+      - 大数据分析与应用: courses/catalog/CS4224M.md
+      - 碳减排与氢能: courses/catalog/CBE0403G.md
+      - 电动汽车和混合动力汽车系统: courses/catalog/EE4561M.md
+      - 能源系统人工智能方法: /courses/routes/SmartEnergy/能源系统大数据分析理论与实践/
+      - 基于循环经济的能源环境系统: /courses/routes/Thermal/Extra/机遇循环经济的能源环境系统/
+      - 燃烧学基础: courses/catalog/AA3041M.md
+      - 特种电机及驱动技术: courses/catalog/EE3367M.md
+      - 生物质能: /courses/routes/NovelEnergy/Route/生物质能/
+      - 能源驱动未来世界: courses/catalog/EE3491M.md
+      - 新能源系统检测与控制: /courses/routes/NovelEnergy/Route/新能源系统检测与控制/
+    - 实践课程:
+      - 汽车技术综合实践: /courses/catalog/ENER1405M/
+      - 智能车辆创新实践: courses/catalog/ENER2403M.md
+      - 汽车及动力系统专业实验: /courses/routes/Vehicles/Route/汽车及动力系统专业实验/
+      - 赛车设计与实践: courses/catalog/ENER2404M.md
+      - 未来汽车创新创业实践: courses/catalog/ENER3415M.md
+      - 毕业设计（论文）: /courses/catalog/ENER4403M/
+- 过控:
+  - 课程列表: courses/routes/ProcessControl/index.md
+  - 通识必修:
+    - 人工智能基础（A）: /courses/catalog/CS1241G/
+    - C程序设计基础: /courses/catalog/CS1002G/
+    - Python程序设计: /courses/catalog/CS1006G/
+    - 微积分（甲）Ⅰ: /courses/public/fundamental/微积分与数学分析/
+    - 线性代数（甲）: /courses/catalog/MATH1232G/
+    - 工程化学: /courses/catalog/CHEM1003G/
+    - 工程化学实验: /courses/catalog/CHEM1006G/
+    - 微积分（甲）Ⅱ: /courses/public/fundamental/微积分与数学分析/
+    - 大学物理（乙）Ⅰ: /courses/public/fundamental/物理/
+    - 大学物理（乙）Ⅱ: /courses/public/fundamental/物理/
+    - 大学物理实验: /courses/catalog/PHY2005G/
+  - 专业基础:
+    - 工程图学: /courses/public/fundamental/工程图学/
+    - 常微分方程: /courses/public/fundamental/常微分方程/
+    - 机械制图及CAD基础: /courses/public/fundamental/机械制图及CAD基础/
+    - 复变函数与积分变换: /courses/public/fundamental/复变函数与积分变换/
+    - 理论力学（B）: /courses/catalog/AA2031F/
+    - 概率论与数理统计: /courses/public/fundamental/概率论及数理统计/
+    - 材料力学（B）: /courses/catalog/AA2028F/
+    - 电工电子学: /courses/public/fundamental/电工电子学/
+    - 电工电子学实验: /courses/public/fundamental/电工电子学实验/
+    - 材料力学实验: /courses/public/fundamental/材料力学实验/
+    - 理论力学（甲）: /courses/public/fundamental/理论力学（甲）/
+    - 材料力学（乙）: /courses/public/fundamental/材料力学（乙）/
+  - 专业必修:
+    - 工程热力学: /courses/routes/ProcessControl/Route/工程热力学/
+    - 过程工程流体力学: /courses/routes/ProcessControl/Route/过程工程流体力学/
     - 化工原理（乙）: courses/routes/ProcessControl/Route/化工原理（乙）.md
     - 化工原理实验（乙）: courses/routes/ProcessControl/Route/化工原理实验（乙）.md
-    - 数值计算方法: courses/routes/ProcessControl/Route/数值计算方法.md
+    - 控制工程基础: courses/routes/ProcessControl/Route/控制工程基础.md
+    - 机械设计（乙）: /courses/routes/ProcessControl/Route/机械设计（乙）/
+    - 数值计算方法: /courses/routes/ProcessControl/Route/数值计算方法/
     - 过程设备设计: courses/routes/ProcessControl/Route/过程设备设计.md
-    - 过程装备控制技术: courses/routes/ProcessControl/Route/过程装备控制技术.md
-    - 过程机械: courses/routes/ProcessControl/Route/过程机械.md
-    # - 专业选修课程: 
-    #   - 弹性力学基础: courses/routes/ProcessControl/Extra/弹性力学基础.md
-    #   - 有限单元法纪其工程应用: courses/routes/ProcessControl/Extra/有限单元法纪其工程应用.md
-    #   - 虚拟现实技术开发及应用: courses/routes/ProcessControl/Extra/虚拟现实技术开发及应用.md
-    #   - 过程装备工程设计: courses/routes/ProcessControl/Extra/过程装备工程设计.md
-    #   - 过程工业传递现象基础: courses/routes/ProcessControl/Extra/过程工业传递现象基础.md
-    #   - 过程装备与控制工程技术进展: courses/routes/ProcessControl/Extra/过程装备与控制工程技术进展.md
-  - 跨专业课程分享:
-    - 导航页: courses/extra/index.md
-    - 人工智能: courses/extra/人工智能.md  
-  - 飞跃手册:
-    # - 导航页: Flybook/index.md
-    - 2024年飞跃手册: Flybook/2024.md
-    - 2019年飞跃手册: Flybook/2019.md
-    - 2018年飞跃手册: Flybook/2018.md
-
-
+    - 过程装备智能检测与控制技术: courses/routes/ProcessControl/Route/过程装备控制技术.md
+    - 流体增压机械: /courses/routes/ProcessControl/Route/过程机械/
+  - 专业选修:
+    - 工程测试与信息处理: courses/catalog/ENER3202M.md
+    - 过程装备安全与防腐: courses/catalog/ENER3219M.md
+    - 高分子复合材料与能源装备: /courses/catalog/ENER3226M/
+    - 弹性力学基础: courses/routes/ProcessControl/Extra/弹性力学基础.md
+    - 过程装备智能制造技术: /courses/catalog/ENER3220M/
+    - 虚拟现实技术开发及应用: courses/routes/ProcessControl/Extra/虚拟现实技术开发及应用.md
+    - 有限单元法及其工程应用: /courses/routes/ProcessControl/Extra/有限单元法纪其工程应用/
+    - 过程微纳米技术与装备: courses/catalog/ENER3225M.md
+    - 过程装备工程设计: courses/routes/ProcessControl/Extra/过程装备工程设计.md
+    - 纤维缠绕增强复合材料承压设备: courses/catalog/ENER3227M.md
+    - 过程装备故障诊断技术: courses/catalog/ENER4203M.md
+    - 过程装备与控制工程技术进展: courses/routes/ProcessControl/Extra/过程装备与控制工程技术进展.md
+    - 过程工业传递现象基础: courses/routes/ProcessControl/Extra/过程工业传递现象基础.md
+  - 实践课程:
+    - 工程训练: /courses/public/fundamental/工程训练/
+    - 认识实习: courses/catalog/ENER2203M.md
+    - 工程训练加强实习（乙）: courses/catalog/ME2558M.md
+    - 生产实习: courses/catalog/ENER3211M.md
+    - 过程装备数字化实训: courses/catalog/ENER3224M.md
+    - 过程装备课程设计: courses/catalog/ENER4204M.md
+    - 信息检索与科技写作: /courses/catalog/ENER4207M/
+    - 毕业设计（论文）: courses/catalog/ENER4209M.md
+  - 更多课程资料:
+    - 工程材料: courses/routes/ProcessControl/Route/工程材料.md
+- 跨专业课程分享:
+  - 导航页: courses/extra/index.md
+  - 人工智能: /courses/routes/SmartEnergy/人工智能/
+- 飞跃手册:
+  - 2024年飞跃手册: Flybook/2024.md
+  - 2019年飞跃手册: Flybook/2019.md
+  - 2018年飞跃手册: Flybook/2018.md

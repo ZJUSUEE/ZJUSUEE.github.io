@@ -1,0 +1,74 @@
+{
+  "courses/public/professional/工程热力学（甲）/热力学公式整理.docx": {
+    "source_sha256": "4b662803f4f6a94d770b7cfca065d898865a777cc3604cd92b3deb9a97ca62f7",
+    "preview": "material-previews/4b662803f4f6a94d770b7cfca065d898865a777cc3604cd92b3deb9a97ca62f7.pdf",
+    "preview_sha256": "13c0d3c29014ba94fc6eebdbe414db43ed7f7151a4982147af54df35dbda01ab",
+    "pages": 9
+  },
+  "courses/public/professional/自动控制理论/自控公式整理.docx": {
+    "source_sha256": "52711f5b5d633faaf84b85bcb439860f7e08cb73f08b0e6addde763747573ec3",
+    "preview": "material-previews/52711f5b5d633faaf84b85bcb439860f7e08cb73f08b0e6addde763747573ec3.pdf",
+    "preview_sha256": "a4a1397be1f9abe8468bc440d2414ad5636d0a18fb56c528cf94e01f67ba8882",
+    "pages": 9
+  },
+  "courses/routes/Cryogenic/Route/低温原理/期中回忆卷.docx": {
+    "source_sha256": "114abe0b36dee07bdb2999b9623e68740955f276af2148d321440015be42b4a3",
+    "preview": "material-previews/114abe0b36dee07bdb2999b9623e68740955f276af2148d321440015be42b4a3.pdf",
+    "preview_sha256": "982d0cb68c3ff51c0a64db74715d36fb64c502b3d2ff94177f6059dc5417664a",
+    "pages": 1
+  },
+  "courses/routes/Cryogenic/Route/低温原理/期末回忆卷.docx": {
+    "source_sha256": "b6cbf1af5c98750798761191f28493ee00b77b0a616e0e06b057c05c6dd94388",
+    "preview": "material-previews/b6cbf1af5c98750798761191f28493ee00b77b0a616e0e06b057c05c6dd94388.pdf",
+    "preview_sha256": "69db6a1275d8e1daca0cb2d37f02c5349ba31524222a8e99449871b37713ff4b",
+    "pages": 5
+  },
+  "courses/routes/Cryogenic/Route/制冷与低温设备/回忆卷.docx": {
+    "source_sha256": "c92ac55174675b946bab8aef0d92f884ba54eca9d209ae46e3c8faaf2b74eef4",
+    "preview": "material-previews/c92ac55174675b946bab8aef0d92f884ba54eca9d209ae46e3c8faaf2b74eef4.pdf",
+    "preview_sha256": "85a488b1b158d56c2cca85d7ee2099f44e5bbc7a9bd733467a85e1cf181330ca",
+    "pages": 6
+  },
+  "courses/routes/Cryogenic/Route/暖通与空调/回忆卷.docx": {
+    "source_sha256": "79639066dc78d6bc95e5886afa8380d272991d9ffe93f1c47c92762c24c6a2dd",
+    "preview": "material-previews/79639066dc78d6bc95e5886afa8380d272991d9ffe93f1c47c92762c24c6a2dd.pdf",
+    "preview_sha256": "50b6b7c1a3ea5dc1cc112b4175d440093873717b90148a31144fcd7c303505c9",
+    "pages": 6
+  },
+  "courses/routes/SmartEnergy/制冷低温与空调原理及实践/回忆卷.docx": {
+    "source_sha256": "a0898c32be5c9312ad05012946b2e7b29af9c7b5179f1f19f163a8117203144b",
+    "preview": "material-previews/a0898c32be5c9312ad05012946b2e7b29af9c7b5179f1f19f163a8117203144b.pdf",
+    "preview_sha256": "6cc5a08684c45964ba264a4b1961d31d4848bbd592d5398e5270d2a260dbf448",
+    "pages": 2
+  },
+  "courses/routes/SmartEnergy/动态建模理论与应用/复习题.doc": {
+    "source_sha256": "473312cb56fcbd64ed7b5de79167e5af85d5aa61d87b63e37bd0973faec2a99d",
+    "preview": "material-previews/473312cb56fcbd64ed7b5de79167e5af85d5aa61d87b63e37bd0973faec2a99d.pdf",
+    "preview_sha256": "af4416a461a1b2e950b0a5d34f2a2caa4ab467c32748e305ebe5c2036c419475",
+    "pages": 2
+  },
+  "courses/routes/Thermal/Extra/微机原理及应用/微机原理整理.docx": {
+    "source_sha256": "3eb81af1e31ade1555ab7496e99c6050e28b7a2c77e18b8ddad449fed746bada",
+    "preview": "material-previews/3eb81af1e31ade1555ab7496e99c6050e28b7a2c77e18b8ddad449fed746bada.pdf",
+    "preview_sha256": "e5e0386fa981f54314f372c8adb2f3f045b54514f87fe3181bc0db4b6a2b4952",
+    "pages": 2
+  },
+  "courses/routes/Thermal/Route/热力系统工程/热力系统工程整理.docx": {
+    "source_sha256": "f491af3244b7883f347183d79959d18d28328b596d989058390b49d6cfd92e43",
+    "preview": "material-previews/f491af3244b7883f347183d79959d18d28328b596d989058390b49d6cfd92e43.pdf",
+    "preview_sha256": "ad70edd3659a8825b1abbefa60d1c360b03318404cadcffd95732517c4b300a7",
+    "pages": 9
+  },
+  "courses/routes/Thermal/Route/透平机械原理/透平机械原理整理.docx": {
+    "source_sha256": "65e5da392daaf919effacc08a91647647d057e335e92e37e3aff6d1f085dde98",
+    "preview": "material-previews/65e5da392daaf919effacc08a91647647d057e335e92e37e3aff6d1f085dde98.pdf",
+    "preview_sha256": "f33bfc4309336442e621e57f20e486cb55070fe3b8bfd6021402beae2f2010b5",
+    "pages": 24
+  },
+  "courses/routes/Vehicles/Route/工程流体力学（乙）/回忆卷.docx": {
+    "source_sha256": "c2a6d9fdb5db2414fe1d9050ac1db3976ce67173406f85fe6a65aa26fb5ce2f9",
+    "preview": "material-previews/c2a6d9fdb5db2414fe1d9050ac1db3976ce67173406f85fe6a65aa26fb5ce2f9.pdf",
+    "preview_sha256": "3ebc4da2017e2b9ed3167ac40186005124c3509c08f5b813383f61e79d04bdec",
+    "pages": 3
+  }
+}
