@@ -1,4 +1,4 @@
-"""Publish document originals and PDF previews through the materials release."""
+"""Archive originals in Releases and link verified Pages copies for reading."""
 import argparse
 import hashlib
 import html
@@ -50,17 +50,18 @@ class Links(HTMLParser):
     def asset(self, url):
         parsed = urlsplit(urljoin(ORIGIN + self.page, html.unescape(url)))
         if parsed._replace(fragment='').geturl() == BOILER_URL:
-            return boiler_asset(next(iter(self.assets.values()))['revision'])
+            return self.assets.get(BOILER_PATH) or boiler_asset(next(iter(self.assets.values()))['revision'])
         if parsed.netloc != 'zjusuee.github.io':
             return None
         return self.assets.get(unquote(parsed.path).lstrip('/'))
 
     def download(self, asset):
         name = html.escape(Path(asset['path']).name)
+        filename = html.escape(Path(asset['path']).name, quote=True)
         preview = html.escape(viewer_url(asset), quote=True)
         download = html.escape(asset['url'], quote=True)
         self.output.append(f'<p>{name} · <a href="{preview}" target="_blank" rel="noopener">预览</a> · '
-                           f'<a href="{download}">下载原文件</a></p>')
+                           f'<a href="{download}" download="{filename}">下载原文件</a></p>')
         self.output.append(
             f'<iframe class="course-pdf-preview" src="{html.escape(viewer_url(asset), quote=True)}" '
             f'title="{html.escape(Path(asset["path"]).name, quote=True)} 在线预览" loading="lazy" '
@@ -111,7 +112,8 @@ class Links(HTMLParser):
             self.output.append(f'</{tag}>')
         if tag == 'a' and self.anchor_asset:
             url = html.escape(self.anchor_asset['url'], quote=True)
-            self.output.append(f' <a href="{url}">下载原文件</a>')
+            filename = html.escape(Path(self.anchor_asset['path']).name, quote=True)
+            self.output.append(f' <a href="{url}" download="{filename}">下载原文件</a>')
             self.anchor_asset = None
 
     def handle_data(self, data):
@@ -165,9 +167,38 @@ def plan(site):
             with (site / preview_path).open('rb') as source:
                 if hashlib.file_digest(source, 'sha256').hexdigest() != record['preview_sha256']:
                     raise ValueError(f'PDF preview hash mismatch: {relative}')
-        assets[relative] = dict(path=relative, size=path.stat().st_size, sha256=digest,
+        preview_digest = digest if preview_path == relative else previews[relative]['preview_sha256']
+        asset = dict(path=relative, size=path.stat().st_size, sha256=digest,
                                 name=name, url=BASE + name, revision=revision, preview_path=preview_path,
-                                preview_url=f'https://raw.githubusercontent.com/{REPO}/{revision}/docs/' + quote(preview_path))
+                                source_preview_path=preview_path, preview_sha256=preview_digest, mode='pdf',
+                                full_preview_url=f'https://raw.githubusercontent.com/{REPO}/{revision}/docs/' + quote(preview_path))
+        asset['preview_url'] = asset['full_preview_url']
+        assets[relative] = asset
+    pages_path = SOURCE / 'materials-pages.json'
+    if pages_path.exists():
+        routes = json.loads(pages_path.read_text())
+        if BOILER_PATH in routes:
+            asset = boiler_asset(revision)
+            asset.update(name='boiler-review-notes-klx.pdf',
+                         sha256='507eb96f7afb419db4541a771c2f53ad936b28a9e276e427f7c8fefe1c8e18d2',
+                         external=True, revision=revision, source_preview_path=BOILER_PATH)
+            assets[BOILER_PATH] = asset
+        for asset in assets.values():
+            original = routes.get(asset['path'], {})
+            preview = routes.get(asset['source_preview_path'], {})
+            if (original.get('sha256') != asset['sha256']
+                    or preview.get('sha256') != asset.get('preview_sha256', asset['sha256'])):
+                raise ValueError(f'Publish updated Pages copies before deploying: {asset["path"]}')
+            for source_path, record in [(asset['path'], original), (asset['source_preview_path'], preview)]:
+                if not re.fullmatch(r'/materials-(?:basic|major)/(?:material-[a-f0-9]{64}|boiler-review-notes-klx)\.(?:pdf|docx?)', record.get('url', '')):
+                    raise ValueError('Invalid Pages material URL')
+                expected = 'boiler-review-notes-klx.pdf' if source_path == BOILER_PATH else f'material-{record["sha256"]}{Path(source_path).suffix.lower()}'
+                if record['url'].rsplit('/', 1)[-1] != expected:
+                    raise ValueError('Pages material URL does not match its verified file')
+            if not preview['url'].endswith('.pdf'):
+                raise ValueError('Pages preview must be a PDF')
+            asset.update(mode='pdf', url=original['url'], preview_url=preview['url'],
+                         full_preview_url=preview['url'], pages_mirror=True)
     if not assets:
         raise ValueError('No documents found; build a fresh site before preparing materials')
     return assets
@@ -186,6 +217,8 @@ def upload(site, assets):
     with tempfile.TemporaryDirectory() as folder:
         for asset in {a['name']: a for a in assets.values()}.values():
             if asset['name'] not in remote:
+                if asset.get('external'):
+                    raise ValueError('Restore the published boiler asset before deploying')
                 if release.get('immutable'):
                     raise ValueError('The materials release is immutable; use a new release before publishing')
                 target = Path(folder) / asset['name']
@@ -207,10 +240,10 @@ def prepare(site, assets, publish=False, local_files=None):
         if local_files.is_relative_to(site.resolve()) or site.resolve().is_relative_to(local_files):
             raise ValueError('Use separate directories for original files and the local review build')
         for asset in assets.values():
-            for path in [asset['path'], asset['preview_path']]:
+            for path in [asset['path'], asset['source_preview_path']]:
                 if not (local_files / path).is_file():
                     raise ValueError(f'Local preview file missing: {path}')
-            asset['preview_url'] = '/__local-materials/' + quote(asset['preview_path'])
+            asset['preview_url'] = '/__local-materials/' + quote(asset['source_preview_path'])
             asset['url'] = '/__local-materials/' + quote(asset['path'])
     pages = {}
     for path in site.rglob('*.html'):
@@ -221,16 +254,16 @@ def prepare(site, assets, publish=False, local_files=None):
             raise ValueError(f'Unclosed PDF object: {path}')
         pages[path] = ''.join(parser.output)
     redirects = {}
-    redirect_assets = {**assets, BOILER_PATH: boiler_asset(next(iter(assets.values()))['revision'])}
+    redirect_assets = {BOILER_PATH: boiler_asset(next(iter(assets.values()))['revision']), **assets}
     for relative, asset in redirect_assets.items():
         url, name = html.escape(asset['url'], quote=True), html.escape(Path(relative).name)
         preview = html.escape(viewer_url(asset), quote=True)
         redirects[site / relative / 'index.html'] = (
             '<!doctype html><html lang="zh-CN"><meta charset="utf-8">'
             f'<title>{name}</title><meta http-equiv="refresh" content="0; url={preview}">'
-            f'<p><a href="{preview}">在线预览 {name}</a> · <a href="{url}">下载原文件</a></p></html>')
+            f'<p><a href="{preview}">在线预览 {name}</a> · <a href="{url}" download="{html.escape(Path(relative).name, quote=True)}">下载原文件</a></p></html>')
     before = sum(p.stat().st_size for p in site.rglob('*') if p.is_file())
-    after = before - sum(a['size'] for a in assets.values())
+    after = before - sum(a['size'] for a in assets.values() if not a.get('external'))
     after += sum(len(text.encode()) - path.stat().st_size for path, text in pages.items())
     after += sum(len(text.encode()) for text in redirects.values())
     if after > BUDGET:
@@ -240,7 +273,9 @@ def prepare(site, assets, publish=False, local_files=None):
     # Only generated files change, after validation and (for deployment) verified uploads.
     for path, text in pages.items():
         path.write_text(text)
-    for relative in assets:
+    for relative, asset in assets.items():
+        if asset.get('external'):
+            continue
         path = site / relative
         path.unlink()
         path.mkdir()

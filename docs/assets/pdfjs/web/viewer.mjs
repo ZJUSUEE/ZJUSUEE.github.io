@@ -5540,8 +5540,8 @@ const defaultOptions = new Map([["allowedGlobalEvents", {
   value: "../web/cmaps/",
   kind: OptionKind.API
 }], ["disableAutoFetch", {
-  value: false,
-  kind: OptionKind.API + OptionKind.PREFERENCE
+  value: true,
+  kind: OptionKind.API
 }], ["disableFontFace", {
   value: false,
   kind: OptionKind.API + OptionKind.PREFERENCE
@@ -5549,8 +5549,8 @@ const defaultOptions = new Map([["allowedGlobalEvents", {
   value: false,
   kind: OptionKind.API + OptionKind.PREFERENCE
 }], ["disableStream", {
-  value: false,
-  kind: OptionKind.API + OptionKind.PREFERENCE
+  value: true,
+  kind: OptionKind.API
 }], ["docBaseUrl", {
   value: "",
   kind: OptionKind.API

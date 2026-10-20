@@ -1,0 +1,462 @@
+{
+  "Flybook/2018/2018.pdf": {
+    "sha256": "ab9cc9b6409d7145bf3d2fa9fba9a81cd7e07eb14254256d74fa9496d2943e3f",
+    "url": "/materials-basic/material-ab9cc9b6409d7145bf3d2fa9fba9a81cd7e07eb14254256d74fa9496d2943e3f.pdf"
+  },
+  "Flybook/2019/2019.pdf": {
+    "sha256": "94e17417e745baafd0c306d4a9b1373d3f79525a4a7dfce91e5909b93b82cb2a",
+    "url": "/materials-basic/material-94e17417e745baafd0c306d4a9b1373d3f79525a4a7dfce91e5909b93b82cb2a.pdf"
+  },
+  "Flybook/2024/2024.pdf": {
+    "sha256": "38fe3040320963fa978f382a0348747f956b0498374a830c99828cd0a3dbf2e4",
+    "url": "/materials-basic/material-38fe3040320963fa978f382a0348747f956b0498374a830c99828cd0a3dbf2e4.pdf"
+  },
+  "courses/public/fundamental/工程力学/Engineering Mechanics.pdf": {
+    "sha256": "5d8a53aee6fddf30c48939da828302f11c12ec9bea16e84352f998f9347f3d67",
+    "url": "/materials-basic/material-5d8a53aee6fddf30c48939da828302f11c12ec9bea16e84352f998f9347f3d67.pdf"
+  },
+  "courses/public/fundamental/工程力学/工程力学 思维导图.pdf": {
+    "sha256": "3ead53bb73cbdfccf77c2f79e5787e6ff688f256d4d88f5b64e033b5d9364d6a",
+    "url": "/materials-basic/material-3ead53bb73cbdfccf77c2f79e5787e6ff688f256d4d88f5b64e033b5d9364d6a.pdf"
+  },
+  "courses/public/fundamental/工程流体力学（甲）/工程流体力学 笔记.pdf": {
+    "sha256": "036218c0e667fddc08495b7385d5848fd7b4165269d00cbdbe572ff2610090c8",
+    "url": "/materials-basic/material-036218c0e667fddc08495b7385d5848fd7b4165269d00cbdbe572ff2610090c8.pdf"
+  },
+  "courses/public/fundamental/工程流体力学（甲）/工程流体力学（1、2）精简版笔记.pdf": {
+    "sha256": "5227d6709af6e5000e607724ebcc54a42143533d35a276396c080de7d88e4539",
+    "url": "/materials-basic/material-5227d6709af6e5000e607724ebcc54a42143533d35a276396c080de7d88e4539.pdf"
+  },
+  "courses/public/fundamental/常微分方程/常微分总结ckx.pdf": {
+    "sha256": "41c125b2607a74ec232f8dfb49f5b27226dac33fac8e53e20058daa76e60b8ab",
+    "url": "/materials-basic/material-41c125b2607a74ec232f8dfb49f5b27226dac33fac8e53e20058daa76e60b8ab.pdf"
+  },
+  "courses/public/fundamental/常微分方程/常微分方程ljy.pdf": {
+    "sha256": "5b44ca4f6f841b5f06323e1f9037a57084aac446b9ddea00989ad491d9d659c7",
+    "url": "/materials-basic/material-5b44ca4f6f841b5f06323e1f9037a57084aac446b9ddea00989ad491d9d659c7.pdf"
+  },
+  "courses/public/fundamental/微积分与数学分析/微积分总结2.pdf": {
+    "sha256": "549d0e2bcb97545b36a149dc5dee45e43b6f914165b5b2d67ac577289bba88ff",
+    "url": "/materials-basic/material-549d0e2bcb97545b36a149dc5dee45e43b6f914165b5b2d67ac577289bba88ff.pdf"
+  },
+  "courses/public/fundamental/数理方法/数理方法 I•II.pdf": {
+    "sha256": "2ab7ef6092632b2765a688ac1ecc8930187e493550e2c1eb588c3d131363a243",
+    "url": "/materials-basic/material-2ab7ef6092632b2765a688ac1ecc8930187e493550e2c1eb588c3d131363a243.pdf"
+  },
+  "courses/public/fundamental/数理方法/数理方法I.pdf": {
+    "sha256": "ce70c2338687e5731dfea4cb038f1ab7acd307cf6c5485915bb7eca2c24ac782",
+    "url": "/materials-basic/material-ce70c2338687e5731dfea4cb038f1ab7acd307cf6c5485915bb7eca2c24ac782.pdf"
+  },
+  "courses/public/fundamental/数理方法/数理方法II简括.pdf": {
+    "sha256": "baa4dce9fb6a072dc5cfdb32cc7319bcde495d8ee473315e5bf417595d1c251d",
+    "url": "/materials-basic/material-baa4dce9fb6a072dc5cfdb32cc7319bcde495d8ee473315e5bf417595d1c251d.pdf"
+  },
+  "courses/public/fundamental/机械设计基础（甲）/机械设计基础.pdf": {
+    "sha256": "25cfb7413d83969a876e6169892adbadeb92090e36ccd237f6d1c05fd3c61a76",
+    "url": "/materials-basic/material-25cfb7413d83969a876e6169892adbadeb92090e36ccd237f6d1c05fd3c61a76.pdf"
+  },
+  "courses/public/fundamental/材料力学（乙）/材料力学补天+自测.pdf": {
+    "sha256": "0020c9aa687217b117253a9c84f6ff6bc010e6ed3acc9f78207ed9916b546118",
+    "url": "/materials-basic/material-0020c9aa687217b117253a9c84f6ff6bc010e6ed3acc9f78207ed9916b546118.pdf"
+  },
+  "courses/public/fundamental/概率论及数理统计/概率论与数理统计 笔记.pdf": {
+    "sha256": "15a613f09dd7a4ec755612e89e61ad87c817eb8842dcc6bb602b506133e3dab3",
+    "url": "/materials-basic/material-15a613f09dd7a4ec755612e89e61ad87c817eb8842dcc6bb602b506133e3dab3.pdf"
+  },
+  "courses/public/fundamental/概率论及数理统计/概率论与数理统计ckx.pdf": {
+    "sha256": "698f2f4a830089fe1c21fa97544a909056661e7e7af627a5e1452e76237c4437",
+    "url": "/materials-basic/material-698f2f4a830089fe1c21fa97544a909056661e7e7af627a5e1452e76237c4437.pdf"
+  },
+  "courses/public/fundamental/概率论及数理统计/概统总结.pdf": {
+    "sha256": "07eff56e8fb57a75c3e30ed5464ebe3b51618733b9d9700dd9bb88d35aea7fb7",
+    "url": "/materials-basic/material-07eff56e8fb57a75c3e30ed5464ebe3b51618733b9d9700dd9bb88d35aea7fb7.pdf"
+  },
+  "courses/public/fundamental/物理/普通物理学Ⅱ.pdf": {
+    "sha256": "125ee2bf6a4de056bc0505c31e801f008fe5a456ab5a342a94fc2aabf81efe39",
+    "url": "/materials-basic/material-125ee2bf6a4de056bc0505c31e801f008fe5a456ab5a342a94fc2aabf81efe39.pdf"
+  },
+  "courses/public/fundamental/电工电子学/电工电子学.pdf": {
+    "sha256": "c1891e703555cd157295639088dfd91e669319aa5c529f8f97eab8782df6828a",
+    "url": "/materials-basic/material-c1891e703555cd157295639088dfd91e669319aa5c529f8f97eab8782df6828a.pdf"
+  },
+  "courses/public/fundamental/电工电子学及实验/电工电子学及实验复习提纲 - 2024.pdf": {
+    "sha256": "37998bd25eafc51f40336d94565898f92fc413262bebe877cd9159d914d9b2b9",
+    "url": "/materials-basic/material-37998bd25eafc51f40336d94565898f92fc413262bebe877cd9159d914d9b2b9.pdf"
+  },
+  "courses/public/fundamental/随机过程/随机过程.pdf": {
+    "sha256": "a5e738176ce7ff73cbe3918e29661f0f1949d12efff67aaa054fa72e59a19637",
+    "url": "/materials-basic/material-a5e738176ce7ff73cbe3918e29661f0f1949d12efff67aaa054fa72e59a19637.pdf"
+  },
+  "courses/public/professional/传热学（甲）/Heat_Transfer.pdf": {
+    "sha256": "5413fc0da17172d206e7eabd22222c1f8672093396d6e84c33a6ade33ba233c8",
+    "url": "/materials-basic/material-5413fc0da17172d206e7eabd22222c1f8672093396d6e84c33a6ade33ba233c8.pdf"
+  },
+  "courses/public/professional/传热学（甲）/传热学 思维导图.pdf": {
+    "sha256": "0e4c37f63a8d2bdb6c7cca285f9a0aba52c0c858704a67667707e0779ecf333a",
+    "url": "/materials-basic/material-0e4c37f63a8d2bdb6c7cca285f9a0aba52c0c858704a67667707e0779ecf333a.pdf"
+  },
+  "courses/public/professional/传热学（甲）/传热学笔记by陈晨.pdf": {
+    "sha256": "e515a1b106a443aafc0581641761cca07084320516a2c32e67bcb544b6ddc350",
+    "url": "/materials-basic/material-e515a1b106a443aafc0581641761cca07084320516a2c32e67bcb544b6ddc350.pdf"
+  },
+  "courses/public/professional/传热学（甲）/传热学（考研笔记）by 李楚乔.pdf": {
+    "sha256": "5bef90875882caa2135006f53ffa429e234389197d6bbbc6f85473fdf7cee3e5",
+    "url": "/materials-basic/material-5bef90875882caa2135006f53ffa429e234389197d6bbbc6f85473fdf7cee3e5.pdf"
+  },
+  "courses/public/professional/工程热力学（甲）/Thermal engineering.pdf": {
+    "sha256": "b0d6d3c98494ead843faa6a269c92740ae39ac32f06e4e7b0800f4a1fa9120fb",
+    "url": "/materials-basic/material-b0d6d3c98494ead843faa6a269c92740ae39ac32f06e4e7b0800f4a1fa9120fb.pdf"
+  },
+  "courses/public/professional/工程热力学（甲）/工程热力学 思维导图.pdf": {
+    "sha256": "9624ecee719e81195d38743f443c10a5f8dff9da5ca2b976bb0981cacb202fbb",
+    "url": "/materials-basic/material-9624ecee719e81195d38743f443c10a5f8dff9da5ca2b976bb0981cacb202fbb.pdf"
+  },
+  "courses/public/professional/工程热力学（甲）/热力学公式整理.docx": {
+    "sha256": "4b662803f4f6a94d770b7cfca065d898865a777cc3604cd92b3deb9a97ca62f7",
+    "url": "/materials-basic/material-4b662803f4f6a94d770b7cfca065d898865a777cc3604cd92b3deb9a97ca62f7.docx"
+  },
+  "courses/public/professional/工程热力学（甲）/热力学公式整理.pdf": {
+    "sha256": "295a780855c20169f03f1899540d9343eb70b85533af4313bcde6471da645933",
+    "url": "/materials-basic/material-295a780855c20169f03f1899540d9343eb70b85533af4313bcde6471da645933.pdf"
+  },
+  "courses/public/professional/热工实验/热工实验2 by 燕天润.pdf": {
+    "sha256": "c21e83ce3f82eff2b900d13508164638b7bfa5591ecac365d9fd3974235fcf33",
+    "url": "/materials-basic/material-c21e83ce3f82eff2b900d13508164638b7bfa5591ecac365d9fd3974235fcf33.pdf"
+  },
+  "courses/public/professional/能源与环境系统工程概论/能环概论复习提纲-20级燕天润.pdf": {
+    "sha256": "6714cfaf301db3d15f2f8ae480ac70c5eef1bf6a795a107de0c40d36762982bc",
+    "url": "/materials-basic/material-6714cfaf301db3d15f2f8ae480ac70c5eef1bf6a795a107de0c40d36762982bc.pdf"
+  },
+  "courses/public/professional/自动控制理论/Control.pdf": {
+    "sha256": "587700241c9c7c9cb56dc2b615ae710b12356b4bed30d7b284a325231c1330bf",
+    "url": "/materials-basic/material-587700241c9c7c9cb56dc2b615ae710b12356b4bed30d7b284a325231c1330bf.pdf"
+  },
+  "courses/public/professional/自动控制理论/自控公式整理.docx": {
+    "sha256": "52711f5b5d633faaf84b85bcb439860f7e08cb73f08b0e6addde763747573ec3",
+    "url": "/materials-basic/material-52711f5b5d633faaf84b85bcb439860f7e08cb73f08b0e6addde763747573ec3.docx"
+  },
+  "courses/public/professional/自动控制理论/自控公式整理.pdf": {
+    "sha256": "9377cd0847cd6e4448cc1c6b87652c05e4c58065f5efdc51d81a790ccf3acb7b",
+    "url": "/materials-basic/material-9377cd0847cd6e4448cc1c6b87652c05e4c58065f5efdc51d81a790ccf3acb7b.pdf"
+  },
+  "courses/routes/Cryogenic/Route/人工环境概论/人工环境概论 复习提纲整理版.pdf": {
+    "sha256": "b37b46b28f87c55da2e6189023842ac3f8a09852645ca68d7fff124858bad150",
+    "url": "/materials-major/material-b37b46b28f87c55da2e6189023842ac3f8a09852645ca68d7fff124858bad150.pdf"
+  },
+  "courses/routes/Cryogenic/Route/低温原理/Cryogenics.pdf": {
+    "sha256": "8beb50a24e10582507d8e2fb60749f704d488cb980edd894ff4710269ef0ea0d",
+    "url": "/materials-major/material-8beb50a24e10582507d8e2fb60749f704d488cb980edd894ff4710269ef0ea0d.pdf"
+  },
+  "courses/routes/Cryogenic/Route/低温原理/期中回忆卷.docx": {
+    "sha256": "114abe0b36dee07bdb2999b9623e68740955f276af2148d321440015be42b4a3",
+    "url": "/materials-major/material-114abe0b36dee07bdb2999b9623e68740955f276af2148d321440015be42b4a3.docx"
+  },
+  "courses/routes/Cryogenic/Route/低温原理/期末回忆卷.docx": {
+    "sha256": "b6cbf1af5c98750798761191f28493ee00b77b0a616e0e06b057c05c6dd94388",
+    "url": "/materials-major/material-b6cbf1af5c98750798761191f28493ee00b77b0a616e0e06b057c05c6dd94388.docx"
+  },
+  "courses/routes/Cryogenic/Route/制冷与低温测试技术/低温测试技术复习资料 -lj.pdf": {
+    "sha256": "7b66f3e1bb2b7cab392ea3a1dcec21e41535969961c8577a5b8a61fe55f29c06",
+    "url": "/materials-major/material-7b66f3e1bb2b7cab392ea3a1dcec21e41535969961c8577a5b8a61fe55f29c06.pdf"
+  },
+  "courses/routes/Cryogenic/Route/制冷与低温测试技术/制冷与低温测试技术 笔记.pdf": {
+    "sha256": "5a3501c8072f5a67d44b4e5e792577f0298a76cd99a3ad1d4fb202a196554d51",
+    "url": "/materials-major/material-5a3501c8072f5a67d44b4e5e792577f0298a76cd99a3ad1d4fb202a196554d51.pdf"
+  },
+  "courses/routes/Cryogenic/Route/制冷与低温设备/回忆卷.docx": {
+    "sha256": "c92ac55174675b946bab8aef0d92f884ba54eca9d209ae46e3c8faaf2b74eef4",
+    "url": "/materials-major/material-c92ac55174675b946bab8aef0d92f884ba54eca9d209ae46e3c8faaf2b74eef4.docx"
+  },
+  "courses/routes/Cryogenic/Route/制冷与低温设备/复习-潘文豪.pdf": {
+    "sha256": "64ddd530d7c86f195026f2f29c2c3fe78ac901cddb78ffba519645f8474e2c7d",
+    "url": "/materials-major/material-64ddd530d7c86f195026f2f29c2c3fe78ac901cddb78ffba519645f8474e2c7d.pdf"
+  },
+  "courses/routes/Cryogenic/Route/制冷与低温设备/复习Liujian.pdf": {
+    "sha256": "dd4a627014656c911e3f4daa3e567008a581caed3c6f7340645a48d6eb27ed97",
+    "url": "/materials-major/material-dd4a627014656c911e3f4daa3e567008a581caed3c6f7340645a48d6eb27ed97.pdf"
+  },
+  "courses/routes/Cryogenic/Route/制冷原理/Refrigeration.pdf": {
+    "sha256": "d350d81359a3e738bb3e1bbe63d5b42d13945378cff54e3d4669c27b83fd231a",
+    "url": "/materials-major/material-d350d81359a3e738bb3e1bbe63d5b42d13945378cff54e3d4669c27b83fd231a.pdf"
+  },
+  "courses/routes/Cryogenic/Route/制冷原理/制冷原理 思维导图.pdf": {
+    "sha256": "a1c160f41d5dbfd4496f54b46307fadc3d6a63b1ee0448344c38a14ab77d63a6",
+    "url": "/materials-major/material-a1c160f41d5dbfd4496f54b46307fadc3d6a63b1ee0448344c38a14ab77d63a6.pdf"
+  },
+  "courses/routes/Cryogenic/Route/暖通与空调/回忆卷.docx": {
+    "sha256": "79639066dc78d6bc95e5886afa8380d272991d9ffe93f1c47c92762c24c6a2dd",
+    "url": "/materials-major/material-79639066dc78d6bc95e5886afa8380d272991d9ffe93f1c47c92762c24c6a2dd.docx"
+  },
+  "courses/routes/Cryogenic/Route/流体输送及控制/Fluid Transport and Control.pdf": {
+    "sha256": "2e3ca54d78232d988a9aad530ab0713ade86d888e9b5091503ccdea4f63b6673",
+    "url": "/materials-major/material-2e3ca54d78232d988a9aad530ab0713ade86d888e9b5091503ccdea4f63b6673.pdf"
+  },
+  "courses/routes/Cryogenic/Route/流体输送及控制/流体输送与控制 思维导图.pdf": {
+    "sha256": "0dadf5222316f82798aefcba092389e39c9022c126d708a8e58c9843565a3bcc",
+    "url": "/materials-major/material-0dadf5222316f82798aefcba092389e39c9022c126d708a8e58c9843565a3bcc.pdf"
+  },
+  "courses/routes/NovelEnergy/Route/新能源系统检测与控制/新能源系统与检测复习提纲2025.pdf": {
+    "sha256": "af4f774777856bd78802f0c3beb63ad3a15b79afd861b98ec2d491993b71d04a",
+    "url": "/materials-major/material-af4f774777856bd78802f0c3beb63ad3a15b79afd861b98ec2d491993b71d04a.pdf"
+  },
+  "courses/routes/NovelEnergy/Route/新能源系统检测与控制/新能源系统控制与检测by燕天润.pdf": {
+    "sha256": "a3fc4f8508e12a059312db447b3fc78244182313a0e09a24cf5d999391252171",
+    "url": "/materials-major/material-a3fc4f8508e12a059312db447b3fc78244182313a0e09a24cf5d999391252171.pdf"
+  },
+  "courses/routes/NovelEnergy/Route/新能源系统检测与控制/笔记bylzs.pdf": {
+    "sha256": "f4a4bd6d985d1518c3203acf565b41cf7953c857ae539ea8e4da1359dccf2a7d",
+    "url": "/materials-major/material-f4a4bd6d985d1518c3203acf565b41cf7953c857ae539ea8e4da1359dccf2a7d.pdf"
+  },
+  "courses/routes/NovelEnergy/Route/氢能/笔记byxjh.pdf": {
+    "sha256": "b6cc5e542950d76ba4c7d7f2af2a0668903627c56b7d05d716547d2df8349d16",
+    "url": "/materials-major/material-b6cc5e542950d76ba4c7d7f2af2a0668903627c56b7d05d716547d2df8349d16.pdf"
+  },
+  "courses/routes/NovelEnergy/Route/生物质能/生物质能 by yyz.pdf": {
+    "sha256": "f9ad1986c7e6edfcf1272ca2f5d9ed9eb5e5d1682a1349fe8b40093028459a60",
+    "url": "/materials-major/material-f9ad1986c7e6edfcf1272ca2f5d9ed9eb5e5d1682a1349fe8b40093028459a60.pdf"
+  },
+  "courses/routes/NovelEnergy/Route/生物质能/生物质能 by 燕天润.pdf": {
+    "sha256": "25354e6c64b4d4406a353cfabe494a99f94b05b7ecfb4f86e86c7afccbbde617",
+    "url": "/materials-major/material-25354e6c64b4d4406a353cfabe494a99f94b05b7ecfb4f86e86c7afccbbde617.pdf"
+  },
+  "courses/routes/NovelEnergy/Route/能源材料/笔记byxjh.pdf": {
+    "sha256": "7d7270d4427bfb9c6459c1d71641545e7dac9ecb6ccce559aa2485044adc70b1",
+    "url": "/materials-major/material-7d7270d4427bfb9c6459c1d71641545e7dac9ecb6ccce559aa2485044adc70b1.pdf"
+  },
+  "courses/routes/NovelEnergy/Route/锅炉原理及热交换器设计/笔记bylzs.pdf": {
+    "sha256": "8e3abfaf253ff963625a98b41380e011b35df269eca2fc37aa157bc26d2b1f21",
+    "url": "/materials-major/material-8e3abfaf253ff963625a98b41380e011b35df269eca2fc37aa157bc26d2b1f21.pdf"
+  },
+  "courses/routes/NovelEnergy/Route/风能/提纲bylzs.pdf": {
+    "sha256": "d047d8d8ed647f1fbdf79087213adfdac5b0fd4e7519c153c666b3b74d8320f3",
+    "url": "/materials-major/material-d047d8d8ed647f1fbdf79087213adfdac5b0fd4e7519c153c666b3b74d8320f3.pdf"
+  },
+  "courses/routes/NovelEnergy/Route/风能/笔记bylzs.pdf": {
+    "sha256": "209756a8e5ac056de182744a2a135b76d84b09d55a2e196bfcb16c483c66771e",
+    "url": "/materials-major/material-209756a8e5ac056de182744a2a135b76d84b09d55a2e196bfcb16c483c66771e.pdf"
+  },
+  "courses/routes/NovelEnergy/Route/风能/笔记byxjh.pdf": {
+    "sha256": "0fe88d0d46e9a8e62494c13ab63b179ac038b1f0fd3c201076834e63552d409c",
+    "url": "/materials-major/material-0fe88d0d46e9a8e62494c13ab63b179ac038b1f0fd3c201076834e63552d409c.pdf"
+  },
+  "courses/routes/ProcessControl/Route/化工原理（乙）/化工原理.pdf": {
+    "sha256": "1ccb52e147578ff4b9eb9d2cd42fd7ce3dc1535b377e1072a50bc571e676725b",
+    "url": "/materials-major/material-1ccb52e147578ff4b9eb9d2cd42fd7ce3dc1535b377e1072a50bc571e676725b.pdf"
+  },
+  "courses/routes/ProcessControl/Route/工程材料/工程材料提纲.pdf": {
+    "sha256": "2729012e95a40cd68b85b3b778ce24474aaca30a344c221e79c690eec7e90c3d",
+    "url": "/materials-major/material-2729012e95a40cd68b85b3b778ce24474aaca30a344c221e79c690eec7e90c3d.pdf"
+  },
+  "courses/routes/ProcessControl/Route/工程材料/工程材料提纲1.pdf": {
+    "sha256": "d5f909aba4ff18c24ea65fb002ee6cc8ae5e02ac1d2377070c0ba1717b3e66d4",
+    "url": "/materials-major/material-d5f909aba4ff18c24ea65fb002ee6cc8ae5e02ac1d2377070c0ba1717b3e66d4.pdf"
+  },
+  "courses/routes/ProcessControl/Route/工程材料/工程材料提纲2.pdf": {
+    "sha256": "94f63f20ff6cb297324f1fe91eeeb754ef2c65000e39cf2f74410f692f398a7b",
+    "url": "/materials-major/material-94f63f20ff6cb297324f1fe91eeeb754ef2c65000e39cf2f74410f692f398a7b.pdf"
+  },
+  "courses/routes/ProcessControl/Route/控制工程基础/控制工程基础.pdf": {
+    "sha256": "2e546aa92a6de099253b1a41e53cfa197727f8277e9db40518e357046f63a2d7",
+    "url": "/materials-major/material-2e546aa92a6de099253b1a41e53cfa197727f8277e9db40518e357046f63a2d7.pdf"
+  },
+  "courses/routes/ProcessControl/Route/机械设计（乙）/机械设计.pdf": {
+    "sha256": "aa5561538a394dc0d812106e57276ad918f1e6aa0d732a9999b5f206c0b6ee41",
+    "url": "/materials-major/material-aa5561538a394dc0d812106e57276ad918f1e6aa0d732a9999b5f206c0b6ee41.pdf"
+  },
+  "courses/routes/ProcessControl/Route/过程工程流体力学/笔记by李佳朔.pdf": {
+    "sha256": "86b08e3fd830734e79c270ef8d1ca140655dfb3098ce5815e5b7650652bd7782",
+    "url": "/materials-major/material-86b08e3fd830734e79c270ef8d1ca140655dfb3098ce5815e5b7650652bd7782.pdf"
+  },
+  "courses/routes/ProcessControl/Route/过程工程流体力学/笔记by深夜读史记.pdf": {
+    "sha256": "3cd23f2810f744052d879745104ddd4f65f8a6c502d0355ada861ae6f848dc19",
+    "url": "/materials-major/material-3cd23f2810f744052d879745104ddd4f65f8a6c502d0355ada861ae6f848dc19.pdf"
+  },
+  "courses/routes/ProcessControl/Route/过程机械/过程机械.pdf": {
+    "sha256": "52178c094f08cf8dbf9d56b8883c0e09249003e7faf0de600978a9caae92ffe0",
+    "url": "/materials-major/material-52178c094f08cf8dbf9d56b8883c0e09249003e7faf0de600978a9caae92ffe0.pdf"
+  },
+  "courses/routes/ProcessControl/Route/过程机械/过程机械byAlphaCat.pdf": {
+    "sha256": "f7563b0466cdf450d5825842606254a476188078c1f7837d8f2e883e39951697",
+    "url": "/materials-major/material-f7563b0466cdf450d5825842606254a476188078c1f7837d8f2e883e39951697.pdf"
+  },
+  "courses/routes/ProcessControl/Route/过程机械/过程机械答案by深夜读史记.pdf": {
+    "sha256": "b529e3e71d547bba4e7f555e0a0f8cc71b3495dd4759807be369616d1cb61764",
+    "url": "/materials-major/material-b529e3e71d547bba4e7f555e0a0f8cc71b3495dd4759807be369616d1cb61764.pdf"
+  },
+  "courses/routes/ProcessControl/Route/过程装备控制技术/过程装备控制技术by此世之黯.pdf": {
+    "sha256": "d8087172c41f95034779b59c7098771dde0b6f0d222091b61f700ef123355926",
+    "url": "/materials-major/material-d8087172c41f95034779b59c7098771dde0b6f0d222091b61f700ef123355926.pdf"
+  },
+  "courses/routes/ProcessControl/Route/过程装备控制技术/过程装备控制技术by深夜读史记.pdf": {
+    "sha256": "22396280d7bf3e16ddc97a53f62ce62439bf8a3f7bc1d89a296c2acaa81aeb1c",
+    "url": "/materials-major/material-22396280d7bf3e16ddc97a53f62ce62439bf8a3f7bc1d89a296c2acaa81aeb1c.pdf"
+  },
+  "courses/routes/ProcessControl/Route/过程设备设计/过程设备设计.pdf": {
+    "sha256": "93e890e632b7d17e8b20c33ddee43e75c199722f6452d3088a5a2606916c23eb",
+    "url": "/materials-major/material-93e890e632b7d17e8b20c33ddee43e75c199722f6452d3088a5a2606916c23eb.pdf"
+  },
+  "courses/routes/ProcessControl/Route/过程设备设计/过程设备设计by深夜读史记.pdf": {
+    "sha256": "c5e0bef149af62e8f105d6ac20e94b5f9531b2feb28043a469b76517bfe55910",
+    "url": "/materials-major/material-c5e0bef149af62e8f105d6ac20e94b5f9531b2feb28043a469b76517bfe55910.pdf"
+  },
+  "courses/routes/SmartEnergy/人工智能/思维导图 by 一二的夏季.pdf": {
+    "sha256": "074e9583835bbab9e3a99d63d29b853b3568e9c7593f9f522e9913ea1534b09f",
+    "url": "/materials-major/material-074e9583835bbab9e3a99d63d29b853b3568e9c7593f9f522e9913ea1534b09f.pdf"
+  },
+  "courses/routes/SmartEnergy/人工智能/思维导图 by 远道不可思.pdf": {
+    "sha256": "e989d5567589de1e1317f98dc527cddeab02ada0e285f622d7975e072f4f7a60",
+    "url": "/materials-major/material-e989d5567589de1e1317f98dc527cddeab02ada0e285f622d7975e072f4f7a60.pdf"
+  },
+  "courses/routes/SmartEnergy/人工智能/课程笔记 by 一二的夏季.pdf": {
+    "sha256": "d02cd099fe006fb62a4a46d3f28ce0f7e8d6b4e67e7131ff9625bdeab32a924b",
+    "url": "/materials-major/material-d02cd099fe006fb62a4a46d3f28ce0f7e8d6b4e67e7131ff9625bdeab32a924b.pdf"
+  },
+  "courses/routes/SmartEnergy/人工智能/课程笔记 by 小角龙.pdf": {
+    "sha256": "f7c12b1ae6ab521cb89ad93edce0c1d3224e479fd1b048e2511d4fe18849f982",
+    "url": "/materials-major/material-f7c12b1ae6ab521cb89ad93edce0c1d3224e479fd1b048e2511d4fe18849f982.pdf"
+  },
+  "courses/routes/SmartEnergy/制冷低温与空调原理及实践/回忆卷.docx": {
+    "sha256": "a0898c32be5c9312ad05012946b2e7b29af9c7b5179f1f19f163a8117203144b",
+    "url": "/materials-major/material-a0898c32be5c9312ad05012946b2e7b29af9c7b5179f1f19f163a8117203144b.docx"
+  },
+  "courses/routes/SmartEnergy/动态建模理论与应用/回忆卷.pdf": {
+    "sha256": "32e89726bc6f527eabea095a1848ca851dac043ceae2e37852b247d06b9e2be1",
+    "url": "/materials-major/material-32e89726bc6f527eabea095a1848ca851dac043ceae2e37852b247d06b9e2be1.pdf"
+  },
+  "courses/routes/SmartEnergy/动态建模理论与应用/复习题.doc": {
+    "sha256": "473312cb56fcbd64ed7b5de79167e5af85d5aa61d87b63e37bd0973faec2a99d",
+    "url": "/materials-major/material-473312cb56fcbd64ed7b5de79167e5af85d5aa61d87b63e37bd0973faec2a99d.doc"
+  },
+  "courses/routes/Thermal/Extra/微机原理及应用/微机原理整理.docx": {
+    "sha256": "3eb81af1e31ade1555ab7496e99c6050e28b7a2c77e18b8ddad449fed746bada",
+    "url": "/materials-major/material-3eb81af1e31ade1555ab7496e99c6050e28b7a2c77e18b8ddad449fed746bada.docx"
+  },
+  "courses/routes/Thermal/Extra/微机原理及应用/微机原理整理.pdf": {
+    "sha256": "d442e1cbd73996d6f9932cae9ec08853359fee6795de0030364c7d2572aad7ac",
+    "url": "/materials-major/material-d442e1cbd73996d6f9932cae9ec08853359fee6795de0030364c7d2572aad7ac.pdf"
+  },
+  "courses/routes/Thermal/Route/热力环境控制/提纲by陈青云.pdf": {
+    "sha256": "da67a33bfc092b86065b4261be2c3640af3fd79d7282fc5c111d57970365cdbe",
+    "url": "/materials-major/material-da67a33bfc092b86065b4261be2c3640af3fd79d7282fc5c111d57970365cdbe.pdf"
+  },
+  "courses/routes/Thermal/Route/热力系统工程/热力系统工程.pdf": {
+    "sha256": "70f3545c3d67939821370ae2b47a303922260e075c15f043f6dbd95869ef7c7d",
+    "url": "/materials-major/material-70f3545c3d67939821370ae2b47a303922260e075c15f043f6dbd95869ef7c7d.pdf"
+  },
+  "courses/routes/Thermal/Route/热力系统工程/热力系统工程整理.docx": {
+    "sha256": "f491af3244b7883f347183d79959d18d28328b596d989058390b49d6cfd92e43",
+    "url": "/materials-major/material-f491af3244b7883f347183d79959d18d28328b596d989058390b49d6cfd92e43.docx"
+  },
+  "courses/routes/Thermal/Route/热力系统工程/热力系统工程整理.pdf": {
+    "sha256": "f39ad5123ee6d9e2116536df0cc147634d243482b40cf766f10ee53d1cc0af16",
+    "url": "/materials-major/material-f39ad5123ee6d9e2116536df0cc147634d243482b40cf766f10ee53d1cc0af16.pdf"
+  },
+  "courses/routes/Thermal/Route/热工信号处理技术及实验/热工信号处理技术及实验.pdf": {
+    "sha256": "5a47b180b6fd058d0d1bc5e89753a61f2007a2c90a8d27ec063415e224e87a80",
+    "url": "/materials-major/material-5a47b180b6fd058d0d1bc5e89753a61f2007a2c90a8d27ec063415e224e87a80.pdf"
+  },
+  "courses/routes/Thermal/Route/燃烧理论/思维导图by陈青云.pdf": {
+    "sha256": "d3116d66eea5e01d71dba79699fa0762d26fcb8a765613575d7fff6d8a8b6644",
+    "url": "/materials-major/material-d3116d66eea5e01d71dba79699fa0762d26fcb8a765613575d7fff6d8a8b6644.pdf"
+  },
+  "courses/routes/Thermal/Route/能源生产过程控制/能源生产过程控制.pdf": {
+    "sha256": "84f08d17beafcffef6ae38a240ba2a6a7ad61c1c3026ff444c4719d393592641",
+    "url": "/materials-major/material-84f08d17beafcffef6ae38a240ba2a6a7ad61c1c3026ff444c4719d393592641.pdf"
+  },
+  "courses/routes/Thermal/Route/透平机械原理/透平机械原理.pdf": {
+    "sha256": "8f5598668778448f10e0f167ea57cc4b082a7537b8ae678dca7f6cbb423da63d",
+    "url": "/materials-major/material-8f5598668778448f10e0f167ea57cc4b082a7537b8ae678dca7f6cbb423da63d.pdf"
+  },
+  "courses/routes/Thermal/Route/透平机械原理/透平机械原理整理.docx": {
+    "sha256": "65e5da392daaf919effacc08a91647647d057e335e92e37e3aff6d1f085dde98",
+    "url": "/materials-major/material-65e5da392daaf919effacc08a91647647d057e335e92e37e3aff6d1f085dde98.docx"
+  },
+  "courses/routes/Thermal/Route/透平机械原理/透平机械原理整理.pdf": {
+    "sha256": "b079d8a54feb4654dea6679ae455cbaab7ec2f98296e7bfb87d95046ff04a586",
+    "url": "/materials-major/material-b079d8a54feb4654dea6679ae455cbaab7ec2f98296e7bfb87d95046ff04a586.pdf"
+  },
+  "courses/routes/Vehicles/Route/工程流体力学（乙）/回忆卷.docx": {
+    "sha256": "c2a6d9fdb5db2414fe1d9050ac1db3976ce67173406f85fe6a65aa26fb5ce2f9",
+    "url": "/materials-major/material-c2a6d9fdb5db2414fe1d9050ac1db3976ce67173406f85fe6a65aa26fb5ce2f9.docx"
+  },
+  "courses/routes/Vehicles/Route/工程流体力学（乙）/工流by陈波.pdf": {
+    "sha256": "abb643b2d9fee25ea7f6c811790dec065dced2a833357f174d8c6a0cfe069891",
+    "url": "/materials-major/material-abb643b2d9fee25ea7f6c811790dec065dced2a833357f174d8c6a0cfe069891.pdf"
+  },
+  "courses/routes/Vehicles/Route/工程流体力学（乙）/工程流体力学（乙）.pdf": {
+    "sha256": "c4157073504bf6e3c3519300fa831a1d6df4551caf68d4a5859699ee04d54b72",
+    "url": "/materials-major/material-c4157073504bf6e3c3519300fa831a1d6df4551caf68d4a5859699ee04d54b72.pdf"
+  },
+  "courses/routes/Vehicles/Route/汽车动力系统原理/笔记by胡耀.pdf": {
+    "sha256": "035dcf2c70baefb0387e6f3de33c46f08301720272248c9627daedca2318135c",
+    "url": "/materials-major/material-035dcf2c70baefb0387e6f3de33c46f08301720272248c9627daedca2318135c.pdf"
+  },
+  "courses/routes/Vehicles/Route/汽车构造/汽车构造 by 番茄杀西瓜.pdf": {
+    "sha256": "515bba393d4b2a66f5c0803b6d6eb855c76846b7f9eb72f65ab0f402ad1d2318",
+    "url": "/materials-major/material-515bba393d4b2a66f5c0803b6d6eb855c76846b7f9eb72f65ab0f402ad1d2318.pdf"
+  },
+  "courses/routes/Vehicles/Route/汽车理论/汽车理论.pdf": {
+    "sha256": "fb251b7cb9ef38670f3519f0b1d8ad860eb41a4e8522af29b28f1141745d00a0",
+    "url": "/materials-major/material-fb251b7cb9ef38670f3519f0b1d8ad860eb41a4e8522af29b28f1141745d00a0.pdf"
+  },
+  "courses/routes/Vehicles/Route/设计与制造/设计与制造III.pdf": {
+    "sha256": "2733bc3ec8bf6f6b43ea74f58eb97037a02adc4d080772c522649bb24a4d2fa0",
+    "url": "/materials-major/material-2733bc3ec8bf6f6b43ea74f58eb97037a02adc4d080772c522649bb24a4d2fa0.pdf"
+  },
+  "courses/routes/Vehicles/Route/设计与制造/设计与制造by陈波.pdf": {
+    "sha256": "b0fdb5ab8c2888f13cce63fe603d493d2de7996d6f7ad1c9cd08d74f490c35db",
+    "url": "/materials-major/material-b0fdb5ab8c2888f13cce63fe603d493d2de7996d6f7ad1c9cd08d74f490c35db.pdf"
+  },
+  "material-previews/114abe0b36dee07bdb2999b9623e68740955f276af2148d321440015be42b4a3.pdf": {
+    "sha256": "982d0cb68c3ff51c0a64db74715d36fb64c502b3d2ff94177f6059dc5417664a",
+    "url": "/materials-major/material-982d0cb68c3ff51c0a64db74715d36fb64c502b3d2ff94177f6059dc5417664a.pdf"
+  },
+  "material-previews/3eb81af1e31ade1555ab7496e99c6050e28b7a2c77e18b8ddad449fed746bada.pdf": {
+    "sha256": "e5e0386fa981f54314f372c8adb2f3f045b54514f87fe3181bc0db4b6a2b4952",
+    "url": "/materials-major/material-e5e0386fa981f54314f372c8adb2f3f045b54514f87fe3181bc0db4b6a2b4952.pdf"
+  },
+  "material-previews/473312cb56fcbd64ed7b5de79167e5af85d5aa61d87b63e37bd0973faec2a99d.pdf": {
+    "sha256": "af4416a461a1b2e950b0a5d34f2a2caa4ab467c32748e305ebe5c2036c419475",
+    "url": "/materials-major/material-af4416a461a1b2e950b0a5d34f2a2caa4ab467c32748e305ebe5c2036c419475.pdf"
+  },
+  "material-previews/4b662803f4f6a94d770b7cfca065d898865a777cc3604cd92b3deb9a97ca62f7.pdf": {
+    "sha256": "13c0d3c29014ba94fc6eebdbe414db43ed7f7151a4982147af54df35dbda01ab",
+    "url": "/materials-basic/material-13c0d3c29014ba94fc6eebdbe414db43ed7f7151a4982147af54df35dbda01ab.pdf"
+  },
+  "material-previews/52711f5b5d633faaf84b85bcb439860f7e08cb73f08b0e6addde763747573ec3.pdf": {
+    "sha256": "a4a1397be1f9abe8468bc440d2414ad5636d0a18fb56c528cf94e01f67ba8882",
+    "url": "/materials-basic/material-a4a1397be1f9abe8468bc440d2414ad5636d0a18fb56c528cf94e01f67ba8882.pdf"
+  },
+  "material-previews/65e5da392daaf919effacc08a91647647d057e335e92e37e3aff6d1f085dde98.pdf": {
+    "sha256": "f33bfc4309336442e621e57f20e486cb55070fe3b8bfd6021402beae2f2010b5",
+    "url": "/materials-major/material-f33bfc4309336442e621e57f20e486cb55070fe3b8bfd6021402beae2f2010b5.pdf"
+  },
+  "material-previews/79639066dc78d6bc95e5886afa8380d272991d9ffe93f1c47c92762c24c6a2dd.pdf": {
+    "sha256": "50b6b7c1a3ea5dc1cc112b4175d440093873717b90148a31144fcd7c303505c9",
+    "url": "/materials-major/material-50b6b7c1a3ea5dc1cc112b4175d440093873717b90148a31144fcd7c303505c9.pdf"
+  },
+  "material-previews/a0898c32be5c9312ad05012946b2e7b29af9c7b5179f1f19f163a8117203144b.pdf": {
+    "sha256": "6cc5a08684c45964ba264a4b1961d31d4848bbd592d5398e5270d2a260dbf448",
+    "url": "/materials-major/material-6cc5a08684c45964ba264a4b1961d31d4848bbd592d5398e5270d2a260dbf448.pdf"
+  },
+  "material-previews/b6cbf1af5c98750798761191f28493ee00b77b0a616e0e06b057c05c6dd94388.pdf": {
+    "sha256": "69db6a1275d8e1daca0cb2d37f02c5349ba31524222a8e99449871b37713ff4b",
+    "url": "/materials-major/material-69db6a1275d8e1daca0cb2d37f02c5349ba31524222a8e99449871b37713ff4b.pdf"
+  },
+  "material-previews/c2a6d9fdb5db2414fe1d9050ac1db3976ce67173406f85fe6a65aa26fb5ce2f9.pdf": {
+    "sha256": "3ebc4da2017e2b9ed3167ac40186005124c3509c08f5b813383f61e79d04bdec",
+    "url": "/materials-major/material-3ebc4da2017e2b9ed3167ac40186005124c3509c08f5b813383f61e79d04bdec.pdf"
+  },
+  "material-previews/c92ac55174675b946bab8aef0d92f884ba54eca9d209ae46e3c8faaf2b74eef4.pdf": {
+    "sha256": "85a488b1b158d56c2cca85d7ee2099f44e5bbc7a9bd733467a85e1cf181330ca",
+    "url": "/materials-major/material-85a488b1b158d56c2cca85d7ee2099f44e5bbc7a9bd733467a85e1cf181330ca.pdf"
+  },
+  "material-previews/f491af3244b7883f347183d79959d18d28328b596d989058390b49d6cfd92e43.pdf": {
+    "sha256": "ad70edd3659a8825b1abbefa60d1c360b03318404cadcffd95732517c4b300a7",
+    "url": "/materials-major/material-ad70edd3659a8825b1abbefa60d1c360b03318404cadcffd95732517c4b300a7.pdf"
+  },
+  "courses/routes/Thermal/Route/能源转化（锅炉原理）/热能锅炉原理复习笔记.-klx.pdf": {
+    "sha256": "507eb96f7afb419db4541a771c2f53ad936b28a9e276e427f7c8fefe1c8e18d2",
+    "url": "/materials-major/boiler-review-notes-klx.pdf"
+  }
+}
