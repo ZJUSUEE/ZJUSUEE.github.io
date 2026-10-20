@@ -37,6 +37,9 @@ class PublicationTests(unittest.TestCase):
         revision = patch.dict(materials.os.environ, {'GITHUB_SHA': 'a' * 40})
         revision.start()
         self.addCleanup(revision.stop)
+        source = patch.object(materials, 'SOURCE', self.site)
+        source.start()
+        self.addCleanup(source.stop)
 
     def test_download_redirect_and_duplicate_names_keep_file_identity(self):
         other = self.site / 'other/笔记 + &.pdf'
@@ -141,6 +144,51 @@ class PublicationTests(unittest.TestCase):
     def test_local_preview_cannot_publish(self):
         with self.assertRaisesRegex(ValueError, 'cannot be published'):
             materials.prepare(self.site, materials.plan(self.site), publish=True, local_files=self.site)
+
+    def test_pages_copy_uses_original_pdf_and_preserves_page_link(self):
+        first = materials.plan(self.site)['courses/笔记 + &.pdf']
+        url = '/materials-basic/' + first['name']
+        routes = {first['path']: dict(sha256=first['sha256'], url=url)}
+        (self.site / 'materials-pages.json').write_text(json.dumps(routes))
+        assets = materials.plan(self.site)
+        asset = assets[first['path']]
+        self.assertEqual(asset['mode'], 'pdf')
+        self.assertEqual(asset['url'], url)
+        self.assertEqual(asset['preview_url'], url)
+        self.assertNotIn('material-viewer', materials.viewer_url(asset))
+        result = materials.prepare(self.site, assets)
+        self.assertIn(url, self.page.read_text())
+        self.assertIn('download="笔记 + &amp;.pdf"', self.page.read_text())
+        self.assertIn('#page=3', self.page.read_text())
+        self.assertFalse((self.site / 'document-previews').exists())
+        self.assertEqual(result['after_bytes'], sum(p.stat().st_size for p in self.site.rglob('*') if p.is_file()))
+
+    def test_pages_copy_hash_or_url_mismatch_blocks_edits(self):
+        asset = materials.plan(self.site)['courses/笔记 + &.pdf']
+        original = self.page.read_bytes()
+        for changes in [dict(sha256='0'*64), dict(url='https://example.com/file.pdf'),
+                        dict(url='/materials-basic/material-'+'0'*64+'.pdf')]:
+            routes = {asset['path']: dict(sha256=asset['sha256'], url='/materials-basic/'+asset['name'])}
+            routes[asset['path']].update(changes)
+            (self.site / 'materials-pages.json').write_text(json.dumps(routes))
+            with self.assertRaises(ValueError):
+                materials.plan(self.site)
+            self.assertEqual(self.page.read_bytes(), original)
+
+    def test_external_boiler_uses_verified_pages_copy_without_local_pdf(self):
+        first = materials.plan(self.site)['courses/笔记 + &.pdf']
+        boiler = '/materials-major/boiler-review-notes-klx.pdf'
+        routes = {first['path']: dict(sha256=first['sha256'], url='/materials-basic/'+first['name']),
+                  materials.BOILER_PATH: dict(sha256='507eb96f7afb419db4541a771c2f53ad936b28a9e276e427f7c8fefe1c8e18d2', url=boiler)}
+        (self.site / 'materials-pages.json').write_text(json.dumps(routes))
+        self.page.write_text(self.page.read_text()+f'<a href="{materials.BOILER_URL}#page=2">锅炉笔记</a>')
+        assets = materials.plan(self.site)
+        self.assertTrue(assets[materials.BOILER_PATH]['external'])
+        result = materials.prepare(self.site, assets)
+        self.assertIn('file=%2Fmaterials-major%2Fboiler-review-notes-klx.pdf', self.page.read_text())
+        self.assertIn('#page=2', self.page.read_text())
+        self.assertIn(boiler, (self.site / materials.BOILER_PATH / 'index.html').read_text())
+        self.assertEqual(result['after_bytes'], sum(p.stat().st_size for p in self.site.rglob('*') if p.is_file()))
 
     def test_immutable_release_blocks_new_uploads(self):
         assets = materials.plan(self.site)
