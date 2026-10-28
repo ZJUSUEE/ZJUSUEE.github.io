@@ -197,7 +197,3 @@ CC98 原帖需登录访问。
 - [概率论（H）2024–2025秋冬回忆卷与复习笔记](https://www.cc98.org/topic/6087234) — 东方震
     <br><small>概率论（H）</small>
     <br>作者回忆与个人笔记合并为PDF。
-
-- [概率论（H）2023–2024秋冬回忆卷](https://www.cc98.org/topic/5800325) — 45gfg9
-    <br><small>概率论（H）</small>
-    <br>原帖展示回忆卷，并提供图灵班学习指南中的PDF与TeX入口。
