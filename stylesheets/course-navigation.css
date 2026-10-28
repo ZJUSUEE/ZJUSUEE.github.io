@@ -1,0 +1,25 @@
+.md-tabs,
+.md-tabs__list { overflow: visible; }
+.md-tabs__list { contain: none; }
+.site-direction-item { position: relative; }
+.site-direction-menu { display: flow-root; height: 100%; }
+.site-direction-menu > summary { cursor: pointer; list-style: none; }
+.site-direction-menu > summary::-webkit-details-marker { display: none; }
+.site-direction-menu > summary::after { content: "▾"; margin-left: .35em; font-size: .75em; }
+.site-direction-menu[open] > summary { opacity: 1; }
+.site-direction-menu__panel {
+  /* One layer above the tabs, inside Material's existing navigation layer. */
+  position: absolute; z-index: 1; top: 100%; left: -.6rem;
+  min-width: 11rem; padding: .4rem 0;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: .15rem;
+  box-shadow: 0 .15rem .4rem #0002;
+}
+.site-direction-menu__panel a { display: block; padding: .55rem .85rem; font-size: .72rem; font-weight: 600; }
+.site-direction-menu__panel a:hover,
+.site-direction-menu__panel a:focus-visible { background: var(--md-accent-fg-color--transparent); color: var(--md-accent-fg-color); }
+.site-direction-menu summary:focus-visible { outline: 2px solid currentColor; outline-offset: .15rem; }
+.md-typeset table td:first-child a,
+.md-typeset h2#external-learning-resources ~ ul > li > a:first-of-type { font-weight: 600; }
