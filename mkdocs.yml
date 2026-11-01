@@ -75,6 +75,19 @@ extra_javascript:
 
 extra:
   direction_menus:
+    经验分享:
+      - title: 经验总览
+        url: experience/
+      - title: 保研
+        url: experience/recommendation/
+      - title: 考研
+        url: experience/postgraduate-exam/
+      - title: 留学（含飞跃手册）
+        url: experience/overseas/
+      - title: 就业
+        url: experience/employment/
+      - title: 通用准备
+        url: experience/preparation/
     能环:
       - title: 热能
         url: courses/routes/Thermal/
@@ -792,7 +805,59 @@ nav:
 - 跨专业课程分享:
   - 导航页: courses/extra/index.md
   - 人工智能: /courses/routes/SmartEnergy/人工智能/
+- 经验分享:
+  - 经验总览: experience/index.md
+  - 保研:
+    - 经验列表: experience/recommendation.md
+    - "zzb工程硕博与部分推免保研流程与经验分享（能源学院）": experience/posts/6621432.md
+    - "清华大学能源环境经济研究所保研面试经验（清华3E，清华能经所）": experience/posts/5899731.md
+    - "【信息】大概整理了一下在控制学院保研需要准备什么": experience/posts/6269122.md
+    - "过控保研免研面试回忆": experience/posts/4728299.md
+    - "求能源学院热能所预推免复试面试经验": experience/posts/5987521.md
+  - 考研:
+    - 经验列表: experience/postgraduate-exam.md
+    - "26考研浙大/能动/能源/833/初试经验分享贴": experience/posts/6464195.md
+    - "三个月考研本校能源动力经验丨关键词：833传热学，能源学院": experience/posts/6162002.md
+    - "23能源考研425 上岸经验分享": experience/posts/5568229.md
+    - "能源学院833传热学考研经验": experience/posts/6144362.md
+    - "能源工程学院 传热学（甲）课程学习经验总结2025—2026秋冬": experience/posts/6409082.md
+    - "机械考研832经验贴": experience/posts/5283463.md
+  - 留学（含飞跃手册）:
+    - 飞跃手册:
+      - 历年手册: Flybook/index.md
+      - 2024年飞跃手册: Flybook/2024.md
+      - 2019年飞跃手册: Flybook/2019.md
+      - 2018年飞跃手册: Flybook/2018.md
+    - 经验列表: experience/overseas.md
+    - "【23Fall申请】英美欧机械化工能源PhD混申小记": experience/posts/5607411.md
+    - "日本留学申请记录（tag：东京大学/IME/SGU/机械/ME）": experience/posts/6212440.md
+    - "22级海外申请分享+飞跃手册补充(tag： 26fall ME phd)": experience/posts/6456327.md
+    - "留学申请｜我的申请分享（京都大学IESC、东京大学IME、新加坡、欧陆）": experience/posts/6144140.md
+    - "【23fall申请】欧陆机械硕，超低绩点DIY，欢迎提问": experience/posts/5566334.md
+    - "欧陆岗位制phd瞎申请回忆贴（适合陆本陆硕体质）": experience/posts/5965548.md
+    - "香港新加坡留学申请经验（实验物理）": experience/posts/5514089.md
+  - 就业:
+    - 经验列表: experience/employment.md
+    - "能源小硕24年秋招体验分享，能源类国央企供参考": experience/posts/6296880.md
+    - "能源学子秋招挣扎实录：写在国庆之前": experience/posts/6296018.md
+    - "25考研机械专硕832+25机械本科秋招经验贴": experience/posts/6152341.md
+    - "秋招机械本情况来报": experience/posts/6623936.md
+    - "电气专业秋招应聘经验与心得分享": experience/posts/5419489.md
+    - "Offer比较｜秋招经验｜求职记录｜时间节点（汽车电子与新能源企业）": experience/posts/5724793.md
+    - "想问一下能源热工热动低温所硕士毕业的就业去向": experience/posts/5887105.md
+  - 通用准备:
+    - 经验列表: experience/preparation.md
+    - "低年级本科生的保研综述：如何认识与准备保研": experience/posts/6671961.md
+    - "推免联系导师经历——信息完全不对等的一场博弈": experience/posts/6638683.md
+    - "又是一年保研季，谈谈保研如何选导师，以及保研边缘人的抉择与避坑指南": experience/posts/5414919.md
+    - "导师选择 信息渠道指南1.0": experience/posts/5104152.md
+    - "保研到本院联系导师需要做简历吗": experience/posts/6195186.md
+    - "26 本科新生学业和升学规划科普分享 直播回放": experience/posts/6596575.md
+    - "【经验分享】从简历筛选的视角来讲下招聘经验": experience/posts/5524310.md
+    - "文理医工科研入门小白实用（找导师、项目平台、课程与工具）": experience/posts/6253128.md
+    - "TOEFL+GRE（一周脱产333）经验分享[六级500]": experience/posts/5562233.md
 - 飞跃手册:
+  - 历年手册: Flybook/index.md
   - 2024年飞跃手册: Flybook/2024.md
   - 2019年飞跃手册: Flybook/2019.md
   - 2018年飞跃手册: Flybook/2018.md
