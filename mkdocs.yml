@@ -72,6 +72,8 @@ extra_css:
   - stylesheets/course-navigation.css
 extra_javascript:
   - javascripts/course-navigation.js
+  - path: javascripts/web-analytics.js
+    defer: true
 
 extra:
   direction_menus:
