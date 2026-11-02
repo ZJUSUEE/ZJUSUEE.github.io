@@ -10,6 +10,7 @@
 
 | 课程名称                  | 学分  | 开课学院 | 资料情况 |
 | -------                   | ----- | ---- | ------------| 
-| [**人工智能**](../routes/SmartEnergy/人工智能.md)                |   3.5  |  计算机学院  |   :white_check_mark: 含攻略  |
+| [**人工智能引论**](../routes/SmartEnergy/人工智能.md)<br><small>AI1001M</small> | 3 | 人工智能学院 | :x: 不完善 |
+| [**人工智能（历史课程）**](../routes/SmartEnergy/人工智能.md#legacy-CS3022F)<br><small>CS3022F</small> | 3.5 | 计算机学院 | :white_check_mark: 含攻略 |
 
 ---
