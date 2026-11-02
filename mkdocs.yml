@@ -424,7 +424,7 @@ nav:
       - 计算机模拟: courses/routes/SmartEnergy/计算机模拟.md
       - 动态建模理论及应用: courses/routes/SmartEnergy/动态建模理论与应用.md
       - 能源系统先进测量技术: courses/routes/SmartEnergy/能源系统先进测量技术.md
-      - 人工智能: courses/routes/SmartEnergy/人工智能.md
+      - 人工智能引论: courses/routes/SmartEnergy/人工智能.md
       - 制冷低温与空调原理及实践: courses/routes/SmartEnergy/制冷低温与空调原理及实践.md
       - 数据挖掘概论: courses/routes/SmartEnergy/数据挖掘概论.md
     - 专业选修:
@@ -806,7 +806,7 @@ nav:
     - 工程材料: courses/routes/ProcessControl/Route/工程材料.md
 - 跨专业课程分享:
   - 导航页: courses/extra/index.md
-  - 人工智能: /courses/routes/SmartEnergy/人工智能/
+  - 人工智能引论: /courses/routes/SmartEnergy/人工智能/
 - 经验分享:
   - 经验总览: experience/index.md
   - 保研:
