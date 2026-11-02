@@ -50,7 +50,8 @@
     | [计算机模拟](计算机模拟.md)<br><small>MATH3604M</small> | 3 | 25级及以前<br>**专业必修** | :white_check_mark: 较完善 |
     | [动态建模理论及应用](动态建模理论与应用.md)<br><small>ENER3022M</small> | 2 | 25级及以前<br>**专业必修** | :white_check_mark: 较完善 |
     | [能源系统先进测量技术](能源系统先进测量技术.md)<br><small>ENER3036M</small> | 2 | 25级及以前<br>**专业必修** | :white_check_mark: 有资料 |
-    | [人工智能](人工智能.md)<br><small>CS3022F</small> | 3.5 | 25级及以前<br>**专业必修** | :white_check_mark: 有资料 |
+    | [人工智能引论](人工智能.md)<br><small>AI1001M</small> | 3 | 24、25级<br>**专业必修** | :x: 不完善 |
+    | [人工智能](人工智能.md#legacy-CS3022F)<br><small>CS3022F</small> | 3.5 | 23级及以前<br>**专业必修** | :white_check_mark: 有资料 |
     | [制冷低温与空调原理及实践](制冷低温与空调原理及实践.md)<br><small>ENER3012M</small> | 3 | 25级及以前<br>**专业必修** | :white_check_mark: 有资料 |
     | [数据挖掘概论](数据挖掘概论.md)<br><small>ISEE3060M</small> | 2 | 25级及以前<br>**专业必修** | :white_check_mark: 有资料 |
 
