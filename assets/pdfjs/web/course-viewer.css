@@ -1,0 +1,7 @@
+:root {
+  --toolbar-bg-color: light-dark(#f2edf9, #30283e);
+  --sidebar-toolbar-bg-color: light-dark(#f2edf9, #30283e);
+  --progressBar-color: #7654ad;
+  --body-bg-color: light-dark(#eceaf0, #25212d);
+}
+#editorModeButtons, #editorModeSeparator, #secondaryOpenFile { display: none !important; }
