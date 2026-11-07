@@ -458,5 +458,9 @@
   "courses/routes/Thermal/Route/能源转化（锅炉原理）/热能锅炉原理复习笔记.-klx.pdf": {
     "sha256": "507eb96f7afb419db4541a771c2f53ad936b28a9e276e427f7c8fefe1c8e18d2",
     "url": "/materials-major/boiler-review-notes-klx.pdf"
+  },
+  "courses/submissions/24级周科帆/人工智能基础（A）2024-2025回忆卷.pdf": {
+    "sha256": "2a22c55c185b99c7861022415dbc4fd2856fd380df7c2344de64b0f555926f7d",
+    "url": "/materials-basic/material-2a22c55c185b99c7861022415dbc4fd2856fd380df7c2344de64b0f555926f7d.pdf"
   }
 }
